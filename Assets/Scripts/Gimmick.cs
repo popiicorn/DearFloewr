@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Gimmick 
+public abstract class Gimmick : MonoBehaviour
 {
-    public bool IsLock { get; }
+    public bool IsLock { get; protected set; }
 
-    public void OnClickAction();
+    public abstract Transform GetTargetPosition(Vector3 playerPos);
 
-    public Transform GetTargetPosition(Vector3 playerPos);
+    public abstract void Move(Vector3 distance);
 }

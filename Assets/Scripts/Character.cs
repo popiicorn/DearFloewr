@@ -27,7 +27,7 @@ public class Character : MonoBehaviour
     }
 
     Mode mode = Mode.Normal;
-    GameObject pushObj;
+    Gimmick gimmick;
 
     private void Awake()
     {
@@ -41,6 +41,10 @@ public class Character : MonoBehaviour
     // クリックした場所まで移動
     private void Update()
     {
+        if (GameManager.Instance.IsGameClear)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -52,24 +56,25 @@ public class Character : MonoBehaviour
 
             if (hit2d)
             {
-                Gimmick gimmick = hit2d.transform.GetComponent<Gimmick>();
-                if (gimmick != null)
+                gimmick = hit2d.transform.GetComponent<Gimmick>();
+                if (gimmick && gimmick.IsLock)
+                {
+                    gimmick = null;
+                }
+                if(gimmick)
                 {
                     isClicking = true;
-                    gimmick.OnClickAction();
                     mode = Mode.PrePush;
-                    // targetPos = hit2d.transform.position;
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
 
-                    pushObj = hit2d.transform.gameObject;
                 }
             }
-            else if (pushObj && ((faceDirection == FaceDirection.Right && clickPos.x < pushObj.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > pushObj.transform.position.x)) )
+            else if (gimmick && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)) )
             {
                 // 進行方向と逆をクリックしたら
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
-                pushObj = null;
+                gimmick = null;
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -89,9 +94,9 @@ public class Character : MonoBehaviour
         targetPos.y = transform.position.y;
         Vector3 prePos = transform.position;
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        if (pushObj && mode == Mode.Push)
+        if (gimmick && mode == Mode.Push)
         {
-            pushObj.transform.position += transform.position - prePos;
+            gimmick.Move(transform.position - prePos);
         }
         SetDirection(targetPos);
 
@@ -105,7 +110,7 @@ public class Character : MonoBehaviour
         {
             animator.SetTrigger("Push");
             mode = Mode.Push;
-            SetDirection(pushObj.transform.position);
+            SetDirection(gimmick.transform.position);
         }
         else if (mode == Mode.Normal || mode == Mode.PrePush)
         {
@@ -134,5 +139,16 @@ public class Character : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
             faceDirection = FaceDirection.Right;
         }
+    }
+
+    public void SetDefaultMode()
+    {
+        mode = Mode.Normal;
+        isClicking = false;
+        gimmick = null;
+        isWalking = false;
+        animator.SetTrigger("OnNormal");
+        animator.SetBool("IsWalking", isWalking);
+        targetPos = transform.position;
     }
 }
