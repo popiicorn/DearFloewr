@@ -6,6 +6,8 @@ public class Rock : MonoBehaviour, Gimmick
 {
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+    bool isLock;
+    public bool IsLock { get => isLock; }
 
     public Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -20,5 +22,10 @@ public class Rock : MonoBehaviour, Gimmick
     {
         Debug.Log("岩をクリック");
         // 特定の場所まで移動させる
+    }
+
+    public void SetLock(bool value)
+    {
+        isLock = value;
     }
 }

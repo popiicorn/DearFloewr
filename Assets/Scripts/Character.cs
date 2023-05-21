@@ -8,14 +8,26 @@ public class Character : MonoBehaviour
     [SerializeField] Vector3 targetPos;
     Animator animator;
     bool isWalking;
+    bool isClicking;
+
+    enum FaceDirection
+    {
+        Right,
+        Left,
+    };
+    FaceDirection faceDirection = FaceDirection.Right;
+
+
     enum Mode
     {
+        Busy,
         Normal,
         PrePush,
         Push,
     }
 
     Mode mode = Mode.Normal;
+    GameObject pushObj;
 
     private void Awake()
     {
@@ -34,24 +46,39 @@ public class Character : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit2d = Physics2D.Raycast((Vector2)ray.origin, (Vector2)ray.direction);
 
+            Vector3 touchScreenPosition = Input.mousePosition;
+            touchScreenPosition.z = 5.0f;
+            Vector3 clickPos = Camera.main.ScreenToWorldPoint(touchScreenPosition);
+
             if (hit2d)
             {
                 Gimmick gimmick = hit2d.transform.GetComponent<Gimmick>();
                 if (gimmick != null)
                 {
+                    isClicking = true;
                     gimmick.OnClickAction();
-
                     mode = Mode.PrePush;
+                    // targetPos = hit2d.transform.position;
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
+
+                    pushObj = hit2d.transform.gameObject;
                 }
             }
-            else
+            else if (pushObj && ((faceDirection == FaceDirection.Right && clickPos.x < pushObj.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > pushObj.transform.position.x)) )
             {
+                // 進行方向と逆をクリックしたら
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
+                pushObj = null;
             }
         }
-        if (mode == Mode.Normal)
+        if (Input.GetMouseButtonUp(0))
+        {
+            isClicking = false;
+        }
+        
+
+        if (!isClicking &&(mode == Mode.Normal || mode == Mode.Push))
         {
             if (Input.GetMouseButton(0))
             {
@@ -60,8 +87,13 @@ public class Character : MonoBehaviour
         }
         targetPos.z = transform.position.z;
         targetPos.y = transform.position.y;
+        Vector3 prePos = transform.position;
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        SetDirection();
+        if (pushObj && mode == Mode.Push)
+        {
+            pushObj.transform.position += transform.position - prePos;
+        }
+        SetDirection(targetPos);
 
         isWalking = (transform.position - targetPos).sqrMagnitude >= float.Epsilon;
 
@@ -72,8 +104,10 @@ public class Character : MonoBehaviour
         if (!isWalking && mode == Mode.PrePush)
         {
             animator.SetTrigger("Push");
+            mode = Mode.Push;
+            SetDirection(pushObj.transform.position);
         }
-        else
+        else if (mode == Mode.Normal || mode == Mode.PrePush)
         {
             animator.SetBool("IsWalking", isWalking);
         }
@@ -88,15 +122,17 @@ public class Character : MonoBehaviour
         targetPos.y = transform.position.y;
     }
 
-    void SetDirection()
+    void SetDirection(Vector3 target)
     {
-        if (targetPos.x < transform.position.x)
+        if (target.x < transform.position.x)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            faceDirection = FaceDirection.Left;
         }
-        else if(targetPos.x > transform.position.x)
+        else if(target.x > transform.position.x)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            faceDirection = FaceDirection.Right;
         }
     }
 }
