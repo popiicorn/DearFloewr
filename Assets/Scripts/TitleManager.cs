@@ -13,6 +13,6 @@ public class TitleManager : MonoBehaviour
             return;
         }
         isStart = true;
-        FadeManager.Instance.LoadScene("Main", 1.5f);
+        FadeManager.Instance.LoadScene("Main", 1f);
     }
 }
