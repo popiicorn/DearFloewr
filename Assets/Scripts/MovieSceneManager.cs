@@ -1,26 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class MovieSceneManager : MonoBehaviour
 {
-    [SerializeField]
-    VideoPlayer videoPlayer;
+    [SerializeField] VideoPlayer videoPlayer;
+    [SerializeField] RawImage rawImage;
 
     void Start()
     {
-        // FadeManager.Instance.gameObject.SetActive(false);
+        rawImage.gameObject.SetActive(false);
         videoPlayer.loopPointReached += LoopPointReached;
-        videoPlayer.Play();
-
+		StartCoroutine(PlayStart());
+	}
+    IEnumerator PlayStart()
+    {
+        videoPlayer.Prepare();
+        while (!videoPlayer.isPrepared)
+            yield return null;
+        Play();
     }
 
+    public void Play()
+    {
+        rawImage.gameObject.SetActive(true);
+        videoPlayer.Play();
+    }
 
     public void LoopPointReached(VideoPlayer vp)
-    {
-        // 動画再生完了時の処理
-        FadeManager.Instance.gameObject.SetActive(true);
-        FadeManager.Instance.LoadScene("Title", 1f);
+	{
+		videoPlayer.Stop();
+		// 動画再生完了時の処理
+		FadeManager.Instance.LoadScene("Title", 1f);
     }
 }
