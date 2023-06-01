@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] int speed;
+    [SerializeField] float speed;
     [SerializeField] Vector3 targetPos;
     Animator animator;
     bool isWalking;
     bool isClicking;
+    float defaultSpeed;
 
     enum FaceDirection
     {
@@ -36,6 +37,7 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
+        defaultSpeed = speed;
         targetPos = transform.position;
     }
     // クリックした場所まで移動
@@ -102,6 +104,19 @@ public class Character : MonoBehaviour
 
         isWalking = (transform.position - targetPos).sqrMagnitude >= float.Epsilon;
 
+        if (isWalking)
+        {
+            if (mode == Mode.Push)
+            {
+                speed = defaultSpeed / 2f;
+                Debug.Log("Push!!!!");
+            }
+            else if (mode == Mode.Normal)
+            {
+                speed = defaultSpeed;
+                Debug.Log("Walk!!!!");
+            }
+        }
     }
 
     private void LateUpdate()
