@@ -110,6 +110,7 @@ public class Character : MonoBehaviour
             {
                 speed = defaultSpeed / 2f;
                 Debug.Log("Push!!!!");
+                CriManager.instance.PlayPushSE();
             }
             else if (mode == Mode.Normal)
             {
