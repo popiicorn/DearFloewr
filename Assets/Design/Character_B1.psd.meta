@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch_0
+      name: Switch_R_0
       rect:
         serializedVersion: 2
         x: 560
@@ -376,6 +376,27 @@ TextureImporter:
       bones: []
       spriteID: 7e2c6c67ab3139a4f81cebe4a9f80f99
       internalID: -129376256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_L_0
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 624
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c009bf85e74566b44a661d8050363331
+      internalID: -1199969981
       vertices: []
       indices: 
       edges: []
@@ -400,7 +421,8 @@ TextureImporter:
       Idle_0: 1708571928
       Kick_0: -914343175
       Push_0: -2106437448
-      Switch_0: -129376256
+      Switch_L_0: -1199969981
+      Switch_R_0: -129376256
       Walk_0: 1730264218
       Walk_1: 411974330
       Walk_2: 507093736
