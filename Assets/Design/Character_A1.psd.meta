@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kick_0
+      name: Kick_2
       rect:
         serializedVersion: 2
         x: 700
@@ -339,12 +339,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_0
+      name: Kick_1
       rect:
         serializedVersion: 2
         x: 840
         y: 824
-        width: 184
+        width: 140
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -401,6 +401,195 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Push_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc61324c0442fa04f9cb8a386fb5e777
+      internalID: 1849498145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 424
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2ce6474733e1643864947188dadda5
+      internalID: -803994408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 424
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccb9b870431b5844819956a07d39fa8
+      internalID: 1780495791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 424
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff77c0729257414bb5b55f285ac9b2d
+      internalID: 1746064651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_4
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 424
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2364f135dafff84c9ac6c4320284030
+      internalID: -1433005612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17397243e8a229541a604bb628c7304f
+      internalID: 702800444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_6
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 224
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24de8525fc1971042b104f460d0280fe
+      internalID: 209647639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 224
+        width: 174
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6080876230739ea47910c5fa2f4a9570
+      internalID: -1110435564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kick_0
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 624
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fe406d830bc55448bb6bdc32e374b0
+      internalID: 406272726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -419,8 +608,17 @@ TextureImporter:
       Gimmick_1: -2135931112
       Gimmick_2: 1174842953
       Idle_0: 1708571928
-      Kick_0: -914343175
-      Push_0: -2106437448
+      Kick_0: 406272726
+      Kick_1: -2106437448
+      Kick_2: -914343175
+      Push_0: 1849498145
+      Push_1: -803994408
+      Push_2: 1780495791
+      Push_3: 1746064651
+      Push_4: -1433005612
+      Push_5: 702800444
+      Push_6: 209647639
+      Push_7: -1110435564
       Switch_L_0: 834974103
       Switch_R_0: -129376256
       Walk_0: 1730264218
