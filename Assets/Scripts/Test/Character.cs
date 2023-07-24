@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     bool isWalking;
     bool isClicking;
     float defaultSpeed;
+    float gimmickSize;
 
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;
@@ -27,8 +28,9 @@ public class Character : MonoBehaviour
     {
         Busy,
         Normal,
-        PrePush,
+        ReachGimmick,
         Push,
+        Kick,
     }
 
     Mode mode = Mode.Normal;
@@ -44,6 +46,12 @@ public class Character : MonoBehaviour
         defaultSpeed = speed;
         targetPos = transform.position;
     }
+
+
+    // クリックしたものの近くまでいく
+    // クリックしたものが「動かすもの」ならモードを「PrePush」に変更
+    // クリックしたものが「キック」ならモードを「PrePush」に変更
+
     // クリックした場所まで移動
     private void Update()
     {
@@ -64,6 +72,12 @@ public class Character : MonoBehaviour
 
             if (hit2d)
             {
+                if (gimmick)
+                {
+                    return;
+                }
+
+                // ギミックを取得
                 gimmick = hit2d.transform.GetComponent<Gimmick>();
                 if (gimmick && gimmick.IsLock)
                 {
@@ -72,9 +86,8 @@ public class Character : MonoBehaviour
                 if(gimmick)
                 {
                     isClicking = true;
-                    mode = Mode.PrePush;
+                    mode = Mode.ReachGimmick;
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
-
                 }
             }
             else if (gimmick && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)) )
@@ -126,17 +139,42 @@ public class Character : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!isWalking && mode == Mode.PrePush)
+        // この時にPrePshならPushに移行
+        // キックならキックに移行
+        if (!isWalking && mode == Mode.ReachGimmick)
         {
-            animator.SetTrigger("Push");
-            mode = Mode.Push;
+            mode = Mode.Busy;
             SetDirection(gimmick.transform.position);
+            gimmick.OnGameCharacter(this);
         }
-        else if (mode == Mode.Normal || mode == Mode.PrePush)
+        else if (mode == Mode.Normal || mode == Mode.ReachGimmick)
         {
             animator.SetBool("IsWalking", isWalking);
         }
     }
+
+    public void BusyMode()
+    {
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+    }
+
+    public void KickGimmick()
+    {
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+        animator.Play("Kick");
+        mode = Mode.Kick;
+    }
+
+    public void SetPushMode()
+    {
+        isWalking = false;
+        animator.SetTrigger("Push");
+        mode = Mode.Push;
+    }
+
+
 
     void SetTarget()
     {
@@ -146,9 +184,9 @@ public class Character : MonoBehaviour
         targetPos.z = transform.position.z;
         targetPos.y = transform.position.y;
         float offsetX = 0;
-        if (mode == Mode.Push)
+        if (mode == Mode.Push && gimmick)
         {
-            offsetX = gimmick.GetComponent<SpriteRenderer>().bounds.size.x*2f;
+            offsetX = gimmick.Size*2f;
         }
         if (exitLimit)
         {
