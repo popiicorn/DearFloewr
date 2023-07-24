@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] float fadeTime = 1f;
     [SerializeField] string nextSceneName;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
@@ -24,6 +25,6 @@ public class GameManager : MonoBehaviour
     IEnumerator ToNextScene()
     {
         yield return new WaitForSeconds(3);
-        FadeManager.Instance.LoadScene(nextSceneName, 1f);
+        FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
     }
 }

@@ -10,7 +10,6 @@ using System.Collections.Generic;
 /// </summary>
 public class FadeManager : MonoBehaviour
 {
-
 	#region Singleton
 
 	private static FadeManager instance;
