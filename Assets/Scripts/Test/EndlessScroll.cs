@@ -8,7 +8,8 @@ public class EndlessScroll : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float parallaxEffect;
     [SerializeField] int panelBetween;
-
+    [SerializeField] bool isSelfSetting;
+    [SerializeField] float selfSize;
     float length, startpos;
 
     void Start()
@@ -17,6 +18,10 @@ public class EndlessScroll : MonoBehaviour
         startpos = transform.position.x;
         // 背景画像のx軸方向の幅
         length = spriteRenderer.bounds.size.x * panelBetween;
+        if (isSelfSetting)
+        {
+            length = selfSize * panelBetween;
+        }
     }
     private void FixedUpdate()
     {

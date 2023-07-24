@@ -121,3 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   targetPos: {x: 0, y: 0, z: 0}
+  exitLimit: 0
+  leftPos: {fileID: 0}
+  rightPos: {fileID: 0}

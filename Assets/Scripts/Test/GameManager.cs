@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] string nextSceneName;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     private void Awake()
@@ -17,12 +18,12 @@ public class GameManager : MonoBehaviour
             return;
         }
         IsGameClear = true;
-        StartCoroutine(ToMovieScene());
+        StartCoroutine(ToNextScene());
     }
 
-    IEnumerator ToMovieScene()
+    IEnumerator ToNextScene()
     {
         yield return new WaitForSeconds(3);
-        FadeManager.Instance.LoadScene("Movie", 1f);
+        FadeManager.Instance.LoadScene(nextSceneName, 1f);
     }
 }

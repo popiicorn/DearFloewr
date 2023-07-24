@@ -11,6 +11,10 @@ public class Character : MonoBehaviour
     bool isClicking;
     float defaultSpeed;
 
+    [SerializeField] bool exitLimit;
+    [SerializeField] Transform leftPos;
+    [SerializeField] Transform rightPos;
+
     enum FaceDirection
     {
         Right,
@@ -55,6 +59,8 @@ public class Character : MonoBehaviour
             Vector3 touchScreenPosition = Input.mousePosition;
             touchScreenPosition.z = 5.0f;
             Vector3 clickPos = Camera.main.ScreenToWorldPoint(touchScreenPosition);
+
+
 
             if (hit2d)
             {
@@ -139,6 +145,15 @@ public class Character : MonoBehaviour
         targetPos = Camera.main.ScreenToWorldPoint(touchScreenPosition);
         targetPos.z = transform.position.z;
         targetPos.y = transform.position.y;
+        float offsetX = 0;
+        if (mode == Mode.Push)
+        {
+            offsetX = gimmick.GetComponent<SpriteRenderer>().bounds.size.x*2f;
+        }
+        if (exitLimit)
+        {
+            targetPos.x = Mathf.Clamp(targetPos.x, leftPos.position.x + offsetX, rightPos.position.x - offsetX);
+        }
     }
 
     void SetDirection(Vector3 target)
