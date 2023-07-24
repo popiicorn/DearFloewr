@@ -382,12 +382,12 @@ PrefabInstance:
         type: 3}
       propertyPath: leftPos
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1681481164}
     - target: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: rightPos
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 455577028}
     - target: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: exitLimit
@@ -814,6 +814,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &455577028 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4312976780252568561, guid: aa827d1ed3362494ebb41817b9967310,
+    type: 3}
+  m_PrefabInstance: {fileID: 703707598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &496886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2527,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4440234446275231716, guid: 114177247989a41438de4dd8da6b93a6,
     type: 3}
   m_PrefabInstance: {fileID: 1116669411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1681481164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,
+    type: 3}
+  m_PrefabInstance: {fileID: 703707598}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1802047413
 GameObject:

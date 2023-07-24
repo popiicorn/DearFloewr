@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LightStone : Gimmick
 {
+    [SerializeField] int id;
     [SerializeField] GameObject lightEF;
 
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
-
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
         if (transform.position.x < playerPos.x)
@@ -39,9 +39,16 @@ public class LightStone : Gimmick
         yield return new WaitForSeconds(0.5f);
         character.KickGimmick();
         yield return new WaitForSeconds(0.3f);
-        lightEF.SetActive(true);
+        if (LightStoneManager.Instance.IsCorrect(id))
+        {
+            lightEF.SetActive(true);
+        }
         character.SetDefaultMode();
     }
 
+    public void LightOff()
+    {
+        lightEF.SetActive(false);
+    }
 
 }
