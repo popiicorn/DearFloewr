@@ -35,7 +35,7 @@ public class LightStone : Gimmick
 
     IEnumerator Anim(Character character)
     {
-        character.SetDefaultMode();
+        character.BusyMode();
         yield return new WaitForSeconds(0.5f);
         character.KickGimmick();
         yield return new WaitForSeconds(0.3f);

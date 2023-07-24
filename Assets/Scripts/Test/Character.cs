@@ -59,6 +59,10 @@ public class Character : MonoBehaviour
         {
             return;
         }
+        if (mode == Mode.Busy)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -90,9 +94,15 @@ public class Character : MonoBehaviour
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
                 }
             }
-            else if (gimmick && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)) )
+            else if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)))
             {
                 // 進行方向と逆をクリックしたら
+                animator.SetTrigger("OnNormal");
+                mode = Mode.Normal;
+                gimmick = null;
+            }
+            else if (gimmick && mode != Mode.Push)
+            {
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
                 gimmick = null;
@@ -155,8 +165,10 @@ public class Character : MonoBehaviour
 
     public void BusyMode()
     {
+        mode = Mode.Busy;
         isWalking = false;
         animator.SetBool("IsWalking", isWalking);
+        targetPos = transform.position;
     }
 
     public void KickGimmick()
