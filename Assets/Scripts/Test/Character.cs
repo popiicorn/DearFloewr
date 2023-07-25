@@ -31,6 +31,7 @@ public class Character : MonoBehaviour
         ReachGimmick,
         Push,
         Kick,
+        PushSwitch,
     }
 
     Mode mode = Mode.Normal;
@@ -177,6 +178,23 @@ public class Character : MonoBehaviour
         animator.SetBool("IsWalking", isWalking);
         animator.Play("Kick");
         mode = Mode.Kick;
+    }
+    public void PushButtonGimmick()
+    {
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+        animator.Play("Switch_R");
+
+        //if (gimmick.transform.position.x < transform.position.x)
+        //{
+        //    animator.Play("Switch_L");
+        //}
+        //else
+        //{
+        //    animator.Play("Switch_R");
+        //}
+
+        mode = Mode.PushSwitch;
     }
 
     public void SetPushMode()

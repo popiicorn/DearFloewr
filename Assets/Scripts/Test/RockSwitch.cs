@@ -5,14 +5,16 @@ using UnityEngine.Events;
 
 public class RockSwitch : MonoBehaviour
 {
-    [SerializeField] GameObject clearObj;
+    [SerializeField] int id;
     public UnityEvent ClearEvent;
     // もしRockがぶつかったら
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponentInParent<Rock>().SetLock(true);
-        clearObj.SetActive(true);
-        ClearEvent?.Invoke();
-        GameManager.Instance.GameClear();
+        Rock rock = collision.GetComponentInParent<Rock>();
+        if (rock && rock.Id == id)
+        {
+            collision.GetComponentInParent<Rock>().SetLock(true);
+            ClearEvent?.Invoke();
+        }
     }
 }

@@ -798,13 +798,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd53711d76ae4aacb843c26170ed3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearObj: {fileID: 884662303}
+  id: 0
   ClearEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 884662303}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1078153417}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: SetDefaultMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 304081378}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: GameClear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2342,6 +2366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb78c9d8a5d44914b172aa6895144a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   leftPos: {fileID: 499300875}
   rightPos: {fileID: 1353765643}
 --- !u!61 &1417693984

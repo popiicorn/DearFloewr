@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Rock : Gimmick
 {
+    [SerializeField] int id;
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+
+    public int Id { get => id; }
+
     private void Awake()
     {
         Size = GetComponent<SpriteRenderer>().bounds.size.x;
