@@ -14,7 +14,7 @@ public class GS06_Monitor : MonoBehaviour
 
     private void Awake()
     {
-        index = 0;
+        index = 3;
         power = false;
         icons[index].SetActive(power);
     }
