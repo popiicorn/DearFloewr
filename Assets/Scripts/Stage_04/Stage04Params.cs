@@ -10,7 +10,7 @@ public class Stage04Params : MonoBehaviour
         Instance = this;
     }
 
-    [Header("揺れるまでの時間")]
+    [Header("Clearで揺れるまでの時間")]
     public float delayTimeOfShake;
     [Header("闇フェード時間")]
     public float fadeDurationOfDarkSky;
