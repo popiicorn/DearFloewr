@@ -15,6 +15,7 @@ public class Character : MonoBehaviour
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+    [SerializeField] GameObject emoticon;
 
     enum FaceDirection
     {
@@ -87,8 +88,9 @@ public class Character : MonoBehaviour
                 if (gimmick && gimmick.IsLock)
                 {
                     gimmick = null;
+                    return;
                 }
-                if(gimmick)
+                if (gimmick)
                 {
                     isClicking = true;
                     mode = Mode.ReachGimmick;
@@ -145,6 +147,10 @@ public class Character : MonoBehaviour
             {
                 speed = defaultSpeed;
             }
+            if (emoticon.activeSelf)
+            {
+                emoticon.SetActive(false);
+            }
         }
         else if(mode == Mode.Normal)
         {
@@ -163,7 +169,7 @@ public class Character : MonoBehaviour
             SetDirection(gimmick.transform.position);
             gimmick.OnGameCharacter(this);
         }
-        else if (mode == Mode.Normal || mode == Mode.ReachGimmick)
+        else if (mode == Mode.Normal || mode == Mode.ReachGimmick || mode == Mode.Push)
         {
             animator.SetBool("IsWalking", isWalking);
         }
@@ -202,9 +208,15 @@ public class Character : MonoBehaviour
         mode = Mode.PushSwitch;
     }
 
+    public void ShowQuestionEmotion(bool isActive)
+    {
+        emoticon.gameObject.SetActive(isActive);
+    }
+
     public void SetPushMode()
     {
-        isWalking = false;
+        //isWalking = false;
+        //animator.SetBool("IsWalking", false);
         animator.SetTrigger("Push");
         mode = Mode.Push;
     }
@@ -240,6 +252,12 @@ public class Character : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
             faceDirection = FaceDirection.Right;
+        }
+
+        if (!isWalking && mode == Mode.Normal)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            faceDirection = FaceDirection.Left;
         }
     }
 

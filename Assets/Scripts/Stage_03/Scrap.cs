@@ -2,25 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scrap : MonoBehaviour
+public class Scrap : Gimmick
 {
+    [SerializeField] Transform leftPos;
+    [SerializeField] Transform rightPos;
     [SerializeField] float timeOfActive;
-    [SerializeField] GameObject emotion;
     WaitForSeconds wait;
+
     private void Awake()
     {
         wait = new WaitForSeconds(timeOfActive);
     }
-    public void Show()
+
+    public override Transform GetTargetPosition(Vector3 playerPos)
     {
-        StopAllCoroutines();
-        StartCoroutine(ShowCor());
+        if (transform.position.x < playerPos.x)
+        {
+            return rightPos;
+        }
+        return leftPos;
     }
 
-    IEnumerator ShowCor()
+    public override void Move(Vector3 distance)
     {
-        emotion.SetActive(true);
+        Debug.LogError("ERROR");
+    }
+
+    public override void OnGameCharacter(Character character)
+    {
+        StartCoroutine(Anim(character));
+    }
+
+    IEnumerator Anim(Character character)
+    {
+        character.SetDefaultMode();
+        yield return new WaitForSeconds(0.1f);
+        character.ShowQuestionEmotion(true);
         yield return wait;
-        emotion.SetActive(false);
+        character.ShowQuestionEmotion(false);
     }
 }
