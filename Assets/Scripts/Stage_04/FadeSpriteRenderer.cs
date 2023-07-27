@@ -7,7 +7,6 @@ using DG.Tweening;
 public class FadeSpriteRenderer : MonoBehaviour
 {
     public UnityEvent OnFadeEndEvent;
-    [SerializeField] float fadeDuration;
     SpriteRenderer spriteRenderer;
     private void Awake()
     {
@@ -16,6 +15,6 @@ public class FadeSpriteRenderer : MonoBehaviour
 
     public void DoFade()
     {
-        spriteRenderer.DOFade(1, fadeDuration).OnComplete(() => OnFadeEndEvent?.Invoke());
+        spriteRenderer.DOFade(1, Stage04Params.Instance.fadeDurationOfDarkSky).OnComplete(() => OnFadeEndEvent?.Invoke());
     }
 }

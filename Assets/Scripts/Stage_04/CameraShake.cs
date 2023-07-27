@@ -37,6 +37,7 @@ public class CameraShake : MonoBehaviour
 
     public IEnumerator Shake()
     {
+        yield return new WaitForSeconds(Stage04Params.Instance.delayTimeOfShake);
         float shakeIntensity = ShakeIntensity;
         while (shakeIntensity > 0)
         {
