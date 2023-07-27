@@ -208,9 +208,19 @@ public class Character : MonoBehaviour
         mode = Mode.PushSwitch;
     }
 
-    public void ShowQuestionEmotion(bool isActive)
+
+    public void ShowQuestionEmotion()
     {
-        emoticon.gameObject.SetActive(isActive);
+        StartCoroutine(ShowEmotion());
+    }
+
+    IEnumerator ShowEmotion()
+    {
+        SetDefaultMode();
+        yield return new WaitForSeconds(0.7f);
+        emoticon.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        emoticon.gameObject.SetActive(false);
     }
 
     public void SetPushMode()

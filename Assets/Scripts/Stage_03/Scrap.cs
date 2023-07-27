@@ -30,15 +30,6 @@ public class Scrap : Gimmick
 
     public override void OnGameCharacter(Character character)
     {
-        StartCoroutine(Anim(character));
-    }
-
-    IEnumerator Anim(Character character)
-    {
-        character.SetDefaultMode();
-        yield return new WaitForSeconds(0.1f);
-        character.ShowQuestionEmotion(true);
-        yield return wait;
-        character.ShowQuestionEmotion(false);
+        character.ShowQuestionEmotion();
     }
 }

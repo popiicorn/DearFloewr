@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class GS06_Monitor : MonoBehaviour
 {
     public UnityAction OnPushed;
+    public UnityEvent NoReaction;
     [SerializeField] GameObject[] icons;
     int index;
     bool power = false;
@@ -24,6 +25,7 @@ public class GS06_Monitor : MonoBehaviour
     {
         if (!power)
         {
+            NoReaction?.Invoke();
             return;
         }
         icons[index].SetActive(false);
@@ -40,13 +42,5 @@ public class GS06_Monitor : MonoBehaviour
     {
         power = !power;
         icons[index].SetActive(power);
-    }
-
-    void HideAllIcon()
-    {
-        foreach (var icon in icons)
-        {
-            icon.SetActive(false);
-        }
     }
 }
