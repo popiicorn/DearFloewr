@@ -146,6 +146,11 @@ public class Character : MonoBehaviour
                 speed = defaultSpeed;
             }
         }
+        else if(mode == Mode.Normal)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            faceDirection = FaceDirection.Left;
+        }
     }
 
     private void LateUpdate()
