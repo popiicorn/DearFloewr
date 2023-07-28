@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class LightStone : Gimmick
 {
     [SerializeField] int id;
@@ -38,7 +38,9 @@ public class LightStone : Gimmick
         character.BusyMode();
         yield return new WaitForSeconds(0.5f);
         character.KickGimmick();
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
+        yield return Shake();
+        // yield return new WaitForSeconds(0.3f);
         if (LightStoneManager.Instance.IsCorrect(id))
         {
             lightEF.SetActive(true);
@@ -51,4 +53,36 @@ public class LightStone : Gimmick
         lightEF.SetActive(false);
     }
 
+
+    [Header("Shake")]
+    public float ShakeIntensity = 0.02f;   // カメラの揺れの強さ
+    public float ShakeDecay = 0.002f;      // 揺れの減算値
+    public float ShakeAmount = 0.2f;       // 揺れの強さ係数
+
+    private Vector3 originPosition;
+    private Quaternion originRotation;
+
+    void Start()
+    {
+        originPosition = transform.localPosition;
+        originRotation = transform.localRotation;
+    }
+
+    public IEnumerator Shake()
+    {
+        float shakeIntensity = ShakeIntensity;
+        while (shakeIntensity > 0)
+        {
+            transform.localPosition = originPosition + Random.insideUnitSphere * shakeIntensity;
+            transform.localRotation = new Quaternion(
+                originRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount);
+            shakeIntensity -= ShakeDecay;
+            yield return false;
+        }
+        transform.localPosition = originPosition;
+        transform.localRotation = originRotation;
+    }
 }

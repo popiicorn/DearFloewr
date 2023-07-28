@@ -21,13 +21,7 @@ public class CameraShake : MonoBehaviour
         originPosition = ShakeObject.localPosition;
         originRotation = ShakeObject.localRotation;
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Do();
-        }
-    }
+
 
     public void Do()
     {
