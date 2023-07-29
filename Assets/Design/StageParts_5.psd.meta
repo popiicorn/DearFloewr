@@ -338,6 +338,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: StageParts_5_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 62
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f45cb344212e74696988e201993738
+      internalID: 1215251509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 360
+        width: 146
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978e579f5ae96da4e955ee0fa571c3a1
+      internalID: -417028516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_12
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 6
+        width: 201
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2894351018f629840ba8637abd11224a
+      internalID: -1588012552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_13
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 717
+        width: 130
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7a9b4ce630b674789f9ada5bc21478
+      internalID: 857425561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_14
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 615
+        width: 133
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a36b432e2b81f47b9c0c5b111a5a50
+      internalID: -787162595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_15
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 530
+        width: 116
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbee04e77c0aed4aa882f355652047b
+      internalID: -90983325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_16
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 416
+        width: 141
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7130155538dccc3408d625af97737ad5
+      internalID: 686129553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_5_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 231
+        width: 155
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78007aec4dca2b240ad3073f26303d88
+      internalID: -1428149275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -352,6 +520,13 @@ TextureImporter:
       StageParts_5_0: -617017050
       StageParts_5_1: 1288790723
       StageParts_5_10: 1215251509
+      StageParts_5_11: -417028516
+      StageParts_5_12: -1588012552
+      StageParts_5_13: 857425561
+      StageParts_5_14: -787162595
+      StageParts_5_15: -90983325
+      StageParts_5_16: 686129553
+      StageParts_5_17: -1428149275
       StageParts_5_2: 368586091
       StageParts_5_3: -660516855
       StageParts_5_4: -1565584289

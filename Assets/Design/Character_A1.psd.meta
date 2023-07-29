@@ -578,7 +578,7 @@ TextureImporter:
         width: 140
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -586,6 +586,69 @@ TextureImporter:
       bones: []
       spriteID: d5fe406d830bc55448bb6bdc32e374b0
       internalID: 406272726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0780e6d84bccd142b0bcd65bd1db762
+      internalID: 227464485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ee467d5e49c3247858d34a36429818
+      internalID: -1073295193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e937545e2292a24f9fd3cd0b1edb427
+      internalID: -1859735406
       vertices: []
       indices: 
       edges: []
@@ -611,6 +674,9 @@ TextureImporter:
       Kick_0: 406272726
       Kick_1: -2106437448
       Kick_2: -914343175
+      Lever_0: 227464485
+      Lever_1: -1073295193
+      Lever_2: -1859735406
       Push_0: 1849498145
       Push_1: -803994408
       Push_2: 1780495791
