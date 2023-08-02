@@ -1427,8 +1427,8 @@ Transform:
   - {fileID: 1938322864}
   - {fileID: 1137004369}
   - {fileID: 2113617964}
-  - {fileID: 1832711620}
   - {fileID: 1959216452}
+  - {fileID: 1832711620}
   - {fileID: 1341937697}
   - {fileID: 2040796548}
   m_Father: {fileID: 1902523722}
@@ -2467,6 +2467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137004369}
   - component: {fileID: 1137004370}
+  - component: {fileID: 1137004372}
   - component: {fileID: 1137004371}
   m_Layer: 0
   m_Name: SignArrow
@@ -2620,7 +2621,7 @@ MonoBehaviour:
   isRelative: 0
   isFrom: 1
   isIndependentUpdate: 0
-  autoKill: 1
+  autoKill: 0
   autoGenerate: 1
   isActive: 1
   isValid: 1
@@ -2650,6 +2651,21 @@ MonoBehaviour:
   optionalScrambleMode: 0
   optionalShakeRandomnessMode: 0
   optionalString: 
+--- !u!114 &1137004372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137004368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40306178, guid: aa0b1eebb5db27a419fa4564bbe5c9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preset: 0
+  onEnableBehaviour: 2
+  onDisableBehaviour: 0
 --- !u!1 &1186504697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4234,7 +4250,7 @@ PrefabInstance:
     - target: {fileID: 9102374054294155031, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9102374054294155031, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
@@ -4958,7 +4974,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 758122099}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018927782
 GameObject:
@@ -5396,7 +5412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2113617964
 Transform:
   m_ObjectHideFlags: 0
@@ -5805,6 +5821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GS08_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980058507961838888, guid: c0d5a7469f5cbd5489e0952bd80caecc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6980058507961838895, guid: c0d5a7469f5cbd5489e0952bd80caecc,
         type: 3}
