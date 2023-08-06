@@ -2096,6 +2096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever
       objectReference: {fileID: 0}
+    - target: {fileID: 9102374054294155028, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9102374054294155031, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: m_RootOrder
@@ -4264,7 +4269,7 @@ Transform:
   - {fileID: 1135250833}
   - {fileID: 1185272550}
   m_Father: {fileID: 1902523722}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1748375864
 PrefabInstance:
@@ -5170,11 +5175,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 408342311}
+  - {fileID: 1718184530}
   - {fileID: 1639049842}
   - {fileID: 1060192260}
   - {fileID: 813542838}
   - {fileID: 405023845}
-  - {fileID: 1718184530}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
