@@ -208,6 +208,14 @@ public class Character : MonoBehaviour
         mode = Mode.PushSwitch;
     }
 
+    public void PushLeverButtonGimmick()
+    {
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+        animator.Play("Lever");
+        mode = Mode.PushSwitch;
+    }
+
 
     public void ShowQuestionEmotion()
     {
