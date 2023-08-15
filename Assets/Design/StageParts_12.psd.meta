@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c87d41f86d509174ba99ceee4e8406c1
+guid: 64af3f4a5f0894e40b4bdc786d29d075
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -129,295 +129,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StageParts_7_0
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 0
-        width: 227
-        height: 468
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 018f175441d6b8245a2c2f29a46437ca
-      internalID: -1609573929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StageParts_7_1
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 0
-        width: 356
-        height: 687
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75da61db408fa2b449a6e1d1fdd2e9c7
-      internalID: 1919675796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StageParts_7_2
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 352
-        width: 424
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5aa3af6815472e1419389eeefce84927
-      internalID: 326553250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StageParts_7_3
+      name: ErrorParts_A1
       rect:
         serializedVersion: 2
         x: 0
-        y: 870
-        width: 263
-        height: 154
+        y: 607
+        width: 168
+        height: 417
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a529540984c8e24299b6fcf234271bd
-      internalID: 1268449057
+      spriteID: 16b5db66c4c255a49a1734a097bab5b3
+      internalID: 1311926989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_4
+      name: ErrorParts_A2
       rect:
         serializedVersion: 2
-        x: 739
-        y: 112
-        width: 285
-        height: 55
+        x: 178
+        y: 607
+        width: 168
+        height: 417
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4232dcf8ed1ce7c4799f48b457d75e06
-      internalID: 177890020
+      spriteID: 3427b740f9f33fd4189ffcefcfc83921
+      internalID: 697102009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_1
+      name: ErrorParts_B1
       rect:
         serializedVersion: 2
-        x: 739
+        x: 364
+        y: 620
+        width: 159
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e15287c8afdb446a7d07cbb2440653
+      internalID: -503130584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorParts_B2
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 620
+        width: 159
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6510ff202e609840b46b08ec7996d2c
+      internalID: -309425648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorParts_C1
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 705
+        width: 146
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ecf2d7b3cf92e40b3342ac4fea2eb3
+      internalID: -1059224080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorParts_C2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 705
+        width: 146
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb223f2196636346b319b2b0f774df0
+      internalID: -1749729196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorParts_D1
+      rect:
+        serializedVersion: 2
+        x: 4
         y: 291
-        width: 285
-        height: 55
+        width: 145
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bccdb7d9faa276441a593dc5fa3a801c
-      internalID: 38938210
+      spriteID: 4f8ca6a2c7fa02b4e9b73fa7ecc44ed2
+      internalID: 1647410848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_2
+      name: ErrorParts_D2
       rect:
         serializedVersion: 2
-        x: 739
-        y: 229
-        width: 285
-        height: 55
+        x: 165
+        y: 291
+        width: 145
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b3262a7bfbf61429827146209f80a8
-      internalID: 2049657138
+      spriteID: 83e2fa9e56082aa49b3dedfcf8c5f3de
+      internalID: 290676399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_3
+      name: ErrorWindow_1
       rect:
         serializedVersion: 2
-        x: 739
-        y: 169
-        width: 285
-        height: 55
+        x: 331
+        y: 295
+        width: 583
+        height: 305
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b696dede6dc0aa14ea27918d00b42c90
-      internalID: 736576975
+      spriteID: 5742d1c46ba72b9468e8dac629981b4d
+      internalID: 668722283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_5
+      name: ErrorWindow_2
       rect:
         serializedVersion: 2
-        x: 739
-        y: 57
-        width: 285
-        height: 55
+        x: 0
+        y: 5
+        width: 708
+        height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8dbe9ceaed43da4bba7ff915c989b9c
-      internalID: -364867479
+      spriteID: 24358c16805487b4584b809f72cabace
+      internalID: 286939716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ErrorText_6
+      name: ErrorCancel
       rect:
         serializedVersion: 2
-        x: 739
-        y: 0
-        width: 285
-        height: 55
+        x: 922
+        y: 602
+        width: 84
+        height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 077ee405eee9ec1498faf8b5c0b1071c
-      internalID: -1569193585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ErrorParticle1
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 882
-        width: 73
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fcfd7682d470cc419a9e07161707c0a
-      internalID: -1001258490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ErrorParticle2
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 860
-        width: 89
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5c06f8813b56554a875a374775a5ae3
-      internalID: 662410912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ErrorParticle3
-      rect:
-        serializedVersion: 2
-        x: 451
-        y: 859
-        width: 33
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d26f65c140ec4f4aa8f3e752541f532
-      internalID: 872084758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ErrorParticle4
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 862
-        width: 61
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2603af0511d9395488d911edb23060cb
-      internalID: 1781476880
+      spriteID: dc2ba9f4e823542499dcad1c23c6cbb8
+      internalID: 1875149192
       vertices: []
       indices: 
       edges: []
@@ -433,20 +370,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ErrorParticle1: -1001258490
-      ErrorParticle2: 662410912
-      ErrorParticle3: 872084758
-      ErrorParticle4: 1781476880
-      ErrorText_1: 38938210
-      ErrorText_2: 2049657138
-      ErrorText_3: 736576975
-      ErrorText_4: 177890020
-      ErrorText_5: -364867479
-      ErrorText_6: -1569193585
-      StageParts_7_0: -1609573929
-      StageParts_7_1: 1919675796
-      StageParts_7_2: 326553250
-      StageParts_7_3: 1268449057
+      ErrorCancel: 1875149192
+      ErrorParts_A1: 1311926989
+      ErrorParts_A2: 697102009
+      ErrorParts_B1: -503130584
+      ErrorParts_B2: -309425648
+      ErrorParts_C1: -1059224080
+      ErrorParts_C2: -1749729196
+      ErrorParts_D1: 1647410848
+      ErrorParts_D2: 290676399
+      ErrorWindow_1: 668722283
+      ErrorWindow_2: 286939716
+      StageParts_10_0: 1138723213
+      StageParts_11_0: -2086350995
+      StageParts_11_1: 1703224363
+      StageParts_11_2: 225104818
+      StageParts_11_3: -945249444
+      StageParts_11_4: 1307982634
+      StageParts_11_5: 540875255
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
