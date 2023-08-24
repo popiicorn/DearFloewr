@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] string nextSceneName;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
+    public bool IsPreGameClear;
     private void Awake()
     {
         Instance = this;
@@ -19,12 +20,22 @@ public class GameManager : MonoBehaviour
             return;
         }
         IsGameClear = true;
-        StartCoroutine(ToNextScene());
+        StartCoroutine(ToNextScene(3));
+    }
+    public void PreGameClear()
+    {
+        if (IsPreGameClear)
+        {
+            return;
+        }
+        IsPreGameClear = true;
+        StartCoroutine(ToNextScene(0));
     }
 
-    IEnumerator ToNextScene()
+
+    IEnumerator ToNextScene(int time)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(time);
         FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
     }
 }

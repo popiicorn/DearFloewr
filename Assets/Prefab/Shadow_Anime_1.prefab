@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5772015438008089409}
+  - component: {fileID: 2762522083267754678}
   m_Layer: 0
   m_Name: Shadow_Anime_1
   m_TagString: Untagged
@@ -34,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2762522083267754678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757055670923806268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1491daf8a83351e4d86448c46365410a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1472021953531237719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}
@@ -289,6 +302,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526420541495696395, guid: e7a817b16620e454aa3a1b5dba444a2d,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7526420541495696398, guid: e7a817b16620e454aa3a1b5dba444a2d,
         type: 3}
@@ -468,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}
@@ -582,7 +600,7 @@ PrefabInstance:
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331310257305080784, guid: 0b24ca94fe673654fbf5f355a834ad69,
         type: 3}

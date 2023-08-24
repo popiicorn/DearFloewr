@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] float speed;
-    [SerializeField] Vector3 targetPos;
+    float speed = 3;
+    Vector3 targetPos;
     Animator animator;
     bool isWalking;
     bool isClicking;
@@ -47,6 +47,11 @@ public class Character : MonoBehaviour
     {
         defaultSpeed = speed;
         targetPos = transform.position;
+    }
+
+    public void SetParams(float speed)
+    {
+        this.speed = speed;
     }
 
 
