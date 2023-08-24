@@ -539,6 +539,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &157716900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157716902}
+  - component: {fileID: 157716901}
+  m_Layer: 0
+  m_Name: GS07_3Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &157716901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157716900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024c9e39d140389459640a61dd6e6859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &157716902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157716900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178848587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +2196,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 795264377}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 157716901}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GS07_3GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3239584114003914704, guid: 9f336cc79d1e8ed4990764da59721dde,
         type: 3}
       propertyPath: m_Name
@@ -3861,6 +3945,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 795264377}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 157716901}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GS07_3GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351488315535446874, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3239584114003914704, guid: f681fcd9c62313748b4c3cf082dce3fb,
         type: 3}
       propertyPath: m_Name
@@ -5283,6 +5407,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shadow_Anime_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 795264377}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 157716901}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GS07_3GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762522083267754678, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: OnCharacter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5772015438008089409, guid: 25ff42ca517fb5444b715b6d8f9cded8,
         type: 3}
