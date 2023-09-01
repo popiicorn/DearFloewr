@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GS07_Lever : Gimmick
+public class GS08_Button : Gimmick
 {
 
     [SerializeField] Transform leftPos;
@@ -24,10 +24,6 @@ public class GS07_Lever : Gimmick
         Debug.LogError("ERROR");
     }
 
-    // クリックされたら
-    // ターゲットをこいつにしてPlayerが近づいてくる
-    // 近くまできたら「Lever」をする
-
     public override void OnGameCharacter(Character character)
     {
         StartCoroutine(Anim(character));
@@ -37,9 +33,8 @@ public class GS07_Lever : Gimmick
     {
         character.BusyMode();
         yield return new WaitForSeconds(0.2f);
-        GetComponent<SpriteRenderer>().enabled = false;
-        character.PushLeverButtonGimmick();
-        yield return new WaitForSeconds(0.5f);
+        character.PushButtonGimmick();
+        yield return new WaitForSeconds(0.1f);
         OnPush?.Invoke();
         // 絵柄を切り替える
         character.SetDefaultMode();

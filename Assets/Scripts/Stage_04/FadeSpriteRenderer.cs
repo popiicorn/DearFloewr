@@ -8,6 +8,8 @@ public class FadeSpriteRenderer : MonoBehaviour
 {
     public UnityEvent OnFadeEndEvent;
     SpriteRenderer spriteRenderer;
+    public float fadeDurationOfDarkSky;
+    [SerializeField] int endValue;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -15,6 +17,6 @@ public class FadeSpriteRenderer : MonoBehaviour
 
     public void DoFade()
     {
-        spriteRenderer.DOFade(1, Stage04Params.Instance.fadeDurationOfDarkSky).OnComplete(() => OnFadeEndEvent?.Invoke());
+        spriteRenderer.DOFade(endValue, fadeDurationOfDarkSky).OnComplete(() => OnFadeEndEvent?.Invoke());
     }
 }

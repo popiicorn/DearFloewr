@@ -10,6 +10,7 @@ public class CameraShake : MonoBehaviour
     public float ShakeIntensity = 0.02f;   // カメラの揺れの強さ
     public float ShakeDecay = 0.002f;      // 揺れの減算値
     public float ShakeAmount = 0.2f;       // 揺れの強さ係数
+    public float delayTimeOfShake;
 
     public UnityEvent OnShakedEvent;
 
@@ -31,7 +32,7 @@ public class CameraShake : MonoBehaviour
 
     public IEnumerator Shake()
     {
-        yield return new WaitForSeconds(Stage04Params.Instance.delayTimeOfShake);
+        yield return new WaitForSeconds(delayTimeOfShake);
         float shakeIntensity = ShakeIntensity;
         while (shakeIntensity > 0)
         {

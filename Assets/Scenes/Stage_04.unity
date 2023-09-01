@@ -512,6 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48eb34e88e0be4f65809fd7755cc12fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpriteRenderer: {fileID: 0}
+  cameraShake: {fileID: 786419925}
   delayTimeOfShake: 1
   fadeDurationOfDarkSky: 1
 --- !u!4 &214573446
@@ -776,6 +778,7 @@ MonoBehaviour:
   fadeTime: 1
   nextSceneName: Stage_05
   IsGameClear: 0
+  IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
   m_ObjectHideFlags: 0
@@ -1352,6 +1355,7 @@ MonoBehaviour:
   ShakeIntensity: 0.1
   ShakeDecay: 0.001
   ShakeAmount: 0.1
+  delayTimeOfShake: 0
   OnShakedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2477,6 +2481,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  fadeDurationOfDarkSky: 0
+  endValue: 1
 --- !u!1 &1902523720
 GameObject:
   m_ObjectHideFlags: 0

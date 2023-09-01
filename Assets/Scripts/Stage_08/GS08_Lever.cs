@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GS07_Lever : Gimmick
+public class GS08_Lever : Gimmick
 {
 
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
+    [SerializeField] EventData[] eventDatas;
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -43,6 +44,23 @@ public class GS07_Lever : Gimmick
         OnPush?.Invoke();
         // äGïøÇêÿÇËë÷Ç¶ÇÈ
         character.SetDefaultMode();
+        foreach (var eventData in eventDatas)
+        {
+            yield return eventData.Play();
+        }
     }
+
 }
 
+[System.Serializable]
+public class EventData
+{
+    public float delay;
+    public UnityEvent unityEvent;
+
+    public IEnumerator Play()
+    {
+        yield return new WaitForSeconds(delay);
+        unityEvent.Invoke();
+    }
+}
