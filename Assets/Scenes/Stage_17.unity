@@ -493,6 +493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadow_Anime_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3239584114003914704, guid: f681fcd9c62313748b4c3cf082dce3fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7245536647348392621, guid: f681fcd9c62313748b4c3cf082dce3fb,
         type: 3}
       propertyPath: m_RootOrder
@@ -719,6 +724,7 @@ MonoBehaviour:
   fadeTime: 1
   nextSceneName: Stage_04
   IsGameClear: 0
+  IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
   m_ObjectHideFlags: 0
@@ -1429,6 +1435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadow_Anime_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3239584114003914704, guid: 9f336cc79d1e8ed4990764da59721dde,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7245536647348392621, guid: 9f336cc79d1e8ed4990764da59721dde,
         type: 3}
       propertyPath: m_RootOrder
@@ -1812,6 +1823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shadow_Anime_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757055670923806268, guid: 25ff42ca517fb5444b715b6d8f9cded8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5772015438008089409, guid: 25ff42ca517fb5444b715b6d8f9cded8,
         type: 3}
