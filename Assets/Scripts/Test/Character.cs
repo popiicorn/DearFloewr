@@ -188,6 +188,13 @@ public class Character : MonoBehaviour
         targetPos = transform.position;
     }
 
+    public void SetTarget(Vector3 pos)
+    {
+        Vector3 currentPos = transform.position;
+        currentPos.x = pos.x;
+        targetPos = currentPos;
+    }
+
     public void KickGimmick()
     {
         isWalking = false;

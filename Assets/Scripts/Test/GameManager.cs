@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] float fadeTime = 1f;
     [SerializeField] string nextSceneName;
+    [SerializeField] float nextTime = 3;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     public bool IsPreGameClear;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         IsGameClear = true;
-        StartCoroutine(ToNextScene(3));
+        StartCoroutine(ToNextScene(nextTime));
     }
     public void PreGameClear()
     {
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    IEnumerator ToNextScene(int time)
+    IEnumerator ToNextScene(float time)
     {
         yield return new WaitForSeconds(time);
         FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
