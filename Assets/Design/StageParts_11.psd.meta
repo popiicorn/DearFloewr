@@ -254,6 +254,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: StageParts_11_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 199
+        height: 265
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39398676ce7ba1746914b167de2e4531
+      internalID: 1135225560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_11_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 170
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9243ca1622748b74f809e0e32ec07f5c
+      internalID: -39595882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_11_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 170
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7568783145513164b8f3af44f45c0e7e
+      internalID: -1674208745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -272,6 +335,9 @@ TextureImporter:
       StageParts_11_3: -945249444
       StageParts_11_4: 1307982634
       StageParts_11_5: 540875255
+      StageParts_11_6: 1135225560
+      StageParts_11_7: -39595882
+      StageParts_11_8: -1674208745
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
