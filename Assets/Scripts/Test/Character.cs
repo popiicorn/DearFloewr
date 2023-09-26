@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     bool isClicking;
     float defaultSpeed;
     float gimmickSize;
-    [SerializeField] bool canMove = true;
+    public bool canMove = true;
 
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;

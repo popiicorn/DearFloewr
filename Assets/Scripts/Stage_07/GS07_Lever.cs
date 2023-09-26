@@ -35,6 +35,7 @@ public class GS07_Lever : Gimmick
 
     IEnumerator Anim(Character character)
     {
+        character.canMove = false;
         character.BusyMode();
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().enabled = false;
@@ -43,6 +44,7 @@ public class GS07_Lever : Gimmick
         OnPush?.Invoke();
         // ŠG•¿‚ğØ‚è‘Ö‚¦‚é
         character.SetDefaultMode();
+        character.canMove = true;
     }
 }
 
