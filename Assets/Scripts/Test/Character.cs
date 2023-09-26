@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
     bool isClicking;
     float defaultSpeed;
     float gimmickSize;
+    [SerializeField] bool canMove = true;
 
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;
@@ -62,12 +63,22 @@ public class Character : MonoBehaviour
     // クリックした場所まで移動
     private void Update()
     {
+
         if (GameManager.Instance.IsGameClear)
         {
             return;
         }
         if (mode == Mode.Busy)
         {
+            return;
+        }
+        if (!canMove)
+        {
+            if (mode == Mode.Normal)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                faceDirection = FaceDirection.Left;
+            }
             return;
         }
         if (Input.GetMouseButtonDown(0))
@@ -231,16 +242,24 @@ public class Character : MonoBehaviour
 
     public void ShowQuestionEmotion()
     {
+        StopAllCoroutines();
         StartCoroutine(ShowEmotion());
+    }
+
+    public void SetWalkBackAnim()
+    {
+        animator.Play("WalkBack");
     }
 
     IEnumerator ShowEmotion()
     {
+        canMove = false;
         SetDefaultMode();
         yield return new WaitForSeconds(0.7f);
         emoticon.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
         emoticon.gameObject.SetActive(false);
+        canMove = true;
     }
 
     public void SetPushMode()
