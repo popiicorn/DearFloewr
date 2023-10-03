@@ -27,6 +27,10 @@ public class Rock : Gimmick
     public void SetLock(bool value)
     {
         IsLock = value;
+        if (IsLock)
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
     }
 
     public override void Move(Vector3 distance)

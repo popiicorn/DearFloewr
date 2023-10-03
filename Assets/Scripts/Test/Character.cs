@@ -127,6 +127,8 @@ public class Character : MonoBehaviour
                 gimmick = null;
             }
         }
+
+
         if (Input.GetMouseButtonUp(0))
         {
             isClicking = false;
@@ -138,8 +140,16 @@ public class Character : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 SetTarget();
+                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
+                {
+                    animator.SetTrigger("OnNormal");
+                    mode = Mode.Normal;
+                    gimmick = null;
+                    Debug.Log("おしてるよー");
+                }
             }
         }
+
         targetPos.z = transform.position.z;
         targetPos.y = transform.position.y;
         Vector3 prePos = transform.position;

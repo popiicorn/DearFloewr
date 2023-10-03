@@ -3,25 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Com.LuisPedroFonseca.ProCamera2D;
+using DG.Tweening;
 
 public class EV03_Door : MonoBehaviour
 {
     [SerializeField] ProCamera2D proCamera2D;
     [SerializeField] UnityEvent OnEndAction;
-
+    int d = 100;
     public void CameraMoveLeft()
     {
-        StartCoroutine(SmoothCameraMove(0,-0.01f, false));
+        MoveCamera(1, false);
     }
 
-    IEnumerator SmoothCameraMove(int value, float d, bool exitEvent)
+    void MoveCamera(float endValue, bool exitEvent)
     {
-        while (Mathf.Abs(proCamera2D.CameraTargets[0].TargetInfluenceH - value) > 0.02f)
-        {
-            proCamera2D.CameraTargets[0].TargetInfluenceH += d;
-            yield return null;
-        }
-        proCamera2D.CameraTargets[0].TargetInfluenceH = value;
+        float nowNum = proCamera2D.CameraTargets[1].TargetInfluenceH;
+        DOTween.To(() => nowNum, (x) => nowNum = x, endValue, EV03_Params.Instance.cameraMoveTime).SetEase(Ease.Linear)
+            .OnUpdate(() => proCamera2D.CameraTargets[1].TargetInfluenceH = nowNum).OnComplete(() => OnEnd(exitEvent));
+    }
+
+    void OnEnd(bool exitEvent)
+    {
         if (exitEvent)
         {
             OnEndAction?.Invoke();
@@ -29,6 +31,6 @@ public class EV03_Door : MonoBehaviour
     }
     public void CameraMoveDefault()
     {
-        StartCoroutine(SmoothCameraMove(1,0.01f, true));
+        MoveCamera(0, true);
     }
 }
