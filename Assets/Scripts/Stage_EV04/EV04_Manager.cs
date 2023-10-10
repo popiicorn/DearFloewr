@@ -8,6 +8,11 @@ public class EV04_Manager : MonoBehaviour
 {
     [SerializeField] List<EV04_Button> buttons;
 
+    private void Start()
+    {
+        EventSaveDatas.Instance.StopwatchStop();
+    }
+
     public void OnOKButton()
     {
         // データ収集
