@@ -29,4 +29,9 @@ public class EV04_Manager : MonoBehaviour
             SceneManager.LoadScene("Stage_EV01");
         }
     }
+
+    public void OnButtonAnke()
+    {
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSelbved4w05Dd9B4sfbXZ9YciiiTsDhhA0R4JhC6KYgvopMbQ/viewform?usp=sf_link");
+    }
 }
