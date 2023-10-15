@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class EV04_Manager : MonoBehaviour
 {
+    bool onReset;
     [SerializeField] List<EV04_Button> buttons;
 
     private void Start()
@@ -22,16 +23,14 @@ public class EV04_Manager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            SceneManager.LoadScene("Stage_EV01");
-        }
-    }
-
     public void OnButtonAnke()
     {
+        if (onReset)
+        {
+            return;
+        }
+        onReset = true;
         Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSelbved4w05Dd9B4sfbXZ9YciiiTsDhhA0R4JhC6KYgvopMbQ/viewform?usp=sf_link");
+        FadeManager.Instance.LoadScene("Stage_EV00", 1f);
     }
 }

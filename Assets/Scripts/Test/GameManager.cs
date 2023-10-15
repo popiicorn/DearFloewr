@@ -15,6 +15,17 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        {
+            string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            EventSaveDatas.Instance.SaveData(sceneName+"XX");
+            EventSaveDatas.Instance.StopwatchStop();
+            FadeManager.Instance.LoadScene("Stage_EV00", 1f);
+        }
+    }
+
     public void GameClear()
     {
         if (IsGameClear)

@@ -9,15 +9,16 @@ public class Stage_EV00 : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                EventSaveDatas.Instance.StopwatchStart(false);
-            }
-            else
-            {
-                EventSaveDatas.Instance.StopwatchStart(true);
-            }
             FadeManager.Instance.LoadScene("Stage_EV01", 1f);
+            //if (Input.GetKey(KeyCode.LeftShift))
+            //{
+            //    EventSaveDatas.Instance.StopwatchStart(false);
+            //}
+            //else
+            //{
+            //    EventSaveDatas.Instance.StopwatchStart(true);
+            //}
+
         }
     }
 }
