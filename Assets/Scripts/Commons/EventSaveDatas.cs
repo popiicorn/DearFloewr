@@ -27,16 +27,9 @@ public class EventSaveDatas : MonoBehaviour
 
     void InitCSV(bool isAdd)
     {
-        // string path = Application.persistentDataPath + "/SaveData.csv";
-        // string path = @"SaveData.csv";
         string path = Application.dataPath + "/SaveData.csv";
-
-        Debug.Log(path);
+        // Debug.Log(path);
         sw = new StreamWriter(path, isAdd, Encoding.UTF8);
-        // string[] s1 = {"Time" };
-        // string s2 = string.Join(",", s1);
-        // sw.WriteLine(s2);
-        Debug.Log("èâä˙âª");
     }
 
     void SaveData(string txt1, string time)
@@ -61,9 +54,20 @@ public class EventSaveDatas : MonoBehaviour
         Debug.Log("äJén");
     }
 
+    //    public void StopwatchStop(bool Close)
     public void StopwatchStop()
     {
+        // InitCSV(true);
+    }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
+    private void OnApplicationQuit()
+    {
         sw.Close();
-        InitCSV(true);
+        Debug.Log("ï¬Ç∂ÇÈ");
     }
 }
