@@ -423,9 +423,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acfFile: DearFlower.acf
   cueSheets:
-  - name: TestSE
-    acbFile: TestSE.acb
+  - name: playerAction
+    acbFile: playerAction.acb
     awbFile: 
+    loaderStatus: 0
+  - name: demoStage01
+    acbFile: demoStage01.acb
+    awbFile: 
+    loaderStatus: 0
+  - name: wildness
+    acbFile: wildness.acb
+    awbFile: wildness.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -698,6 +706,8 @@ GameObject:
   - component: {fileID: 422625771}
   - component: {fileID: 422625770}
   - component: {fileID: 422625769}
+  - component: {fileID: 422625773}
+  - component: {fileID: 422625772}
   m_Layer: 0
   m_Name: CriManager
   m_TagString: Untagged
@@ -737,7 +747,7 @@ MonoBehaviour:
     - 0
     - 0
   _cueName: 
-  _cueSheet: TestSE
+  _cueSheet: playerAction
 --- !u!114 &422625770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,7 +760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atomSource: {fileID: 422625769}
+  playerAtomSource: {fileID: 422625769}
+  demoStage01atomSource: {fileID: 422625773}
+  bGIAtomSource: {fileID: 422625772}
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -766,6 +778,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422625772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422625768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: wildness
+--- !u!114 &422625773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422625768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: demoStage01
 --- !u!1 &433422270
 GameObject:
   m_ObjectHideFlags: 0

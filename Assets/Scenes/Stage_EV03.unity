@@ -374,9 +374,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acfFile: DearFlower.acf
   cueSheets:
-  - name: TestSE
-    acbFile: TestSE.acb
+  - name: playerAction
+    acbFile: playerAction.acb
     awbFile: 
+    loaderStatus: 0
+  - name: demoStage03
+    acbFile: demoStage03.acb
+    awbFile: 
+    loaderStatus: 0
+  - name: wildness
+    acbFile: wildness.acb
+    awbFile: wildness.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -1006,6 +1014,8 @@ GameObject:
   - component: {fileID: 422625771}
   - component: {fileID: 422625770}
   - component: {fileID: 422625769}
+  - component: {fileID: 422625772}
+  - component: {fileID: 422625773}
   m_Layer: 0
   m_Name: CriManager
   m_TagString: Untagged
@@ -1045,7 +1055,7 @@ MonoBehaviour:
     - 0
     - 0
   _cueName: 
-  _cueSheet: TestSE
+  _cueSheet: playerAction
 --- !u!114 &422625770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atomSource: {fileID: 422625769}
+  playerAtomSource: {fileID: 422625769}
+  demoStage01atomSource: {fileID: 0}
+  bGIAtomSource: {fileID: 422625772}
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,6 +1086,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422625772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422625768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: wildness
+--- !u!114 &422625773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422625768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: demoStage03
 --- !u!1001 &510940636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2878,6 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atomSource: {fileID: 422625769}
+  sTAGE_TYPE: 0
 --- !u!114 &1832101910 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
@@ -2890,6 +2969,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7a8f27baea04d1b9687a093b5547f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1832101915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1832101916}
+--- !u!114 &1832101916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: demoStage03
 --- !u!1 &1859914029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2304911178411071130, guid: 1cce0a35fbf928c418c00e2e71867e6e,
@@ -3409,6 +3534,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3326c0b20868380449ce7067e5d64419, type: 3}
+--- !u!1 &2024824031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4801666255717879901, guid: 86b30ff46ea364246981e380e3fb5691,
+    type: 3}
+  m_PrefabInstance: {fileID: 7720471409798304162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024824034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024824031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: demoStage03
+--- !u!114 &2024824035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024824031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 2024824034}
 --- !u!1001 &2079750528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3584,6 +3761,52 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &2124552841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124552836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 2124552842}
+--- !u!114 &2124552842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124552836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: demoStage03
 --- !u!4 &2132059054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,

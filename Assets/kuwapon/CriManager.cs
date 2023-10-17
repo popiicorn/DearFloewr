@@ -9,15 +9,23 @@ public class CriManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        
     }
 
 
-    [SerializeField] CriAtomSource atomSource;
+    [SerializeField] CriAtomSource playerAtomSource;
+    [SerializeField] CriAtomSource demoStage01atomSource;
+    [SerializeField] CriAtomSource bGIAtomSource;
     bool push = false;
+
+    private void Start()
+    {
+        StartBGI(0);
+    }
 
     public void PlaySE(int cueNum)
     {
-        atomSource.Play(cueNum);
+        playerAtomSource.Play(cueNum);
     }
 
     public void PlayPushSE()
@@ -41,9 +49,26 @@ public class CriManager : MonoBehaviour
     }
     public void StopSE()
     {
-        atomSource.Stop();
+        playerAtomSource.Stop();
     }
 
+    public void StartBGI(int cueNum)
+    {
+        bGIAtomSource.Play(cueNum);
+    }
+    
+    public void StopBGI()
+    {
+        bGIAtomSource.Stop();
+    }
 
+    public void PlayObjSE(string cueName)
+    {
+        demoStage01atomSource.Play(cueName);
+    }
+    public void StopObjSE()
+    {
+        demoStage01atomSource.Stop();
+    }
 
 }
