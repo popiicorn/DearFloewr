@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using DG.Tweening;
 public class LightStone : Gimmick
 {
@@ -9,6 +10,8 @@ public class LightStone : Gimmick
 
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+    [SerializeField] UnityEvent OnLightON;
+    [SerializeField] UnityEvent OnLightOFF;
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
         if (transform.position.x < playerPos.x)
@@ -44,6 +47,11 @@ public class LightStone : Gimmick
         if (LightStoneManager.Instance.IsCorrect(id))
         {
             lightEF.SetActive(true);
+            OnLightON?.Invoke();
+        }
+        else
+        {
+            OnLightOFF?.Invoke();
         }
         character.SetDefaultMode();
     }
