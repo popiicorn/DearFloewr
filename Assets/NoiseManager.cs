@@ -11,18 +11,15 @@ public class NoiseManager : MonoBehaviour
 
     public void PlayNoise()
     {
-        Debug.Log("push");
         if (push==false)
         {
             atomSource.Play(1);
             push = true;
-            Debug.Log("on");
         }
         else if (push==true)
         {
             StopNoise();
             push = false;
-            Debug.Log("off");
         }
     }
 
