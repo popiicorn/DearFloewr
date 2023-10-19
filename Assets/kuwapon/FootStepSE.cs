@@ -12,6 +12,7 @@ public class FootStepSE : MonoBehaviour
     { 
         WILDNESS,
         FACTRY,
+        NULL,
     
     }
 
@@ -27,6 +28,10 @@ public class FootStepSE : MonoBehaviour
         {
             cueName = "footstep_dirt-001";
             atomSource.Play(cueName);
+        }
+        else
+        {
+
         }
        
     }

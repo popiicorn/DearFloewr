@@ -10,7 +10,9 @@ public class Stage_EV00 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //クリック→新変更
-            FadeManager.Instance.LoadScene("Stage_EV01", 1f);
+            CriManager.instance.StopBGI();
+            CriManager.instance.PlayObjSE("startUI");
+            FadeManager.Instance.LoadScene("Stage_EV01", 2f);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 EventSaveDatas.Instance.StopwatchStart(false);

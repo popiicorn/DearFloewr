@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAtomSource: {fileID: 422625769}
-  demoStage01atomSource: {fileID: 0}
+  demoStage01atomSource: {fileID: 422625773}
   bGIAtomSource: {fileID: 422625772}
 --- !u!4 &422625771
 Transform:
@@ -1299,6 +1299,46 @@ PrefabInstance:
       propertyPath: lightEF
       value: 
       objectReference: {fileID: 1560641623}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 422625770}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayObjSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CriManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: true00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 59977816a55f04253a1752c8d0c51b5f,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59977816a55f04253a1752c8d0c51b5f, type: 3}
 --- !u!114 &619811269 stripped
@@ -2129,6 +2169,46 @@ PrefabInstance:
       propertyPath: lightEF
       value: 
       objectReference: {fileID: 1733600251}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 422625770}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayObjSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CriManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: true00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 21398ee1787494cc4813baa3a73915cc,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21398ee1787494cc4813baa3a73915cc, type: 3}
 --- !u!1001 &1177138380
@@ -2558,6 +2638,46 @@ PrefabInstance:
       propertyPath: lightEF
       value: 
       objectReference: {fileID: 957826912}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 422625770}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayObjSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CriManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: true00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505741866864734283, guid: 9e6aacc7770ae40768e5df35ebc0e7e8,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6aacc7770ae40768e5df35ebc0e7e8, type: 3}
 --- !u!1 &1465649540
@@ -4028,6 +4148,46 @@ PrefabInstance:
         type: 3}
       propertyPath: ShakeIntensity
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 422625770}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayObjSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CriManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: true00
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363448022763027727, guid: c98737d2c84d8ac4faa150c2c97f84ad,
+        type: 3}
+      propertyPath: OnLightON.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98737d2c84d8ac4faa150c2c97f84ad, type: 3}
