@@ -12,4 +12,8 @@ public class AnimationSound : MonoBehaviour
         atomSource.Play(cueName);
     }
 
+    public void StopAnimSE()
+    {
+        atomSource.Stop();
+    }
 }
