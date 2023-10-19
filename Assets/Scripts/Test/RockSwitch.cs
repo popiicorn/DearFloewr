@@ -14,6 +14,7 @@ public class RockSwitch : MonoBehaviour
         if (rock && rock.Id == id)
         {
             collision.GetComponentInParent<Rock>().SetLock(true);
+            //設置
             ClearEvent?.Invoke();
         }
     }

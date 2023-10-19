@@ -771,6 +771,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 422625770}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: PlayObjSE
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: openDoor01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &234203777
 Transform:
   m_ObjectHideFlags: 0
@@ -1319,6 +1331,30 @@ MonoBehaviour:
       - m_Target: {fileID: 304081378}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: GameClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422625770}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: PlayPlayerSE
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: floorStep
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422625770}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: StopBGI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

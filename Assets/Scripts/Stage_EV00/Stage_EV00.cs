@@ -9,6 +9,7 @@ public class Stage_EV00 : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //クリック→新変更
             FadeManager.Instance.LoadScene("Stage_EV01", 1f);
             if (Input.GetKey(KeyCode.LeftShift))
             {

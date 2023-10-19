@@ -23,9 +23,9 @@ public class CriManager : MonoBehaviour
         StartBGI(0);
     }
 
-    public void PlaySE(int cueNum)
+    public void PlayPlayerSE(string  cueName)
     {
-        playerAtomSource.Play(cueNum);
+        playerAtomSource.Play(cueName);
     }
 
     public void PlayPushSE()
@@ -41,7 +41,7 @@ public class CriManager : MonoBehaviour
     {
         push = true;
         yield return null;
-        PlaySE(0);
+        PlayPlayerSE("blockMove");
         yield return new WaitForSeconds(1.6f);
         push = false;
 

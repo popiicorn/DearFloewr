@@ -19,6 +19,7 @@ public class EV01_Door : Gimmick
     {
         // 後ろ向きになってフェード
         character.SetWalkBackAnim();
+        //足音+BGI停止
         OnClear?.Invoke();
     }
 }
