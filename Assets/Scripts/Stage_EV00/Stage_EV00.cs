@@ -12,7 +12,7 @@ public class Stage_EV00 : MonoBehaviour
             //クリック→新変更
             CriManager.instance.StopBGI();
             CriManager.instance.PlayObjSE("startUI");
-            FadeManager.Instance.LoadScene("Stage_EV01", 2f);
+            FadeManager.Instance.LoadScene("Stage_EV01", 3f);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 EventSaveDatas.Instance.StopwatchStart(false);

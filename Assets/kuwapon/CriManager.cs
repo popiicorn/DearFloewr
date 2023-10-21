@@ -30,11 +30,12 @@ public class CriManager : MonoBehaviour
 
     public void PlayPushSE()
     {
+       
         if (push==false)
-        {
-            StartCoroutine(loopSE());
-        }
-        else { return; }
+         {
+             StartCoroutine(loopSE());
+         }
+         else { return; }
     }
 
     IEnumerator loopSE()
