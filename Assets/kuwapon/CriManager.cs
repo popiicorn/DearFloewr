@@ -30,12 +30,17 @@ public class CriManager : MonoBehaviour
 
     public void PlayPushSE()
     {
-       
-        if (push==false)
-         {
-             StartCoroutine(loopSE());
-         }
-         else { return; }
+        if (push == false)
+        {
+            push = true;
+            PlayPlayerSE("blockMove");
+        }
+
+        //if (push==false)
+        // {
+        //     StartCoroutine(loopSE());
+        // }
+        // else { return; }
     }
 
     IEnumerator loopSE()
@@ -51,6 +56,7 @@ public class CriManager : MonoBehaviour
     public void StopSE()
     {
         playerAtomSource.Stop();
+        push = false;
     }
 
     public void StartBGI(int cueNum)
