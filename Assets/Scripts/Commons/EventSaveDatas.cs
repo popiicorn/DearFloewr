@@ -42,7 +42,10 @@ public class EventSaveDatas : MonoBehaviour
     {
         string[] s1 = { stageName, (Time.time - startTime).ToString("0.0") };
         string s2 = string.Join(",", s1);
-        sw.WriteLine(s2);
+        if (sw != null)
+        {
+            sw.WriteLine(s2);
+        }
         startTime = Time.time;
     }
 
