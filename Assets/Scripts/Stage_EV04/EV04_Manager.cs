@@ -30,7 +30,7 @@ public class EV04_Manager : MonoBehaviour
             return;
         }
         onReset = true;
-        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSelbved4w05Dd9B4sfbXZ9YciiiTsDhhA0R4JhC6KYgvopMbQ/viewform?usp=sf_link");
+        Application.OpenURL("https://docs.google.com/forms/d/1bbIi2C-MqYD-OOJJKhKieHW0-hkYN2ro1A3yQVZMLdo/edit");
         FadeManager.Instance.LoadScene("Stage_EV00", 1f);
     }
 }
