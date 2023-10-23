@@ -119,6 +119,7 @@ public class Character : MonoBehaviour
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
                 gimmick = null;
+                CriManager.instance.StopSE();
             }
             else if (gimmick && mode != Mode.Push)
             {
