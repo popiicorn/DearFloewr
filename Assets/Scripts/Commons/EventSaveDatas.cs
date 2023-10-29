@@ -23,6 +23,14 @@ public class EventSaveDatas : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseGame();
+        }
+    }
+
 
 
     void InitCSV(bool isAdd)
