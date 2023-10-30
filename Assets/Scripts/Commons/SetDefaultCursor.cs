@@ -4,14 +4,13 @@ public class SetDefaultCursor : MonoBehaviour
 {
     [SerializeField] Texture2D icon;
     int size;
-    private void Awake()
+    private void Start()
     {
+        Debug.Log(Screen.width);
         size = ((57*100*Screen.width)/1920)/100;
         SetCursor(icon);
     }
-    private void Update()
-    {
-    }
+
     public void SetCursor(Texture2D icon)
     {
         // Cursor.SetCursor(icon, Vector2.zero, CursorMode.ForceSoftware);
