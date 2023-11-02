@@ -146,7 +146,7 @@ public class Character : MonoBehaviour
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
-                    Debug.Log("おしてるよー");
+                    CriManager.instance.StopSE();
                 }
             }
         }
@@ -234,15 +234,6 @@ public class Character : MonoBehaviour
         isWalking = false;
         animator.SetBool("IsWalking", isWalking);
         animator.Play("Switch_R");
-
-        //if (gimmick.transform.position.x < transform.position.x)
-        //{
-        //    animator.Play("Switch_L");
-        //}
-        //else
-        //{
-        //    animator.Play("Switch_R");
-        //}
 
         mode = Mode.PushSwitch;
     }
@@ -333,7 +324,9 @@ public class Character : MonoBehaviour
         gimmick = null;
         isWalking = false;
         animator.SetTrigger("OnNormal");
+        speed = defaultSpeed;
         animator.SetBool("IsWalking", isWalking);
         targetPos = transform.position;
+        CriManager.instance.StopSE();
     }
 }
