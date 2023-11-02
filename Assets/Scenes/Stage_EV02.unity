@@ -861,6 +861,18 @@ MonoBehaviour:
           m_StringArgument: openDoor01
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 577746015}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!4 &234203777
 Transform:
   m_ObjectHideFlags: 0
@@ -3415,6 +3427,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1902523722}
     m_Modifications:
+    - target: {fileID: 1736033441525652442, guid: 2c6ed2ad0b8418547a740b4206693af6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1736033441525652443, guid: 2c6ed2ad0b8418547a740b4206693af6,
         type: 3}
       propertyPath: m_LocalPosition.x
