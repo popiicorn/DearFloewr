@@ -1263,6 +1263,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GSEV01_Box_V
       objectReference: {fileID: 0}
+    - target: {fileID: 3223082894953610985, guid: 9f50c86eb899f1446bfd23dae26efd8a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424009834847124567, guid: 9f50c86eb899f1446bfd23dae26efd8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424009835706045783, guid: 9f50c86eb899f1446bfd23dae26efd8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.425
+      objectReference: {fileID: 0}
     - target: {fileID: 6424009835774168444, guid: 9f50c86eb899f1446bfd23dae26efd8a,
         type: 3}
       propertyPath: m_Enabled
@@ -1492,7 +1507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShakeObject: {fileID: 786419922}
   ShakeIntensity: 0.04
-  ShakeDecay: 0.0002
+  ShakeDecay: 0.001
   ShakeAmount: 0.1
   delayTimeOfShake: 0
   OnShakedEvent:

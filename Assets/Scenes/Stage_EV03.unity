@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShakeObject: {fileID: 786419922}
   ShakeIntensity: 0.05
-  ShakeDecay: 0.0001
+  ShakeDecay: 0.001
   ShakeAmount: 0.1
   delayTimeOfShake: 1
   OnShakedEvent:
@@ -4897,6 +4897,31 @@ PrefabInstance:
     - target: {fileID: 4801666254939449208, guid: 86b30ff46ea364246981e380e3fb5691,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
