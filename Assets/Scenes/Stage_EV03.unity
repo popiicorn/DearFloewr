@@ -1714,10 +1714,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShakeObject: {fileID: 786419922}
-  ShakeIntensity: 0.1
-  ShakeDecay: 0.001
+  ShakeIntensity: 0.05
+  ShakeDecay: 0.0001
   ShakeAmount: 0.1
-  delayTimeOfShake: 0
+  delayTimeOfShake: 1
   OnShakedEvent:
     m_PersistentCalls:
       m_Calls:

@@ -1491,8 +1491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShakeObject: {fileID: 786419922}
-  ShakeIntensity: 0.1
-  ShakeDecay: 0.001
+  ShakeIntensity: 0.04
+  ShakeDecay: 0.0002
   ShakeAmount: 0.1
   delayTimeOfShake: 0
   OnShakedEvent:
