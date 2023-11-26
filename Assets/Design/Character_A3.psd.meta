@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3a17879399835743b6c5b9ee5dffb5c
+guid: 45ddfd7312842f94a881c81331bde042
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StageParts_2_0
+      name: WalkCapsule_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 767
-        width: 402
-        height: 243
+        x: 0
+        y: 824
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f25748794615a445934a52576a1fa5e
-      internalID: -2005717215
+      spriteID: eb469df9204d26c41bf89f8bbbe70394
+      internalID: 1730264218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_1
+      name: WalkCapsule_1
       rect:
         serializedVersion: 2
-        x: 549
-        y: 736
-        width: 475
-        height: 288
+        x: 140
+        y: 824
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b561458f574476548a011f5d8e48459c
-      internalID: 1410441386
+      spriteID: 1a611f34e06237e44a945e03d33b1f0f
+      internalID: 411974330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_2
+      name: WalkCapsule_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 869
-        height: 728
+        x: 280
+        y: 824
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16da26bd086ce56438d006e457cd4694
-      internalID: 58501367
+      spriteID: 0384a2131284adb4486a94d2d29f6641
+      internalID: 507093736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_3
+      name: WalkCapsule_3
       rect:
         serializedVersion: 2
-        x: 889
-        y: 1
-        width: 135
-        height: 269
+        x: 420
+        y: 824
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc384560415b0d644acd820cb22e3ef5
-      internalID: -1990783561
+      spriteID: 5df919b17b96dce488b5af22843e87bc
+      internalID: -71658842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_4
+      name: WalkCapsule_4
       rect:
         serializedVersion: 2
-        x: 431
-        y: 880
-        width: 92
-        height: 135
+        x: 0
+        y: 624
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,29 +239,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62dd7ee8cd03f274180eba3fb7107ac8
-      internalID: -1949150092
+      spriteID: 090eddf29391e084fb0cc98d23e33213
+      internalID: -462845360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_5
+      name: WalkCapsule_5
       rect:
         serializedVersion: 2
-        x: 431
-        y: 751
-        width: 99
-        height: 105
+        x: 140
+        y: 624
+        width: 140
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5167e04d43e53aa488e6269ab3acd45c
-      internalID: -828639762
+      spriteID: 96a9d13fb142d1545ac86b95cfa1b04c
+      internalID: -466832181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCapsule_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 624
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f495527a788b0409a8d996cfd27bb4
+      internalID: 1146634147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCapsule_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 624
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fbd37bcfffad34a8e9f08259d03d55
+      internalID: 436898564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCapsule_0
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 824
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53c16d9282bd0d4ab10695da7413609
+      internalID: 1708571928
       vertices: []
       indices: 
       edges: []
@@ -269,7 +332,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 53f8b892e0f6d4c41afe5de7c7f9bb2e
     internalID: 0
     vertices: []
     indices: 
@@ -277,12 +340,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StageParts_2_0: -2005717215
-      StageParts_2_1: 1410441386
-      StageParts_2_2: 58501367
-      StageParts_2_3: -1990783561
-      StageParts_2_4: -1949150092
-      StageParts_2_5: -828639762
+      GimmickBg: 1452462912
+      GimmickMark_1: -934553831
+      GimmickMark_2: -800786762
+      GimmickMark_3: -301938115
+      Gimmick_1: -2135931112
+      Gimmick_2: 1174842953
+      IdleCapsule_0: 1708571928
+      Kick_0: 406272726
+      Kick_1: -2106437448
+      Kick_2: -914343175
+      Lever_0: 227464485
+      Lever_1: -1073295193
+      Lever_2: -1859735406
+      Push_0: 1849498145
+      Push_1: -803994408
+      Push_2: 1780495791
+      Push_3: 1746064651
+      Push_4: -1433005612
+      Push_5: 702800444
+      Push_6: 209647639
+      Push_7: -1110435564
+      Switch_L_0: 834974103
+      Switch_R_0: -129376256
+      WalkCapsule_0: 1730264218
+      WalkCapsule_1: 411974330
+      WalkCapsule_2: 507093736
+      WalkCapsule_3: -71658842
+      WalkCapsule_4: -462845360
+      WalkCapsule_5: -466832181
+      WalkCapsule_6: 1146634147
+      WalkCapsule_7: 436898564
+      cursor_1: -1325533665
+      cursor_2: -1515672902
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
