@@ -612,7 +612,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 1
   nextSceneName: Stage_06
+  nextTime: 3
   IsGameClear: 0
+  IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
   m_ObjectHideFlags: 0
@@ -807,7 +809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atomSource: {fileID: 422625769}
+  playerAtomSource: {fileID: 0}
+  demoStage01atomSource: {fileID: 0}
+  bGIAtomSource: {fileID: 0}
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -973,6 +977,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465199792436105557, guid: e57d0bf3339fc4e75a26ce2fd10c629d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040690051147167388, guid: e57d0bf3339fc4e75a26ce2fd10c629d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 6182958736767575530, guid: e57d0bf3339fc4e75a26ce2fd10c629d,
         type: 3}
@@ -4004,6 +4018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atomSource: {fileID: 422625769}
+  sTAGE_TYPE: 0
 --- !u!114 &1832101908 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
