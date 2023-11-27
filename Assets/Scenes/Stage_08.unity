@@ -341,6 +341,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &86521807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1441059764578576939, guid: 6f3c0f78ad18da547aba3eca8d85d84d,
+    type: 3}
+  m_PrefabInstance: {fileID: 926921337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &94111570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2429,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 926921337}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &886255704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86521807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3f2a0c82984cf4181bd2a0182cbc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPos: {fileID: 1901970406}
+  rightPos: {fileID: 1718819012}
+  OnPush:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1195284993}
+        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
+        m_MethodName: DOPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 886255704}
+        m_TargetAssemblyTypeName: GS08_Button, Assembly-CSharp
+        m_MethodName: SetIsPushed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &926921337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2505,7 +2552,8 @@ PrefabInstance:
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8039035026956635088, guid: 6f3c0f78ad18da547aba3eca8d85d84d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f3c0f78ad18da547aba3eca8d85d84d, type: 3}
 --- !u!4 &967908588 stripped
 Transform:
@@ -2787,6 +2835,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 886255704}
+    - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
+        type: 3}
       propertyPath: eventDatas.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -2818,7 +2871,7 @@ PrefabInstance:
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
       propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
@@ -2880,6 +2933,11 @@ PrefabInstance:
       propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1718184531}
+    - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
+        type: 3}
+      propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 886255704}
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
       propertyPath: eventDatas.Array.data[1].unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2947,6 +3005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
+      propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetIsPushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
+        type: 3}
       propertyPath: eventDatas.Array.data[1].unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Move
       objectReference: {fileID: 0}
@@ -2978,7 +3041,7 @@ PrefabInstance:
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
       propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GS08_StageParts, Assembly-CSharp
+      value: GS08_Button, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
@@ -3008,6 +3071,11 @@ PrefabInstance:
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
         type: 3}
       propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
+        type: 3}
+      propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4779316340387768442, guid: c0ec33d351c2c0c4c807562300787493,
@@ -4870,6 +4938,12 @@ MonoBehaviour:
   - {fileID: 1847896819}
   - {fileID: 1186504700}
   - {fileID: 1135250835}
+--- !u!4 &1718819012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 575645889856260698, guid: 6f3c0f78ad18da547aba3eca8d85d84d,
+    type: 3}
+  m_PrefabInstance: {fileID: 926921337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1748375864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5823,6 +5897,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1901970406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5817385092310554927, guid: 6f3c0f78ad18da547aba3eca8d85d84d,
+    type: 3}
+  m_PrefabInstance: {fileID: 926921337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1902523720
 GameObject:
   m_ObjectHideFlags: 0

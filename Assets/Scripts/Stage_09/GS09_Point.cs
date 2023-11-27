@@ -9,6 +9,7 @@ public class GS09_Point : MonoBehaviour
     [SerializeField] float waitTime;
     bool isEnter;
     bool isClear;
+    [SerializeField] GS09_Rock rock;
     // もしプレイヤーが２秒間近傍にいれば、自動で15に移動してクリア
 
     float timeCount;
@@ -17,6 +18,10 @@ public class GS09_Point : MonoBehaviour
     private void Update()
     {
         if (isClear)
+        {
+            return;
+        }
+        if (!rock.IsSet)
         {
             return;
         }

@@ -2,29 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GS09_Rock : Gimmick
+public class GS09_Rock : Rock
 {
-    [SerializeField] Transform leftPos;
-    [SerializeField] Transform rightPos;
     [SerializeField] float timeOfActive;
+    [SerializeField] float setPointX;
+    // SetPoint‚ÌˆÊ’u‚É‚ ‚ê‚Î—§‚Âƒtƒ‰ƒO
+    [SerializeField] bool isSet;
 
+    public bool IsSet { get => isSet; }
 
-    public override Transform GetTargetPosition(Vector3 playerPos)
+    private void Update()
     {
-        if (transform.position.x < playerPos.x)
+        if (Mathf.Abs(transform.localPosition.x - setPointX) < 0.2f)
         {
-            return rightPos;
+            isSet = true;
         }
-        return leftPos;
-    }
-
-    public override void Move(Vector3 distance)
-    {
-        Debug.LogError("ERROR");
-    }
-
-    public override void OnGameCharacter(Character character)
-    {
-        character.ShowQuestionEmotion();
+        else
+        {
+            isSet = false;
+        }
     }
 }
