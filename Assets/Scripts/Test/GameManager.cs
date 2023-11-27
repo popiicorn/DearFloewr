@@ -50,8 +50,11 @@ public class GameManager : MonoBehaviour
     IEnumerator ToNextScene(float time)
     {
         string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        EventSaveDatas.Instance.SaveData(sceneName);
-        EventSaveDatas.Instance.StopwatchStop();
+        if (EventSaveDatas.Instance)
+        {
+            EventSaveDatas.Instance.SaveData(sceneName);
+            EventSaveDatas.Instance.StopwatchStop();
+        }
         yield return new WaitForSeconds(time);
         FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
     }

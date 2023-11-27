@@ -11,6 +11,11 @@ public class GS08_Lever : Gimmick
     public UnityEvent OnPush;
     [SerializeField] EventData[] eventDatas;
 
+    // GS08_Buttonをインスペクター
+    [SerializeField] GS08_Button button;
+
+
+
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
         if (transform.position.x < playerPos.x)
@@ -42,11 +47,18 @@ public class GS08_Lever : Gimmick
         character.PushLeverButtonGimmick();
         yield return new WaitForSeconds(0.5f);
         OnPush?.Invoke();
-        // 絵柄を切り替える
-        character.SetDefaultMode();
-        foreach (var eventData in eventDatas)
+        // buttonが押されていたら
+        if (button.IsPushed)
         {
-            yield return eventData.Play();
+            character.SetDefaultMode();
+            foreach (var eventData in eventDatas)
+            {
+                yield return eventData.Play();
+            }
+        }
+        else
+        {
+            character.ShowQuestionEmotion();
         }
     }
 

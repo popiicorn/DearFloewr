@@ -9,6 +9,20 @@ public class GS08_Button : Gimmick
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
+    bool isPushed;
+
+    public bool IsPushed { get => isPushed; }
+
+    // isPushed‚ðFalse‚É‚·‚é
+    public void ResetIsPushed()
+    {
+        isPushed = false;
+    }
+    // isPushed‚ðTrue‚É‚·‚é
+    public void SetIsPushed()
+    {
+        isPushed = true;
+    }
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
