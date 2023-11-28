@@ -5,7 +5,7 @@ using UnityEngine;
 public class GS08_Flower : MonoBehaviour
 {
     [SerializeField] GameObject[] flowers;
-    [SerializeField] EventData OnCompleteEvent;
+    [SerializeField] List<EventData> OnCompleteEvent;
     int index;
     public void ShowFlower()
     {
@@ -14,7 +14,7 @@ public class GS08_Flower : MonoBehaviour
         flowers[index].SetActive(true);
         if (index == 3)
         {
-            StartCoroutine(OnCompleteEvent.Play());
+            StartCoroutine(Play());
         }
     }
     public void SetInit()
@@ -26,4 +26,15 @@ public class GS08_Flower : MonoBehaviour
         index = 0;
         flowers[index].SetActive(true);
     }
+
+    // OnCompleteEvent‚ğ‚·‚×‚ÄÀs‚·‚éŠÖ”
+    IEnumerator Play()
+    {
+        foreach (var item in OnCompleteEvent)
+        {
+            yield return item.Play();
+        }
+    }
+
+
 }

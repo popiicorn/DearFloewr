@@ -13,8 +13,14 @@ public class GS08_Lever : Gimmick
 
     // GS08_Buttonをインスペクター
     [SerializeField] GS08_Button button;
+    bool wasCleared;
 
 
+    // wasClearedをtrueにする   
+    public void Clear()
+    {
+        wasCleared = true;
+    }
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -41,6 +47,8 @@ public class GS08_Lever : Gimmick
 
     IEnumerator Anim(Character character)
     {
+        // Character移動不可
+        character.canMove = false;
         character.BusyMode();
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().enabled = false;
@@ -55,9 +63,17 @@ public class GS08_Lever : Gimmick
             {
                 yield return eventData.Play();
             }
+            if (wasCleared)
+            {
+                yield break;
+            }
+            character.enabled = true;
+            character.canMove = true;
         }
         else
         {
+            character.enabled = true;
+            character.canMove = true;
             character.ShowQuestionEmotion();
         }
     }
