@@ -55,8 +55,8 @@ public class CriManager : MonoBehaviour
     }
     public void StopSE()
     {
-        playerAtomSource.Stop();
         push = false;
+        // playerAtomSource.Stop();
     }
 
     public void StartBGI(int cueNum)

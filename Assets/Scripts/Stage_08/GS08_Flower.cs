@@ -6,6 +6,7 @@ public class GS08_Flower : MonoBehaviour
 {
     [SerializeField] GameObject[] flowers;
     [SerializeField] List<EventData> OnCompleteEvent;
+    [SerializeField] UnityEngine.Events.UnityEvent OnComplete;
     int index;
     public void ShowFlower()
     {
@@ -15,6 +16,10 @@ public class GS08_Flower : MonoBehaviour
         if (index == 3)
         {
             StartCoroutine(Play());
+        }
+        else
+        {
+            OnComplete?.Invoke();
         }
     }
     public void SetInit()
