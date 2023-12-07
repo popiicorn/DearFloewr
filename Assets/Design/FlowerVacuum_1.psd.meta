@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -317,6 +329,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FlowerDance_1
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 732
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf46ec076c2555439edcac15bd96c9e
+      internalID: 1708160101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_2
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 732
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b11ee1e399b0847ae9678e353634b0
+      internalID: 1602081276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_3
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 608
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faffebca321ef5b4496a1f6f96ddf3e1
+      internalID: 756152749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_4
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 732
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3073a3b8ac293478a3143f723a5b47
+      internalID: -1868216060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_5
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 608
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758f463eb39dffc4a84fa2c69a59db14
+      internalID: -1192941317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_6
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 608
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52613db14131104c8475e636b26c6ef
+      internalID: 2091580125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerDance_7
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 484
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed24517694d2854c94e0dbac2a17137
+      internalID: -130240820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -328,6 +487,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      FlowerDance_1: 1708160101
+      FlowerDance_2: 1602081276
+      FlowerDance_3: 756152749
+      FlowerDance_4: -1868216060
+      FlowerDance_5: -1192941317
+      FlowerDance_6: 2091580125
+      FlowerDance_7: -130240820
       FlowerVacuum_01: -1350502082
       FlowerVacuum_02: 2110383395
       FlowerVacuum_03: -1155786229
@@ -337,6 +503,7 @@ TextureImporter:
       FlowerVacuum_11: -1798923298
       FlowerVacuum_12: 1067328055
       FlowerVacuum_13: 1612203978
+      FlowerVacuum_1_1: 265115518
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
