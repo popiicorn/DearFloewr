@@ -219,6 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8068696773759829034}
   - component: {fileID: 8068696773759829035}
+  - component: {fileID: 3798919124769919416}
   m_Layer: 0
   m_Name: GS10_1
   m_TagString: Untagged
@@ -263,3 +264,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3798919124769919416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8068696773759829036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faaffcda6e6f6f44fbdec9353d1f0e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

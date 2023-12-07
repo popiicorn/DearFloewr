@@ -5,10 +5,15 @@ using UnityEngine.Events;
 
 public class GS06_Button : Gimmick
 {
-
+    public bool canPush = true;
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
+
+    public void SetCanPush(bool canPush)
+    {
+        this.canPush = canPush;
+    }
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -40,7 +45,14 @@ public class GS06_Button : Gimmick
         yield return new WaitForSeconds(0.2f);
         character.PushButtonGimmick();
         yield return new WaitForSeconds(0.1f);
-        OnPush?.Invoke();
+        if (canPush)
+        {
+            OnPush?.Invoke();
+        }
+        else
+        {
+            character.ShowQuestionEmotion();
+        }
         // 絵柄を切り替える
         character.SetDefaultMode();
     }
