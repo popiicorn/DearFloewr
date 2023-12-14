@@ -5,10 +5,18 @@ using UnityEngine.Events;
 
 public class GS10_Pipe : MonoBehaviour
 {
-    public UnityEvent OnAnimComp;
+    [SerializeField] EventData[] eventDatas;
 
     public void AnimComp()
     {
-        OnAnimComp?.Invoke();
+        StartCoroutine(AnimCor());
+    }
+
+    IEnumerator AnimCor()
+    {
+        foreach (var eventData in eventDatas)
+        {
+            yield return eventData.Play();
+        }
     }
 }

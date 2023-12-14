@@ -6,7 +6,7 @@ public class GS08_Flower : MonoBehaviour
 {
     [SerializeField] GameObject[] flowers;
     [SerializeField] List<EventData> OnCompleteEvent;
-    [SerializeField] UnityEngine.Events.UnityEvent OnComplete;
+    [SerializeField] List<EventData> OnComplete;
     int index;
     public void ShowFlower()
     {
@@ -19,7 +19,7 @@ public class GS08_Flower : MonoBehaviour
         }
         else
         {
-            OnComplete?.Invoke();
+            StartCoroutine(AnimCor());
         }
     }
     public void SetInit()
@@ -38,6 +38,14 @@ public class GS08_Flower : MonoBehaviour
         foreach (var item in OnCompleteEvent)
         {
             yield return item.Play();
+        }
+    }
+
+    IEnumerator AnimCor()
+    {
+        foreach (var eventData in OnComplete)
+        {
+            yield return eventData.Play();
         }
     }
 
