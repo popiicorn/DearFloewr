@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class CameraShake : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(Shake());
+        Debug.Log("Do");
     }
 
     public IEnumerator Shake()
@@ -49,4 +51,17 @@ public class CameraShake : MonoBehaviour
         ShakeObject.localRotation = originRotation;
         OnShakedEvent?.Invoke();
     }
+    public IEnumerator ShakeLoop(float spanTime, float power)
+    {
+        // 揺れる
+
+        while (true)
+        {
+            ShakeObject.localRotation = Quaternion.Euler(0, 0, power);
+            yield return new WaitForSeconds(spanTime);
+            ShakeObject.localRotation = Quaternion.Euler(0, 0, -power);
+            yield return new WaitForSeconds(spanTime);
+        }
+    }
+
 }
