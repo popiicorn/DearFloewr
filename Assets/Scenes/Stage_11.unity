@@ -2262,6 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da445b4f1ec9c342a527017dc85dfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraMoveTime: 3
   shakeAmount: 0.3
   shakeSpan: 0.05
   fadeStartTime: 5

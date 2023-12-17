@@ -9,7 +9,6 @@ using UnityEditor.Rendering.LookDev;
 
 public class GS11_FlowerTrigger : MonoBehaviour
 {
-    float time = 3f;
     [SerializeField] EventData[] OnTriggers;
     [SerializeField] ProCamera2D proCamera2D;
     [SerializeField] ProCamera2DCameraWindow proCamera2DCameraWindow;
@@ -39,6 +38,7 @@ public class GS11_FlowerTrigger : MonoBehaviour
 
     IEnumerator Play()
     {
+        float time = Stage11Params.Instance.cameraMoveTime;
         StartCoroutine(cameraShake.ShakeLoop(Stage11Params.Instance.shakeSpan, Stage11Params.Instance.shakeAmount));
         foreach (var item in OnTriggers)
         {

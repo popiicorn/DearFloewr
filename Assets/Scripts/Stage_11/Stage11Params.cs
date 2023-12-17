@@ -10,7 +10,7 @@ public class Stage11Params : MonoBehaviour
     {
         Instance = this;
     }
-
+    public float cameraMoveTime = 3;
     public float shakeAmount = 0.3f;
     public float shakeSpan = 0.05f;
     // フェードを開始するまでの時間
