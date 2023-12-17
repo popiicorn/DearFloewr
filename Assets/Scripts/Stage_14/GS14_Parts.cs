@@ -10,6 +10,7 @@ public class GS14_Parts : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     Vector3 offset;
     // 初期ポジション
     Vector3 initPos;
+    public bool isClearPos = false;
     // Spriterendererをマウスでドラッグする
 
     CanvasGroup canvasGroup;
@@ -48,6 +49,10 @@ public class GS14_Parts : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (isClearPos)
+        {
+            return;
+        }
         transform.position = initPos;
         canvasGroup.blocksRaycasts = true;
         GetComponent<Collider2D>().enabled = true;
