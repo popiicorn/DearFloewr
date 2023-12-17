@@ -695,7 +695,7 @@ TextureImporter:
         width: 284
         height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -716,7 +716,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,6 +724,48 @@ TextureImporter:
       bones: []
       spriteID: 67801628bba435d46b018a5b88f9cdf9
       internalID: 2055262531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_16_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 413
+        width: 212
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cf4e1fcc9797544a0a2a9349dcc805
+      internalID: 2089095730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_16_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 413
+        width: 187
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32717bdef541d6418e38bc146c589ec
+      internalID: -2038378851
       vertices: []
       indices: 
       edges: []
@@ -741,6 +783,7 @@ TextureImporter:
     nameFileIdTable:
       LANP: 1928758526
       StageParts_16_0: 504823794
+      StageParts_16_1: 2089095730
       StageParts_16_10: -1044258021
       StageParts_16_12: -1502876812
       StageParts_16_13: 1685546482
@@ -761,6 +804,7 @@ TextureImporter:
       StageParts_16_27: -1611925657
       StageParts_16_28: -313564711
       StageParts_16_29: 2130751024
+      StageParts_16_3: -2038378851
       StageParts_16_4: -648439720
       StageParts_16_6: -396189018
       StageParts_16_7: 586580508

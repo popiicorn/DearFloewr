@@ -149,7 +149,7 @@ TextureImporter:
         width: 888
         height: 888
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,6 +157,111 @@ TextureImporter:
       bones: []
       spriteID: c055b2f5f741d264293ea5d79af534a1
       internalID: 864951142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_17_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 158
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae7b10e2b3ae414bbf27bda5929827c
+      internalID: -1438019369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_17_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 145
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6b6b20ce37d19408ac7bf86384e0a4
+      internalID: -807535727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_17_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4051f0c6774234f931409ace8375b0
+      internalID: 1021488954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_17_3
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 113
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e756d4b1d7b91dc4bb96f864fba11d83
+      internalID: -1796172117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_17_4
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 830
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace76976e482cbd47aa1b7c561a77e01
+      internalID: 1667337321
       vertices: []
       indices: 
       edges: []
@@ -172,6 +277,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      StageParts_17_0: -1438019369
+      StageParts_17_1: -807535727
+      StageParts_17_2: 1021488954
+      StageParts_17_3: -1796172117
+      StageParts_17_4: 1667337321
       circlepuzzle_5: 864951142
   spritePackingTag: 
   pSDRemoveMatte: 0

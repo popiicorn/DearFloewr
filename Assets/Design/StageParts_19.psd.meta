@@ -149,7 +149,7 @@ TextureImporter:
         width: 556
         height: 552
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,6 +157,195 @@ TextureImporter:
       bones: []
       spriteID: ce1d7275c0cd4554bb31f11576940d6b
       internalID: 1902996968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_0
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 621
+        width: 348
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cccb9a8d06e69e4aa616311e04321be
+      internalID: -879211284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 159
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b84bf122ec1e354db2df26c3f87fa7b
+      internalID: 551943589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 384
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9ebe0f4e3201741bc65d6ad471bb7f
+      internalID: 1493092158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 296
+        width: 91
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e896c856dffd4aa4bb2de028cbd772dd
+      internalID: -644829096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 314
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dba398d357d7df40a1823ed677779a8
+      internalID: 819691831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 243
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf66f2f6859b09343afa2b31f85642d0
+      internalID: -190824777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 230
+        width: 226
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210b2b7ff10a36742b3b7f3de964d240
+      internalID: 794126969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_7
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 248
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356628e766b0acd4a8c3f0787fac749e
+      internalID: -1361287716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_19_8
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 250
+        width: 222
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6886b276ac05f374aa96e16b13c18e30
+      internalID: 355107127
       vertices: []
       indices: 
       edges: []
@@ -172,6 +361,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      StageParts_19_0: -879211284
+      StageParts_19_1: 551943589
+      StageParts_19_2: 1493092158
+      StageParts_19_3: -644829096
+      StageParts_19_4: 819691831
+      StageParts_19_5: -190824777
+      StageParts_19_6: 794126969
+      StageParts_19_7: -1361287716
+      StageParts_19_8: 355107127
       circlepuzzle_3: 1902996968
   spritePackingTag: 
   pSDRemoveMatte: 0
