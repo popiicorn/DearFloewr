@@ -421,7 +421,7 @@ PrefabInstance:
     - target: {fileID: 3187627551679478886, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: -18.55
       objectReference: {fileID: 0}
     - target: {fileID: 3187627551679478886, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
@@ -1494,7 +1494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1026287179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2262,10 +2262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da445b4f1ec9c342a527017dc85dfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMoveTime: 3
-  shakeAmount: 0.3
-  shakeSpan: 0.05
-  fadeStartTime: 5
+  cameraMoveTime: 5
+  shakeAmount: 0.2
+  shakeSpan: 0.04
+  fadeStartTime: 4
 --- !u!4 &1539242052
 Transform:
   m_ObjectHideFlags: 0
