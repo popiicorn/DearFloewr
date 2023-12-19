@@ -64,4 +64,23 @@ public class CameraShake : MonoBehaviour
         }
     }
 
+    public IEnumerator Shake(float spanTime, float power, float time)
+    {
+        // 揺れる
+        float sumTime = 0;
+        while (sumTime < time)
+        {
+            ShakeObject.localRotation = Quaternion.Euler(0, 0, power);
+            yield return new WaitForSeconds(spanTime);
+            if (sumTime > time)
+            {
+                break;
+            }
+            ShakeObject.localRotation = Quaternion.Euler(0, 0, -power);
+            yield return new WaitForSeconds(spanTime);
+            sumTime += spanTime * 2;
+        }
+    }
+
+
 }
