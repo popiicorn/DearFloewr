@@ -360,8 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a1daf0d27284742a64c4556fc9ce60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shadow: {fileID: 0}
-  flower: {fileID: 0}
   eventDatas:
   - delay: 1
     unityEvent:
@@ -395,18 +393,6 @@ MonoBehaviour:
             m_StringArgument: Flower_Vacuum
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1122708249}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 73617870}
           m_TargetAssemblyTypeName: GS17_EventController, Assembly-CSharp
           m_MethodName: Shake
@@ -419,10 +405,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - delay: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
         - m_Target: {fileID: 411703986}
           m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
           m_MethodName: Stop
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1122708249}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

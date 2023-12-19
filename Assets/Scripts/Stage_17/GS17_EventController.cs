@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GS17_EventController : MonoBehaviour
 {
-    // Shadowの取得
-    [SerializeField] Animator shadow;
-    [SerializeField] Animator flower;
     [SerializeField] EventData[] eventDatas;
     [SerializeField] CameraShake cameraShake;
+    static int index;
     bool isGameOver;
     string stageName;
     void Start()
@@ -22,11 +21,12 @@ public class GS17_EventController : MonoBehaviour
     IEnumerator EventStart()
     {
         // イベントの数だけ繰り返す
-        foreach (EventData eventData in eventDatas)
+        for (int i = index; i < eventDatas.Length; i++)
         {
             // イベントの開始
-            yield return eventData.Play();
+            yield return eventDatas[i].Play();
         }
+        index = 2;
     }
 
     public void Shake()
