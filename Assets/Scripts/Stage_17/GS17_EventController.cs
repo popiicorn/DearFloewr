@@ -8,7 +8,7 @@ public class GS17_EventController : MonoBehaviour
 {
     [SerializeField] EventData[] eventDatas;
     [SerializeField] CameraShake cameraShake;
-    static int index;
+    public static int index;
     bool isGameOver;
     string stageName;
     void Start()

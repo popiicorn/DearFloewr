@@ -14,6 +14,7 @@ public class GS17_ShadowManager : MonoBehaviour
         if (index >= shadows.Length)
         {
             Clear.Invoke();
+            GS17_EventController.index = 0;
             return;
         }
         shadows[index].SetActive(true);
