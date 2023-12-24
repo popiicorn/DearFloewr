@@ -1022,6 +1022,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: StageParts_1_41
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 560
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 8, y: 10, z: 10, w: 12}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d806c0fc7bea76f45a86a0ab13623672
+      internalID: 242609782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1069,6 +1090,7 @@ TextureImporter:
       StageParts_1_39: 1666019735
       StageParts_1_4: 262597811
       StageParts_1_40: 1288691890
+      StageParts_1_41: 242609782
       StageParts_1_5: 1666589764
       StageParts_1_6: -2062581540
       StageParts_1_7: -592520384
