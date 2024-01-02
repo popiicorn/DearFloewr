@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class GS20_ButtonManager : MonoBehaviour
 {
     [SerializeField] GS20_Button[] buttons;
-    int[] answer = { 2, 0, 1, 3};
+    [SerializeField] int[] answer = { 2, 0, 1, 3};
     [SerializeField] EventData[] OnClearEvent;
     [SerializeField] EventTrigger eventTrigger;
     private void Awake()

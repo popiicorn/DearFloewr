@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    public void SetNextTime(float time)
+    {
+        nextTime = time;
+    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))

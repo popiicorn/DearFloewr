@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GS20_Lever : MonoBehaviour
 {
-    [SerializeField] EventData[] eventDatas;
-    Animator animator;
-    bool isOn = false;
-    bool isPlaying = false;
+    [SerializeField] protected EventData[] eventDatas;
+    protected Animator animator;
+    protected bool isOn = false;
+    protected bool isPlaying = false;
 
     public bool IsOn { set => isOn = value; }
 
@@ -22,7 +22,7 @@ public class GS20_Lever : MonoBehaviour
         StartCoroutine(Play());
     }
 
-    IEnumerator Play()
+    protected virtual IEnumerator Play()
     {
         isOn = true;
         isPlaying = true;
