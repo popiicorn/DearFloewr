@@ -716,7 +716,7 @@ TextureImporter:
         width: 55
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -737,7 +737,7 @@ TextureImporter:
         width: 34
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,6 +745,27 @@ TextureImporter:
       bones: []
       spriteID: f7d7fee06c7bffc4aa9f0b4cbcf29e47
       internalID: 894154388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CorollaDesign
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 69
+        width: 116
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7755d5788abab749a466ccea2892899
+      internalID: -1530585831
       vertices: []
       indices: 
       edges: []
@@ -775,6 +796,7 @@ TextureImporter:
       Bud_C: -778183895
       Bud_D: 894154388
       Bud_E: 2081839695
+      CorollaDesign: -1530585831
       Flower_01: -1356607741
       Flower_02: 1687065697
       Flower_03: -1977326794
