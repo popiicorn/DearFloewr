@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2216068192608504598}
   - component: {fileID: 2216068192608504599}
+  - component: {fileID: 4428389187440581622}
+  - component: {fileID: 49806452885563437}
+  - component: {fileID: 4861263469288674044}
   m_Layer: 0
   m_Name: KeyWrap_1
   m_TagString: Untagged
@@ -84,3 +87,125 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &4428389187440581622
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216068192608504600}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.15, y: 4.37}
+    newSize: {x: 2.15, y: 4.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.545, y: -1.615}
+      - {x: 0.645, y: -1.265}
+      - {x: 0.66499996, y: -1.175}
+      - {x: 0.695, y: -1.035}
+      - {x: 0.745, y: -0.895}
+      - {x: 0.825, y: -0.715}
+      - {x: 0.84499997, y: -0.635}
+      - {x: 0.84499997, y: -0.285}
+      - {x: 0.875, y: -0.195}
+      - {x: 0.905, y: -0.055}
+      - {x: 0.91499996, y: 0.005}
+      - {x: 0.92499995, y: 0.265}
+      - {x: 0.945, y: 0.355}
+      - {x: 0.97499996, y: 0.66499996}
+      - {x: 1.015, y: 0.815}
+      - {x: 1.0749999, y: 1.3249999}
+      - {x: 1.0749999, y: 1.735}
+      - {x: 1.005, y: 1.865}
+      - {x: 0.965, y: 1.905}
+      - {x: 0.775, y: 1.9749999}
+      - {x: 0.625, y: 2.065}
+      - {x: 0.49499997, y: 2.075}
+      - {x: 0.16499999, y: 2.185}
+      - {x: -0.074999996, y: 2.185}
+      - {x: -0.185, y: 2.145}
+      - {x: -0.375, y: 2.055}
+      - {x: -0.73499995, y: 1.9649999}
+      - {x: -0.825, y: 1.9549999}
+      - {x: -0.895, y: 1.9449999}
+      - {x: -1.045, y: 1.8549999}
+      - {x: -1.0649999, y: 1.8249999}
+      - {x: -1.0649999, y: 1.495}
+      - {x: -1.045, y: 1.475}
+      - {x: -1.035, y: 1.3249999}
+      - {x: -1.025, y: 1.145}
+      - {x: -1.005, y: 1.015}
+      - {x: -0.92499995, y: 0.48499998}
+      - {x: -0.895, y: 0.345}
+      - {x: -0.885, y: 0.085}
+      - {x: -0.875, y: 0.024999999}
+      - {x: -0.865, y: -0.015}
+      - {x: -0.78499997, y: -0.375}
+      - {x: -0.755, y: -0.655}
+      - {x: -0.73499995, y: -0.705}
+      - {x: -0.695, y: -0.905}
+      - {x: -0.645, y: -1.105}
+      - {x: -0.615, y: -1.3149999}
+      - {x: -0.575, y: -1.4449999}
+      - {x: -0.49499997, y: -1.615}
+      - {x: -0.48499998, y: -1.6949999}
+      - {x: -0.385, y: -1.8549999}
+      - {x: -0.275, y: -1.995}
+      - {x: -0.175, y: -2.105}
+      - {x: -0.074999996, y: -2.165}
+      - {x: 0.074999996, y: -2.165}
+      - {x: 0.445, y: -1.795}
+--- !u!114 &49806452885563437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216068192608504600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0139514796e684b4389d0388e45b8ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4861263469288674044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216068192608504600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2216068192608504600}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
