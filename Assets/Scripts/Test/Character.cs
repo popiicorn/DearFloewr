@@ -253,6 +253,18 @@ public class Character : MonoBehaviour
         StartCoroutine(ShowEmotion());
     }
 
+    public void ShowNockAnim(bool isRight)
+    {
+        if (isRight)
+        {
+            animator.Play("knock_R");
+        }
+        else
+        {
+            animator.Play("knock_L");
+        }
+    }
+
     public void SetWalkBackAnim()
     {
         animator.Play("WalkBack");
