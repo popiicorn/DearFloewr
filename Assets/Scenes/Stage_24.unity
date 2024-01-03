@@ -1130,6 +1130,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &526038015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+    type: 3}
+  m_PrefabInstance: {fileID: 998737070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c7d3fff763dfd418f58ffa67e40d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &683778094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1402,67 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &745622830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745622832}
+  - component: {fileID: 745622831}
+  m_Layer: 0
+  m_Name: CameraMove
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &745622831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745622830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62abdee5deb076640a55f9d2e26f8278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proCamera2D: {fileID: 786419925}
+  OnEndAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1449700856}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GS24_1
+          m_BoolArgument: 0
+        m_CallState: 2
+  cameraMoveSpeed: 0.98
+--- !u!4 &745622832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745622830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &755574498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,7 +2001,12 @@ PrefabInstance:
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
@@ -1939,7 +2017,12 @@ PrefabInstance:
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1449700856}
+      objectReference: {fileID: 745622831}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 745622831}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1952,13 +2035,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Play
+      value: CameraMoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: CameraMoveLeft
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
@@ -1968,7 +2061,12 @@ PrefabInstance:
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: UnityEngine.Animator, UnityEngine
+      value: GS24_CameraMove, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: GS24_CameraMove, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
@@ -1982,8 +2080,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: GS24_1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
@@ -1993,6 +2096,11 @@ PrefabInstance:
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9102374054294155028, guid: 3326c0b20868380449ce7067e5d64419,
@@ -2198,6 +2306,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7a8f27baea04d1b9687a093b5547f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1099797527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099797529}
+  - component: {fileID: 1099797528}
+  m_Layer: 0
+  m_Name: Params
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1099797528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099797527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9889784db6425c4b86bba5075241c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 786419926}
+  cameraMove: {fileID: 745622831}
+  ShakeIntensity: 0.1
+  ShakeDecay: 0.001
+  ShakeAmount: 0.1
+  cameraMoveSpeed: 1
+--- !u!4 &1099797529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099797527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245749601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2853510419603949689, guid: 2c43d0815a307ee4c9175d6c7fd4d821,
@@ -2595,6 +2753,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: GS24_Door, Assembly-CSharp
           m_MethodName: SetCanKnock
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 745622831}
+          m_TargetAssemblyTypeName: GS24_CameraMove, Assembly-CSharp
+          m_MethodName: CameraMoveDefault
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3779,6 +3949,30 @@ MonoBehaviour:
         - m_Target: {fileID: 44690389}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 526038015}
+          m_TargetAssemblyTypeName: GS07_Lever, Assembly-CSharp
+          m_MethodName: SetClearFlag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1078153417}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

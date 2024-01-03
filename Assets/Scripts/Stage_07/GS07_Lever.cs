@@ -9,6 +9,7 @@ public class GS07_Lever : Gimmick
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
+    bool isClear = false;
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -30,6 +31,7 @@ public class GS07_Lever : Gimmick
 
     public override void OnGameCharacter(Character character)
     {
+
         StartCoroutine(Anim(character));
     }
 
@@ -41,10 +43,20 @@ public class GS07_Lever : Gimmick
         GetComponent<SpriteRenderer>().enabled = false;
         character.PushLeverButtonGimmick();
         yield return new WaitForSeconds(0.5f);
-        OnPush?.Invoke();
+        if (!isClear)
+        {
+            OnPush?.Invoke();
+        }
+        GetComponent<SpriteRenderer>().enabled = true;
+
         // äGïøÇêÿÇËë÷Ç¶ÇÈ
         character.SetDefaultMode();
         character.canMove = true;
+    }
+
+    public void SetClearFlag()
+    {
+        isClear = true;
     }
 }
 

@@ -33,7 +33,12 @@ public class GS24_Door : Gimmick, IPointerDownHandler
 
     public override void OnGameCharacter(Character character)
     {
-        if (!canKnock || isClear)
+        if (isClear)
+        {
+            character.SetDefaultMode();
+            return;
+        }
+        if (!canKnock)
         {
             character.ShowQuestionEmotion();
         }
