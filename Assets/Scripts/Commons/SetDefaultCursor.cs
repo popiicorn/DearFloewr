@@ -14,7 +14,7 @@ public class SetDefaultCursor : MonoBehaviour
     public void SetCursor(Texture2D icon)
     {
         // Cursor.SetCursor(icon, Vector2.zero, CursorMode.ForceSoftware);
-        Cursor.SetCursor(ResizeTexture(icon, size,size), Vector2.zero, CursorMode.ForceSoftware);
+        Cursor.SetCursor(ResizeTexture(icon, size,size), new Vector2(55/2, 55 / 2), CursorMode.ForceSoftware);
     }
 
     Texture2D ResizeTexture(Texture2D srcTexture, int newWidth, int newHeight)

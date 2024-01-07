@@ -18,12 +18,20 @@ public class GS26_KeyButton : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log("Button Clicked");
         OnClickAction?.Invoke(keyNumber);
     }
 
     public void PlayLineAnimator()
     {
         lineAnimator.Play("KeyButton_Push");
+    }
+
+    public void PlayPush()
+    {
+        lineAnimator.Play("KeyButton_PushOnly");
+    }
+    public void PlayIdle()
+    {
+        lineAnimator.Play("KeyButton_Idle");
     }
 }

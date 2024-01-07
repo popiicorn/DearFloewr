@@ -6,6 +6,9 @@ public class GS26_KeyButtonManager : MonoBehaviour
 {
     [SerializeField] GS26_KeyButton[] keyButtons;
     [SerializeField] int[] correctKeys;
+    [SerializeField] EventData[] ClearEvents;
+    bool canPush = false;
+    bool isClear = false;
     int index = 0;
     private void Awake()
     {
@@ -16,17 +19,49 @@ public class GS26_KeyButtonManager : MonoBehaviour
         }
     }
 
+    public void SetCanPush()
+    {
+        canPush = true;
+    }
+
     public void SetAction(int keyNumber)
     {
+        if (!canPush)
+        {
+            return;
+        }
+        if (isClear)
+        {
+            return;
+        }
         if (correctKeys[index] == keyNumber)
         {
             keyButtons[index].PlayLineAnimator();
             index++;
         }
+        else
+        {
+            foreach (var item in keyButtons)
+            {
+                item.PlayIdle();
+            }
+            keyButtons[keyNumber].PlayPush();
+            index = 0;
+        }
 
         if (index == correctKeys.Length)
         {
-            Debug.Log("ê≥â");
+            isClear = true;
+            StartCoroutine(PlayClearEvent());
+        }
+
+    }
+
+    IEnumerator PlayClearEvent()
+    {
+        foreach (var eventData in ClearEvents)
+        {
+            yield return eventData.Play();
         }
     }
 }

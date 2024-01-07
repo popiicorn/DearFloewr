@@ -8,8 +8,10 @@ public class GS26_KeyFlower : MonoBehaviour
     [SerializeField] GameObject[] hanas;
     ParticleSystem flowerParticle;
     [SerializeField] UnityEvent OnClickEvent;
+    [SerializeField] public UnityEvent OnClearEvent;
 
     int index = 0;
+    bool isClear = false;
 
     private void Awake()
     {
@@ -17,7 +19,7 @@ public class GS26_KeyFlower : MonoBehaviour
     }
     public void OnClick()
     {
-        if (index >= hanas.Length)
+        if (isClear)
         {
             return;
         }
@@ -25,5 +27,10 @@ public class GS26_KeyFlower : MonoBehaviour
         hanas[index].SetActive(false);
         OnClickEvent?.Invoke();
         index++;
+        if (index >= hanas.Length)
+        {
+            isClear = true;
+            OnClearEvent?.Invoke();
+        }
     }
 }
