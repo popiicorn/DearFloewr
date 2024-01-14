@@ -203,6 +203,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hint_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 942
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6613cae08b1d0c24195db8f1beadfa4f
+      internalID: -2026188632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hint_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 830
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0af4b2196bb96468fd26c0062ded87
+      internalID: -1524719258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hint_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 659
+        width: 116
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1302b3131ab5347be9d42218e6f594
+      internalID: -1543781083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hint_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 110
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c210a831dbc29d74b9209a10fd0609df
+      internalID: -330215615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hint_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254
+        width: 100
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b50fbaec39b5940863b490ce76358c
+      internalID: 713457984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 599
+        width: 105
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54df5431ecf369147a017946e1c14406
+      internalID: 970084938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 597
+        width: 117
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a2b415bdde2234f854ea78908df9ae
+      internalID: 163828766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 602
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e08b74a4a467b8408f469e940e5dd44
+      internalID: -950874680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_4
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 591
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f454c3da8f617e4085a255539f71c84
+      internalID: 461535290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_5
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 594
+        width: 104
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4909677319c602148be53fa60ae3d43e
+      internalID: 1235796021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 521
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896e00d54dc637046800632384b990fd
+      internalID: 429957370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 521
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d27c6d86a0ebc42b331aed7e174ec9
+      internalID: 276507638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 528
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45953cf4ca711e7459f5e9269f43b701
+      internalID: 700804288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_4
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 520
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d4501853fc1546a68eee0eb11fac3
+      internalID: -826617886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 528
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeea3ae57fa7d84281bedc7745ec4e3
+      internalID: -572398210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 269
+        width: 282
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ba062ff8720a54b86e7b034b2b7f6c
+      internalID: 164222955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 0
+        width: 566
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63438879e945cce4a80c64d8eaee4f8b
+      internalID: 1370617740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -214,6 +571,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Button_1: 429957370
+      Button_2: 276507638
+      Button_3: 700804288
+      Button_4: -826617886
+      Button_5: -572398210
+      Frame_1: 970084938
+      Frame_2: 163828766
+      Frame_3: -950874680
+      Frame_4: 461535290
+      Frame_5: 1235796021
+      Hint_1: -2026188632
+      Hint_2: -1524719258
+      Hint_3: -1543781083
+      Hint_4: -330215615
+      Hint_5: 713457984
+      Key: 1370617740
+      Light: 164222955
       StageParts_24_0: 2123978743
       StageParts_24_1: 732837751
       StageParts_24_2: 327838483

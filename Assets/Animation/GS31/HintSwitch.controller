@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-8419496205108859427
+--- !u!1102 &-6742610495254460268
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3_Center_to_Top
+  m_Name: FadeIN
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,39 +20,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5b38896dbbbfbf841b716569bd17365b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 639eb40d5fef810429cb5d5c62322d73, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-6372566117937477885
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3_Center_Start
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: be5d0f0cbeee2a1429ddc8d92832e5ea, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1107 &-1513788727060043059
+--- !u!1107 &-5042278733785943900
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -62,20 +36,17 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -8419496205108859427}
-    m_Position: {x: 360, y: 40, z: 0}
+    m_State: {fileID: -6742610495254460268}
+    m_Position: {x: 260, y: 170, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 621902941049799957}
-    m_Position: {x: 350, y: 100, z: 0}
+    m_State: {fileID: 3722416791874794703}
+    m_Position: {x: 480, y: 170, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 963295872769134859}
-    m_Position: {x: 360, y: 220, z: 0}
+    m_State: {fileID: 7120251354287087628}
+    m_Position: {x: 40, y: 170, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6473546481414663570}
-    m_Position: {x: 360, y: 160, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -6372566117937477885}
-    m_Position: {x: 130, y: 200, z: 0}
+    m_State: {fileID: -1655772584103578548}
+    m_Position: {x: 240, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -85,20 +56,46 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -6372566117937477885}
+  m_DefaultState: {fileID: -1655772584103578548}
+--- !u!1102 &-1655772584103578548
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HintStart
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 9865577b31da3364ea2444af4aac2fb7, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3
+  m_Name: HintSwitch
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: -1513788727060043059}
+    m_StateMachine: {fileID: -5042278733785943900}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -108,14 +105,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &621902941049799957
+--- !u!1102 &3722416791874794703
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3_Center_to_Under
+  m_Name: FadeOUT
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -128,20 +125,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cca6f0542d4b3f944838100b250ff3b2, type: 2}
+  m_Motion: {fileID: 7400000, guid: fd3124f87751ce049a1f6a5656c94230, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &963295872769134859
+--- !u!1102 &7120251354287087628
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3_Top_to_Center
+  m_Name: HintIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -154,33 +151,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 690119f4962d02c4c950acd8cdfe7157, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &6473546481414663570
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: GS28_3_Under_to_Center
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6bbcabc13a2363b49b40f8fa9b2f1eb6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7ed9ea5c1077a89438e2536d287f7473, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
