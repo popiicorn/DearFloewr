@@ -3876,6 +3876,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1102193778370931445, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102193778370931445, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102193778370931445, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102193778370931445, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102193778370931445, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102193778370931446, guid: 4105645935e3dc54da28095dcd16d912,
         type: 3}
       propertyPath: m_IsActive
@@ -4034,6 +4059,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4744700822036821064, guid: 5ed78430aaacc244eb21200d003809de,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744700822261483834, guid: 5ed78430aaacc244eb21200d003809de,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4744700822420579685, guid: 5ed78430aaacc244eb21200d003809de,
         type: 3}
       propertyPath: m_Name
@@ -4042,6 +4077,11 @@ PrefabInstance:
     - target: {fileID: 4744700822420579685, guid: 5ed78430aaacc244eb21200d003809de,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744700822420579686, guid: 5ed78430aaacc244eb21200d003809de,
+        type: 3}
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4744700822420579687, guid: 5ed78430aaacc244eb21200d003809de,
