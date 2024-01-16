@@ -329,18 +329,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 304081378}
-          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-          m_MethodName: GameClear
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
         - m_Target: {fileID: 1078153417}
           m_TargetAssemblyTypeName: Character, Assembly-CSharp
           m_MethodName: SetDefaultMode
@@ -364,6 +352,22 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+  - delay: 0.5
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 304081378}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: GameClear
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!61 &59551500
 BoxCollider2D:
@@ -1619,6 +1623,7 @@ GameObject:
   - component: {fileID: 540186213}
   - component: {fileID: 540186215}
   - component: {fileID: 540186214}
+  - component: {fileID: 540186216}
   m_Layer: 0
   m_Name: LeverIcon
   m_TagString: Untagged
@@ -1722,6 +1727,52 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1078153417}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 540186216}
+          m_TargetAssemblyTypeName: CursorSelect, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 43bbe164c5218954cb2b1498b0a1ca05,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 540186216}
+          m_TargetAssemblyTypeName: CursorSelect, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &540186215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1748,6 +1799,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.74, y: 0.71}
   m_EdgeRadius: 0
+--- !u!114 &540186216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540186211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d6dbce2c31d46a78224417bafe6677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &683778094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,6 +2181,18 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: GS28_2_Melt
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1078153417}
+          m_TargetAssemblyTypeName: Character, Assembly-CSharp
+          m_MethodName: SetExitLimit
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &842115892
 GameObject:
@@ -2933,6 +3008,22 @@ MonoBehaviour:
   leftPos: {fileID: 738473703}
   rightPos: {fileID: 738473703}
   lever: {fileID: 230435269}
+  OnClear:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1276475805}
+        m_TargetAssemblyTypeName: CursorSelect, Assembly-CSharp
+        m_MethodName: SetCursor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1276475801 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 8140313408804432510, guid: 5ed78430aaacc244eb21200d003809de,
@@ -3461,6 +3552,18 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: GS28_1_Lamp
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1078153417}
+          m_TargetAssemblyTypeName: Character, Assembly-CSharp
+          m_MethodName: SetExitLimit
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
   - delay: 0.5
     unityEvent:

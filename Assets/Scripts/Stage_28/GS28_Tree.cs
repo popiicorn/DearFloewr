@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class GS28_Tree : Gimmick
 {
@@ -10,6 +11,7 @@ public class GS28_Tree : Gimmick
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     [SerializeField] GS28_Lever lever;
+    [SerializeField] UnityEvent OnClear;
 
     Animator animator;
     int kickCount = 0;
@@ -57,6 +59,8 @@ public class GS28_Tree : Gimmick
         if (kickCount >= 3)
         {
             lever.SetCanMove();
+            Destroy(GetComponent<EventTrigger>());
+            OnClear?.Invoke();
         }
     }
 }

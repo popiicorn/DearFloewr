@@ -41,6 +41,11 @@ public class Character : MonoBehaviour
 
     public bool ExitLimit { get => exitLimit; set => exitLimit = value; }
 
+    public void SetExitLimit(bool value)
+    {
+        exitLimit = value;
+    }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
