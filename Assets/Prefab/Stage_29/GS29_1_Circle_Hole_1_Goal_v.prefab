@@ -115,7 +115,25 @@ PrefabInstance:
     - target: {fileID: 5915868564286764803, guid: 0b83620d06951e84db7ab24eb13bbf8c,
         type: 3}
       propertyPath: m_Name
-      value: GS29_1_Circle_Hole
+      value: GS29_1_Circle_Hole_1_Goal_v
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b83620d06951e84db7ab24eb13bbf8c, type: 3}
+--- !u!1 &3393244842319546072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5915868564286764803, guid: 0b83620d06951e84db7ab24eb13bbf8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 9011237937820758491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7399245897335229500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3393244842319546072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c415db8f870b4b543bf4121e643cdfe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

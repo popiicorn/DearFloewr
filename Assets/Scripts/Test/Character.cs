@@ -17,6 +17,7 @@ public class Character : MonoBehaviour
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     [SerializeField] GameObject emoticon;
+    [SerializeField] GameObject emoticonv2;
 
     enum FaceDirection
     {
@@ -259,6 +260,24 @@ public class Character : MonoBehaviour
         StartCoroutine(ShowEmotion());
     }
 
+    public void ShowEmotion2V()
+    {
+        StopAllCoroutines();
+        StartCoroutine(Emotion2V());
+    }
+
+    IEnumerator Emotion2V()
+    {
+        canMove = false;
+        SetDefaultMode();
+        yield return new WaitForSeconds(0.7f);
+        emoticonv2.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        emoticonv2.gameObject.SetActive(false);
+        canMove = true;
+    }
+
+
     public void ShowNockAnim(bool isRight)
     {
         if (isRight)
@@ -346,5 +365,10 @@ public class Character : MonoBehaviour
         animator.SetBool("IsWalking", isWalking);
         targetPos = transform.position;
         CriManager.instance.StopSE();
+    }
+
+    public void SetAnim(AnimatorOverrideController animatorOverrideController)
+    {
+        animator.runtimeAnimatorController = animatorOverrideController;
     }
 }
