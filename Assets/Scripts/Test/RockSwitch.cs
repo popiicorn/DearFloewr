@@ -10,10 +10,10 @@ public class RockSwitch : MonoBehaviour
     // もしRockがぶつかったら
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Rock rock = collision.GetComponentInParent<Rock>();
-        if (rock && rock.Id == id)
+        IRockable rock = collision.GetComponentInParent<IRockable>();
+        if (rock != null &&  rock.Id == id)
         {
-            collision.GetComponentInParent<Rock>().SetLock(true);
+            collision.GetComponentInParent<IRockable>().SetLock(true);
             //設置
             ClearEvent?.Invoke();
         }

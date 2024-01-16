@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GS07_Lever : Gimmick
+public class GS28_Lever : Gimmick
 {
 
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
-    public UnityEvent OnPush;
+    public EventData[] EventDatas;
     bool isClear = false;
+    bool canMove = false;
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -44,11 +45,19 @@ public class GS07_Lever : Gimmick
         GetComponent<SpriteRenderer>().enabled = false;
         character.PushLeverButtonGimmick();
         yield return new WaitForSeconds(0.5f);
-        if (!isClear)
-        {
-            OnPush?.Invoke();
-        }
         GetComponent<SpriteRenderer>().enabled = true;
+        if (!canMove)
+        {
+            character.ShowQuestionEmotion();
+            yield return new WaitForSeconds(1f);
+        }
+        else if (!isClear)
+        {
+            foreach (var eventData in EventDatas)
+            {
+                yield return eventData.Play();
+            }
+        }
 
         // äGïøÇêÿÇËë÷Ç¶ÇÈ
         character.SetDefaultMode();
@@ -59,5 +68,11 @@ public class GS07_Lever : Gimmick
     {
         isClear = true;
     }
+
+    public void SetCanMove()
+    {
+        canMove = true;
+    }
 }
+
 

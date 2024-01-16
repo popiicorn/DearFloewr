@@ -1,8 +1,10 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class Rock : Gimmick,IRockable
+public class GS28_Box : Gimmick, IRockable
 {
     [SerializeField] int id;
     [SerializeField] Transform leftPos;
@@ -19,6 +21,7 @@ public class Rock : Gimmick,IRockable
     {
         if (transform.position.x < playerPos.x)
         {
+
             return rightPos;
         }
         return leftPos;
@@ -29,7 +32,9 @@ public class Rock : Gimmick,IRockable
         IsLock = value;
         if (IsLock)
         {
-            GetComponent<Collider2D>().enabled = false;
+            Destroy(GetComponent<Rigidbody2D>());
+            Destroy(GetComponent<Collider2D>());
+            Destroy(this);
         }
     }
 
@@ -42,9 +47,17 @@ public class Rock : Gimmick,IRockable
         transform.position += distance;
     }
 
-    // Áä∂ÊÖã„Çí
+    // èÛë‘Ç
     public override void OnGameCharacter(Character character)
     {
         character.SetPushMode();
+        if (transform.position.x < character.transform.position.x)
+        {
+            character.ExitLimit = false;
+        }
+        else
+        {
+            character.ExitLimit = true;
+        }
     }
 }

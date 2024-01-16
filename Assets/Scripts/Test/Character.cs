@@ -37,7 +37,9 @@ public class Character : MonoBehaviour
     }
 
     Mode mode = Mode.Normal;
-    Gimmick gimmick;
+    [SerializeField] Gimmick gimmick;
+
+    public bool ExitLimit { get => exitLimit; set => exitLimit = value; }
 
     private void Awake()
     {
@@ -98,7 +100,6 @@ public class Character : MonoBehaviour
                 {
                     return;
                 }
-
                 // ギミックを取得
                 gimmick = hit2d.transform.GetComponent<Gimmick>();
                 if (gimmick && gimmick.IsLock)
