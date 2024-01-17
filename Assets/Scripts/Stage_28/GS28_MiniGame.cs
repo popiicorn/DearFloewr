@@ -5,7 +5,7 @@ using UnityEngine;
 public class GS28_MiniGame : MonoBehaviour
 {
     GS28_3Switch[] switches;
-    int[] correct = { -1, 0, 1, 1, 0, -1 };
+    int[] correct = { 0, -1, 1, 1, -1, 0 };
     bool isClear;
 
     [SerializeField] EventData[] ClearEvents;
