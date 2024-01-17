@@ -51,7 +51,6 @@ public class GS28_3Switch : MonoBehaviour
         {
             return;
         }
-        Debug.Log("OnButtonPressed: " + buttonType);
         switch (buttonType)
         {
             case GS28_Button.ButtonType.Top:
