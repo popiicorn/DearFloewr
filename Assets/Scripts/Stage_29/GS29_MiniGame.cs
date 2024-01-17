@@ -9,6 +9,7 @@ public class GS29_MiniGame : MonoBehaviour
     [SerializeField] EventData[] OnClearEvents;
     bool isPlaying = false;
     bool isClear;
+    [SerializeField] CameraShake cameraShake;
 
 
     public void Show()

@@ -37,6 +37,7 @@ public class GS28_BoxSwitch : MonoBehaviour
         if (rock != null)
         {
             isBoxSet = true;
+            collision.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
             collision.GetComponentInParent<IRockable>().SetLock(true);
             StartCoroutine(PlaySetEvent());
         }

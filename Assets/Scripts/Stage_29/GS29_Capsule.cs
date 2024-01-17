@@ -10,6 +10,13 @@ public class GS29_Capsule : MonoBehaviour
     [SerializeField] float force = 10f;
     [SerializeField] float torque = 10f;
     bool canAddForce = true;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.isKinematic = true;
+    }
+
     public void AddForce()
     {
         if (!canAddForce) return;
@@ -33,5 +40,8 @@ public class GS29_Capsule : MonoBehaviour
         canAddForce = true;
     }
 
-    // åäÇ…êGÇÍÇΩÇÁ
+    public void OnClick()
+    {
+        rb.isKinematic = false;
+    }
 }

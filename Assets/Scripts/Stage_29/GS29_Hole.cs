@@ -28,7 +28,6 @@ public class GS29_Hole : Gimmick
     public override void OnGameCharacter(Character character)
     {
         StartCoroutine(PlayEvent());
-        character.SetAnim(animatorOverrideController);
     }
 
     IEnumerator PlayEvent()
@@ -42,4 +41,14 @@ public class GS29_Hole : Gimmick
         pos.x = 20;
         character.transform.position = pos;
     }
-}
+
+    public void SetMode()
+    {
+        character.SetAnim(animatorOverrideController);
+    }
+
+    public void SetIgnore()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+    }
+} 
