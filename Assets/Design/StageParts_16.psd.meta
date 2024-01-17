@@ -779,7 +779,7 @@ TextureImporter:
         width: 27
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -800,7 +800,7 @@ TextureImporter:
         width: 20
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,6 +808,27 @@ TextureImporter:
       bones: []
       spriteID: c2482360fd09ae043b12b1a8167cb1a7
       internalID: -396189018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageParts_16_7
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 737
+        width: 67
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a3dd52617a3f547a22488289230401
+      internalID: 586580508
       vertices: []
       indices: 
       edges: []
