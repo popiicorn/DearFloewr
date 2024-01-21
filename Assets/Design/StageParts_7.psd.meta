@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,6 +434,195 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cloud_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 141
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f461f848a57a7439866465673d8f82
+      internalID: 928837788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 769
+        width: 276
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7668b7c7cbf58b44a71034e580bfd9d
+      internalID: -1216110764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 699
+        width: 270
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf7efc8aa1f86647acda60d72656631
+      internalID: 174128984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 188
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11d753a451299a419c30f22a72fc5fc
+      internalID: -253890993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 629
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f724735db4e28c949b4d2770a8263a5f
+      internalID: 661455719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 628
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c127a910c4cc134f9a925f31dc844b3
+      internalID: -369978822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 629
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85aa3136694933743a7806459aac73b7
+      internalID: 130261528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 631
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d88ae97d0468043b28fb5ff03e5424
+      internalID: -32561199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 718
+        width: 152
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02333794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47adbd0df54fbf459fe2bff14974b22
+      internalID: 112448793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -433,6 +634,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Box: 112448793
+      Cloud_1: 928837788
+      Cloud_2: -1216110764
+      Cloud_3: 174128984
+      Cloud_4: -253890993
       ErrorParticle1: -1001258490
       ErrorParticle2: 662410912
       ErrorParticle3: 872084758
@@ -447,6 +653,10 @@ TextureImporter:
       StageParts_7_1: 1919675796
       StageParts_7_2: 326553250
       StageParts_7_3: 1268449057
+      Star_1: -32561199
+      Star_2: 130261528
+      Star_3: -369978822
+      Star_4: 661455719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
