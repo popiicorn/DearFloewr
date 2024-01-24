@@ -30,11 +30,6 @@ public class GS33_FlowerManager : MonoBehaviour
     {
         Debug.Log("花がクリックされた");
         count++;
-        // デバッグ用に２個
-        if (count == 2)
-        {
-            OnClickAllFlowers?.Invoke();
-        }
         if (count == flowers.Length)
         {
             OnClickAllFlowers?.Invoke();
