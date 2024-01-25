@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -360,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch_R_0
+      name: Switch_R_1
       rect:
         serializedVersion: 2
         x: 560
@@ -381,7 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch_L_0
+      name: Switch_R_2
       rect:
         serializedVersion: 2
         x: 700
@@ -397,6 +409,48 @@ TextureImporter:
       bones: []
       spriteID: c009bf85e74566b44a661d8050363331
       internalID: -1199969981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_L_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936442a9e540007408ef10171cf1a8f9
+      internalID: 492643762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_L_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 424
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9856dc68815db24bbffba185d223f46
+      internalID: -992100159
       vertices: []
       indices: 
       edges: []
@@ -421,8 +475,10 @@ TextureImporter:
       Idle_0: 1708571928
       Kick_0: -914343175
       Push_0: -2106437448
-      Switch_L_0: -1199969981
-      Switch_R_0: -129376256
+      Switch_L_1: 492643762
+      Switch_L_2: -992100159
+      Switch_R_1: -129376256
+      Switch_R_2: -1199969981
       Walk_0: 1730264218
       Walk_1: 411974330
       Walk_2: 507093736
