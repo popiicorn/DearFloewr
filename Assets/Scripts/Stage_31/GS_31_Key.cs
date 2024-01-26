@@ -45,6 +45,17 @@ public class GS_31_Key : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         // オブジェクトの位置を、クリックした位置とオフセットを足した位置にする
         transform.position = screenToWorldPoint + offset;
+        // Canvasの画面外に出ないようにする。LocalPositionで判定する
+        Vector3 localPosition = transform.localPosition;
+        float buff = 100f;
+        // 画面サイズによって変える必要がある
+        localPosition.x = Mathf.Clamp(localPosition.x, -Screen.width/2f+ buff, Screen.width / 2f- buff);
+        localPosition.y = Mathf.Clamp(localPosition.y, -Screen.height / 2f + buff, Screen.height / 2f- buff);
+        transform.localPosition = localPosition;
+
+
+
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
