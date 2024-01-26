@@ -422,7 +422,7 @@ TextureImporter:
         width: 140
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -443,7 +443,7 @@ TextureImporter:
         width: 140
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,6 +451,27 @@ TextureImporter:
       bones: []
       spriteID: f9856dc68815db24bbffba185d223f46
       internalID: -992100159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 424
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec4847428448940817e044748d90bc
+      internalID: -363687945
       vertices: []
       indices: 
       edges: []
@@ -466,6 +487,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Back: -363687945
       GimmickBg: 1452462912
       GimmickMark_1: -934553831
       GimmickMark_2: -800786762
