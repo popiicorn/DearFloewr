@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventDatas:
-  - delay: 0
+  - delay: 0.5
     unityEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3619,7 +3619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShakeObject: {fileID: 1343781687}
-  ShakeIntensity: 0.5
+  ShakeIntensity: 0.3
   ShakeDecay: 0.01
   ShakeAmount: 0.1
   delayTimeOfShake: 0
@@ -3696,7 +3696,7 @@ PrefabInstance:
     - target: {fileID: 4520692736169667199, guid: 685d3bf94c8c54d489734957c6b2a762,
         type: 3}
       propertyPath: prewarm
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4520692736169667199, guid: 685d3bf94c8c54d489734957c6b2a762,
         type: 3}
@@ -3706,7 +3706,7 @@ PrefabInstance:
     - target: {fileID: 4520692736169667199, guid: 685d3bf94c8c54d489734957c6b2a762,
         type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 12
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4520692736169667199, guid: 685d3bf94c8c54d489734957c6b2a762,
         type: 3}
@@ -4082,6 +4082,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923142183872602665, guid: 4397cae1d584c7a4d86803ca1089047a,
+        type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923142183872602665, guid: 4397cae1d584c7a4d86803ca1089047a,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.z
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923142183872602665, guid: 4397cae1d584c7a4d86803ca1089047a,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4397cae1d584c7a4d86803ca1089047a, type: 3}
