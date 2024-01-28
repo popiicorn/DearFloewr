@@ -4899,10 +4899,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1858159987973158582, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4801666254939449208, guid: 86b30ff46ea364246981e380e3fb5691,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801666255717879901, guid: 86b30ff46ea364246981e380e3fb5691,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836619969385226604, guid: 86b30ff46ea364246981e380e3fb5691,
         type: 3}
