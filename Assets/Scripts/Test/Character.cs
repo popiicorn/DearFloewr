@@ -35,6 +35,7 @@ public class Character : MonoBehaviour
         Push,
         Kick,
         PushSwitch,
+        Sit,
     }
 
     Mode mode = Mode.Normal;
@@ -253,6 +254,14 @@ public class Character : MonoBehaviour
         mode = Mode.PushSwitch;
     }
 
+    // 座るアニメーションをする
+    public void SitGimmick()
+    {
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+        animator.Play("Sit");
+        mode = Mode.Sit;
+    }
 
     public void ShowQuestionEmotion()
     {
