@@ -52,7 +52,7 @@ public class GS28_Tree : Gimmick
         yield return new WaitForSeconds(0.3f);
         character.KickGimmick();
         kickCount++;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.4f);
         animator.SetInteger("KickCount", kickCount);
         yield return new WaitForSeconds(0.2f);
         character.SetDefaultMode();

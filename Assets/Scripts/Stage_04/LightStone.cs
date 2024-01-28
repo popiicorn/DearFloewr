@@ -41,7 +41,7 @@ public class LightStone : Gimmick
         character.BusyMode();
         yield return new WaitForSeconds(0.5f);
         character.KickGimmick();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         yield return Shake();
         // yield return new WaitForSeconds(0.3f);
         if (LightStoneManager.Instance.IsCorrect(id))

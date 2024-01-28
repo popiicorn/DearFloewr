@@ -104,10 +104,11 @@ public class Character : MonoBehaviour
 
             if (hit2d)
             {
-                if (gimmick)
+                if (gimmick && isWalking)
                 {
                     return;
                 }
+                animator.Play("Idle");
                 // ギミックを取得
                 gimmick = hit2d.transform.GetComponent<Gimmick>();
                 if (gimmick && gimmick.IsLock)
@@ -119,6 +120,7 @@ public class Character : MonoBehaviour
                 {
                     isClicking = true;
                     mode = Mode.ReachGimmick;
+                    
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
                 }
             }
@@ -235,6 +237,14 @@ public class Character : MonoBehaviour
     {
         isWalking = false;
         animator.SetBool("IsWalking", isWalking);
+        if (faceDirection == FaceDirection.Left)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         animator.Play("Kick");
         mode = Mode.Kick;
     }
@@ -270,6 +280,7 @@ public class Character : MonoBehaviour
         animator.SetBool("IsWalking", isWalking);
         animator.Play("Sit");
         mode = Mode.Sit;
+        // gimmick = null;
     }
 
     public void ShowQuestionEmotion()
