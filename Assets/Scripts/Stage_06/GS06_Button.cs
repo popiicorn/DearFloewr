@@ -44,7 +44,7 @@ public class GS06_Button : Gimmick
         character.BusyMode();
         yield return new WaitForSeconds(0.2f);
         character.PushButtonGimmick();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.27f);
         if (canPush)
         {
             OnPush?.Invoke();

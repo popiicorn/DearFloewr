@@ -79,6 +79,7 @@ public class Character : MonoBehaviour
         }
         if (mode == Mode.Busy)
         {
+            transform.localScale = new Vector3(1, 1, 1);
             return;
         }
         if (!canMove)
@@ -241,7 +242,15 @@ public class Character : MonoBehaviour
     {
         isWalking = false;
         animator.SetBool("IsWalking", isWalking);
-        animator.Play("Switch_R");
+        if (faceDirection == FaceDirection.Left)
+        {
+            animator.Play("Switch_R");
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            animator.Play("Switch_L");
+        }
 
         mode = Mode.PushSwitch;
     }
