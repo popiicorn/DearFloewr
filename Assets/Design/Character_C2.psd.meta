@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sit_0
+      name: Sit_2
       rect:
         serializedVersion: 2
         x: 512
@@ -283,6 +283,48 @@ TextureImporter:
       bones: []
       spriteID: 8f211dfd0f5a6fc46801a8836a523444
       internalID: 2088781520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 796
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604416b500fb3f849aa00f60d9d32bb0
+      internalID: -547539250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145a2a2d509b2c6468ad1521f0e15eaf
+      internalID: 443030489
       vertices: []
       indices: 
       edges: []
@@ -307,7 +349,9 @@ TextureImporter:
       Idle_0: 1708571928
       Kick_0: -914343175
       Push_0: -2106437448
-      Sit_0: 2088781520
+      Sit_0: -547539250
+      Sit_1: 443030489
+      Sit_2: 2088781520
       Switch_L_0: 31716869
       Switch_R_0: -129376256
       WalkBack_0: -1715805690
