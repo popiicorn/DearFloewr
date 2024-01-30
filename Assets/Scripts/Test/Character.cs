@@ -280,6 +280,8 @@ public class Character : MonoBehaviour
         animator.SetBool("IsWalking", isWalking);
         animator.Play("Sit");
         mode = Mode.Sit;
+        transform.localScale = new Vector3(1, 1, 1);
+
         // gimmick = null;
     }
 
