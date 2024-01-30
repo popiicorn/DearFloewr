@@ -506,6 +506,18 @@ PrefabInstance:
       propertyPath: exitLimit
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3187627551679478880, guid: 37841337faf1a413e86c6782c28524d2,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 0a0fcbc8054453b438bf23fa75e3a114,
+        type: 2}
+    - target: {fileID: 3187627551679478881, guid: 37841337faf1a413e86c6782c28524d2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1708571928, guid: 3c09a3b057c877c4d94b382144512970,
+        type: 3}
     - target: {fileID: 3187627551679478881, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: m_SortingLayer
