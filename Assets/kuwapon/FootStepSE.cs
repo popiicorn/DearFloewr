@@ -11,6 +11,7 @@ public class FootStepSE : MonoBehaviour
     public enum STAGE_TYPE 
     { 
         WILDNESS,
+        ROBOT,
         FACTRY,
         NULL,
     
@@ -27,6 +28,11 @@ public class FootStepSE : MonoBehaviour
         else if (sTAGE_TYPE ==STAGE_TYPE.WILDNESS)
         {
             cueName = "footstep_dirt-001";
+            atomSource.Play(cueName);
+        }
+        else if (sTAGE_TYPE == STAGE_TYPE.ROBOT)
+        {
+            cueName = "footstep_dirt-robo";
             atomSource.Play(cueName);
         }
         else
