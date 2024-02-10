@@ -194,11 +194,11 @@ public class Character : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
             faceDirection = FaceDirection.Left;
-            CriManager.instance.StopSE();
+            // CriManager.instance.StopSE();
         }
         else
         {
-            CriManager.instance.StopSE();
+            // CriManager.instance.StopSE();
         }
     }
 
