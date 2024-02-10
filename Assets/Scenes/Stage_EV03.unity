@@ -4001,6 +4001,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5195808396387903900, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.80650043
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195808396387903900, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9021133
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195808396387903900, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.31096077
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195808396387903900, guid: 3326c0b20868380449ce7067e5d64419,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.31745225
+      objectReference: {fileID: 0}
     - target: {fileID: 7043621181535573286, guid: 3326c0b20868380449ce7067e5d64419,
         type: 3}
       propertyPath: OnPush.m_PersistentCalls.m_Calls.Array.size
