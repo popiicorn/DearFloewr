@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
-using static UnityEditor.Progress;
-using UnityEditor.Rendering.LookDev;
 
 public class GS11_FlowerTrigger : MonoBehaviour
 {
