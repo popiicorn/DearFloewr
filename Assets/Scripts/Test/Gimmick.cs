@@ -6,6 +6,7 @@ public abstract class Gimmick : MonoBehaviour
 {
     public bool IsLock { get; protected set; }
     public float Size { get; protected set; }
+    public bool IsMove { get; protected set; }
 
     public abstract Transform GetTargetPosition(Vector3 playerPos);
 

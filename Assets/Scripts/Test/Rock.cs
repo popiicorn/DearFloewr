@@ -17,6 +17,7 @@ public class Rock : Gimmick,IRockable
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
+        IsMove = false;
         if (transform.position.x < playerPos.x)
         {
             return rightPos;
@@ -40,11 +41,20 @@ public class Rock : Gimmick,IRockable
             return;
         }
         transform.position += distance;
+        if (distance.sqrMagnitude < float.Epsilon)
+        {
+            IsMove = false;
+        }
+        else
+        {
+            IsMove = true;
+        }
     }
 
     // 状態を
     public override void OnGameCharacter(Character character)
     {
+        IsMove = false;
         character.SetPushMode();
     }
 }

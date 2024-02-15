@@ -160,7 +160,22 @@ public class Character : MonoBehaviour
                     CriManager.instance.StopSE();
                 }
             }
+            if (!isClicking && (mode == Mode.Normal || mode == Mode.Push))
+            {
+                if (mode == Mode.Push && gimmick && gimmick.IsMove)
+                {
+                    if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
+                    {
+                        animator.SetTrigger("OnNormal");
+                        mode = Mode.Normal;
+                        gimmick = null;
+                        CriManager.instance.StopSE();
+                    }
+                }
+            }
         }
+
+
 
         targetPos.z = transform.position.z;
         targetPos.y = transform.position.y;
@@ -171,6 +186,7 @@ public class Character : MonoBehaviour
             gimmick.Move(transform.position - prePos);
         }
         SetDirection(targetPos);
+
 
         isWalking = (transform.position - targetPos).sqrMagnitude >= float.Epsilon;
 
