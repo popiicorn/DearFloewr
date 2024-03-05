@@ -91,6 +91,10 @@ public class Character : MonoBehaviour
             }
             return;
         }
+        if (mode == Mode.Kick)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
