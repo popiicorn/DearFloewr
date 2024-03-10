@@ -560,6 +560,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: button_credit
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 166
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc65a4bfa8dfce468f0ccac2e009e22
+      internalID: 189020732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_playgame
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 209
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0886e18f7ace9164b835137c8e23239f
+      internalID: -403396648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_exit
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0
+        width: 164
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1d044a51c39b6459c5d6f56c878598
+      internalID: 258077052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -591,6 +654,9 @@ TextureImporter:
       StageParts_24_0: 2123978743
       StageParts_24_1: 732837751
       StageParts_24_2: 327838483
+      button_credit: 189020732
+      button_exit: 258077052
+      button_playgame: -403396648
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
