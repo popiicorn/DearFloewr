@@ -162,90 +162,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kick_0
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 331
-        width: 140
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1def29bcfe6e33f4196396f966e4e99e
-      internalID: -914343175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Push_0
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 315
-        width: 184
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b69af80a1cb70844e8927ba604733e60
-      internalID: -2106437448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Switch_R_0
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 196
-        width: 140
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e2c6c67ab3139a4f81cebe4a9f80f99
-      internalID: -129376256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Switch_L_0
-      rect:
-        serializedVersion: 2
-        x: 808
-        y: 315
-        width: 140
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29e67d87d3359a14ba9fc8e15494d0c9
-      internalID: 31716869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: WalkBack_0
       rect:
         serializedVersion: 2
@@ -296,7 +212,7 @@ TextureImporter:
         width: 256
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,7 +233,7 @@ TextureImporter:
         width: 256
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,6 +241,69 @@ TextureImporter:
       bones: []
       spriteID: 145a2a2d509b2c6468ad1521f0e15eaf
       internalID: 443030489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 300
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549195309bbc14d448919d4ca1df773d
+      internalID: -591549642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 340
+        width: 300
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c91da005979934bbce29c779f36a00
+      internalID: -112744328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 340
+        width: 300
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0038e4a106a7e5498f7dea6a555aa0b
+      internalID: -1330079382
       vertices: []
       indices: 
       edges: []
@@ -348,6 +327,9 @@ TextureImporter:
       Gimmick_2: 1174842953
       Idle_0: 1708571928
       Kick_0: -914343175
+      Lever_0: -591549642
+      Lever_1: -112744328
+      Lever_2: -1330079382
       Push_0: -2106437448
       Sit_0: -547539250
       Sit_1: 443030489
