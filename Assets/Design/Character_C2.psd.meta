@@ -254,7 +254,7 @@ TextureImporter:
         width: 300
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,7 +275,7 @@ TextureImporter:
         width: 300
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,7 +296,7 @@ TextureImporter:
         width: 300
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,6 +304,153 @@ TextureImporter:
       bones: []
       spriteID: c0038e4a106a7e5498f7dea6a555aa0b
       internalID: -1330079382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knock_L1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 568
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984812a2f9a9b9041911597d78ef9385
+      internalID: 944197072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knock_L2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 568
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d382bfd580b014bb86eafe2a36cefb
+      internalID: -496033751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knock_R1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 568
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cab4573ebfc215408c15dbd199ad479
+      internalID: -1066679349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knock_R2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e01c076fcfd4004ea3dff052891f297
+      internalID: -1501214644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kick_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161573aa584bb1646be635609681132c
+      internalID: 148858639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kick_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 112
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b06d777cecdcf743b16af367def3e4d
+      internalID: -1613993151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kick_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 112
+        width: 256
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040017aa5839d56459fd7ef95f28c638
+      internalID: -665040911
       vertices: []
       indices: 
       edges: []
@@ -326,7 +473,13 @@ TextureImporter:
       Gimmick_1: -2135931112
       Gimmick_2: 1174842953
       Idle_0: 1708571928
-      Kick_0: -914343175
+      Kick_0: 148858639
+      Kick_1: -1613993151
+      Kick_2: -665040911
+      Knock_L1: 944197072
+      Knock_L2: -496033751
+      Knock_R1: -1066679349
+      Knock_R2: -1501214644
       Lever_0: -591549642
       Lever_1: -112744328
       Lever_2: -1330079382
