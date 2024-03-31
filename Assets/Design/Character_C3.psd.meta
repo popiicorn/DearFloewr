@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3a17879399835743b6c5b9ee5dffb5c
+guid: 4034305c9e83b4e47a89962ab85c6ce9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StageParts_2_0
+      name: WalkCupsel_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 767
-        width: 402
-        height: 243
+        x: 0
+        y: 796
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f25748794615a445934a52576a1fa5e
-      internalID: -2005717215
+      spriteID: eb469df9204d26c41bf89f8bbbe70394
+      internalID: 1730264218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_1
+      name: WalkCupsel_1
       rect:
         serializedVersion: 2
-        x: 549
-        y: 736
-        width: 475
-        height: 288
+        x: 256
+        y: 796
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b561458f574476548a011f5d8e48459c
-      internalID: 1410441386
+      spriteID: 1a611f34e06237e44a945e03d33b1f0f
+      internalID: 411974330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_2
+      name: WalkCupsel_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 869
-        height: 728
+        x: 512
+        y: 796
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16da26bd086ce56438d006e457cd4694
-      internalID: 58501367
+      spriteID: 0384a2131284adb4486a94d2d29f6641
+      internalID: 507093736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_3
+      name: WalkCupsel_3
       rect:
         serializedVersion: 2
-        x: 889
-        y: 1
-        width: 135
-        height: 269
+        x: 768
+        y: 796
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc384560415b0d644acd820cb22e3ef5
-      internalID: -1990783561
+      spriteID: 5df919b17b96dce488b5af22843e87bc
+      internalID: -71658842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_4
+      name: WalkCupsel_4
       rect:
         serializedVersion: 2
-        x: 431
-        y: 880
-        width: 92
-        height: 144
+        x: 0
+        y: 568
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62dd7ee8cd03f274180eba3fb7107ac8
-      internalID: -1949150092
+      spriteID: 090eddf29391e084fb0cc98d23e33213
+      internalID: -462845360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StageParts_2_5
+      name: WalkCupsel_5
       rect:
         serializedVersion: 2
-        x: 431
-        y: 751
-        width: 99
-        height: 105
+        x: 256
+        y: 568
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5167e04d43e53aa488e6269ab3acd45c
-      internalID: -828639762
+      spriteID: 96a9d13fb142d1545ac86b95cfa1b04c
+      internalID: -466832181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icon_01
+      name: WalkCupsel_6
       rect:
         serializedVersion: 2
-        x: 905
-        y: 614
-        width: 119
-        height: 117
+        x: 512
+        y: 568
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b290577b4143f224e86a9916b0cfba1f
-      internalID: -714294986
+      spriteID: 09f495527a788b0409a8d996cfd27bb4
+      internalID: 1146634147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icon_02
+      name: WalkCupsel_7
       rect:
         serializedVersion: 2
-        x: 921
-        y: 513
-        width: 103
-        height: 96
+        x: 768
+        y: 568
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0951fd70826350147bed7b3092a306a5
-      internalID: -771582134
+      spriteID: 38fbd37bcfffad34a8e9f08259d03d55
+      internalID: 436898564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icon_03
+      name: IdleCupsel_0
       rect:
         serializedVersion: 2
-        x: 904
-        y: 407
-        width: 117
-        height: 102
+        x: 0
+        y: 340
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,50 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51c8b42b12b9e745a57930ea037b1a3
-      internalID: -1581148004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icon_04
-      rect:
-        serializedVersion: 2
-        x: 958
-        y: 324
-        width: 64
-        height: 68
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8704f43a1ada60c43a7f9398d28d0ec5
-      internalID: 843549347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icon_05
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 278
-        width: 37
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 263e77bb6e46aa04698bf5051bbc6ff4
-      internalID: -1575489789
+      spriteID: a53c16d9282bd0d4ab10695da7413609
+      internalID: 1708571928
       vertices: []
       indices: 
       edges: []
@@ -374,7 +332,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 53f8b892e0f6d4c41afe5de7c7f9bb2e
     internalID: 0
     vertices: []
     indices: 
@@ -382,17 +340,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StageParts_2_0: -2005717215
-      StageParts_2_1: 1410441386
-      StageParts_2_2: 58501367
-      StageParts_2_3: -1990783561
-      StageParts_2_4: -1949150092
-      StageParts_2_5: -828639762
-      icon_01: -714294986
-      icon_02: -771582134
-      icon_03: -1581148004
-      icon_04: 843549347
-      icon_05: -1575489789
+      GimmickBg: 1452462912
+      GimmickMark_1: -934553831
+      GimmickMark_2: -800786762
+      GimmickMark_3: -301938115
+      Gimmick_1: -2135931112
+      Gimmick_2: 1174842953
+      IdleCupsel_0: 1708571928
+      Kick_0: -914343175
+      Push_1: -1773315073
+      Push_2: 762634394
+      Push_3: 1776346985
+      Push_4: -360852184
+      Push_5: -125062706
+      Push_6: -367302352
+      Push_7: 1321333862
+      Switch_L_0: 31716869
+      Switch_R_0: -129376256
+      WalkCupsel_0: 1730264218
+      WalkCupsel_1: 411974330
+      WalkCupsel_2: 507093736
+      WalkCupsel_3: -71658842
+      WalkCupsel_4: -462845360
+      WalkCupsel_5: -466832181
+      WalkCupsel_6: 1146634147
+      WalkCupsel_7: 436898564
+      cursor_1: -1325533665
+      cursor_2: -1515672902
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
