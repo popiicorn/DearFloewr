@@ -359,7 +359,7 @@ TextureImporter:
         width: 141
         height: 156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,7 +380,7 @@ TextureImporter:
         width: 36
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,7 +401,7 @@ TextureImporter:
         width: 72
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,6 +409,69 @@ TextureImporter:
       bones: []
       spriteID: 907e74ba3d5781b4eb3b8fe565bfd106
       internalID: 229222214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_3_wt
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 387
+        width: 141
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da44ab9acab256244858390e3f6806c5
+      internalID: -569365486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_2_wt
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 187
+        width: 36
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edac5c16febd75149b8d47b617434d04
+      internalID: -1284035123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_1_wt
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 122
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce273657eaaf0c44fadc5356d55bdf4c
+      internalID: -912057828
       vertices: []
       indices: 
       edges: []
@@ -435,8 +498,11 @@ TextureImporter:
       StageParts_10_8: 2046749539
       StageParts_10_9: -751988720
       icon_1: 229222214
+      icon_1_wt: -912057828
       icon_2: 734794719
+      icon_2_wt: -1284035123
       icon_3: 117054471
+      icon_3_wt: -569365486
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
