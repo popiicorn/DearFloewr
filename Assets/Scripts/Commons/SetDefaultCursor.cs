@@ -4,6 +4,7 @@ public class SetDefaultCursor : MonoBehaviour
 {
     [SerializeField] Texture2D icon;
     int size;
+    [SerializeField] float hotSpotX = 0;
     private void Start()
     {
         Debug.Log(Screen.width);
@@ -11,10 +12,18 @@ public class SetDefaultCursor : MonoBehaviour
         SetCursor(icon);
     }
 
+    private void Update()
+    {
+        // Cursor.SetCursor(ResizeTexture(icon, size, size), new Vector2(1, 1)* hotSpotX, CursorMode.ForceSoftware);
+    }
+
     public void SetCursor(Texture2D icon)
     {
-        // Cursor.SetCursor(icon, Vector2.zero, CursorMode.ForceSoftware);
-        Cursor.SetCursor(ResizeTexture(icon, size,size), new Vector2(55/2, 55 / 2), CursorMode.ForceSoftware);
+        if (icon == null)
+        {
+            icon = this.icon;
+        }
+        Cursor.SetCursor(ResizeTexture(icon, size, size), Vector2.one*CursorSelect.hotSpotX, CursorMode.ForceSoftware);
     }
 
     Texture2D ResizeTexture(Texture2D srcTexture, int newWidth, int newHeight)

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CursorSelect : MonoBehaviour
 {
     int size;
+    public const float hotSpotX = 55 / 8;
 
     private void Start()
     {
@@ -12,8 +13,7 @@ public class CursorSelect : MonoBehaviour
     }
     public void SetCursor(Texture2D icon)
     {
-        // Cursor.SetCursor(icon, Vector2.zero, CursorMode.ForceSoftware);
-        Cursor.SetCursor(ResizeTexture(icon, size, size), Vector2.zero, CursorMode.ForceSoftware);
+        Cursor.SetCursor(ResizeTexture(icon, size, size), Vector2.one* hotSpotX, CursorMode.ForceSoftware);
     }
 
     Texture2D ResizeTexture(Texture2D srcTexture, int newWidth, int newHeight)
