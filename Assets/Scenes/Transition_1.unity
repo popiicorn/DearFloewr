@@ -527,6 +527,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829057, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829057, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829057, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829057, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829059, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378297227665829069, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1378297228605164755, guid: 61061b3e0e3cf684c8873fdeb75f8c6e,
         type: 3}
       propertyPath: m_IsActive

@@ -522,7 +522,7 @@ PrefabInstance:
     - target: {fileID: 3187627551679478886, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3187627551679478886, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
@@ -1763,6 +1763,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GS36_Flower (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7704819710112882601, guid: e8a93272af00f38488b447550afa4ac5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8a93272af00f38488b447550afa4ac5, type: 3}
 --- !u!4 &1681481164 stripped
@@ -1998,6 +2003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GS36_Flower (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704819710112882601, guid: e8a93272af00f38488b447550afa4ac5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8a93272af00f38488b447550afa4ac5, type: 3}
