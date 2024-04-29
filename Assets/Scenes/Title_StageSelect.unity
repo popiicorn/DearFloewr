@@ -1088,7 +1088,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_035
       objectReference: {fileID: 0}
+    - target: {fileID: 548276635627902320, guid: e02fdc036c1a766469fc3a06c733748e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 548276635636362385, guid: e02fdc036c1a766469fc3a06c733748e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5979175798021737375, guid: e02fdc036c1a766469fc3a06c733748e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7378870612408515297, guid: e02fdc036c1a766469fc3a06c733748e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820517592896573176, guid: e02fdc036c1a766469fc3a06c733748e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13087,7 +13107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2100, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1964679538
