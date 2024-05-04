@@ -29,7 +29,6 @@ public class CameraShake : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(Shake());
-        Debug.Log("Do");
     }
 
     public IEnumerator Shake()
@@ -80,6 +79,7 @@ public class CameraShake : MonoBehaviour
             yield return new WaitForSeconds(spanTime);
             sumTime += spanTime * 2;
         }
+        ShakeObject.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
 

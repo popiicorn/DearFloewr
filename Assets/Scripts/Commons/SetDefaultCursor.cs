@@ -7,7 +7,6 @@ public class SetDefaultCursor : MonoBehaviour
     [SerializeField] float hotSpotX = 0;
     private void Start()
     {
-        Debug.Log(Screen.width);
         size = ((57*100*Screen.width)/1920)/100;
         SetCursor(icon);
     }

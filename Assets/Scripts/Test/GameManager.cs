@@ -62,4 +62,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
     }
+
+    public void GameOver()
+    {
+        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        FadeManager.Instance.LoadScene(sceneName, fadeTime);
+    }
 }

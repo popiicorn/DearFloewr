@@ -115,6 +115,7 @@ public class Character : MonoBehaviour
                 animator.Play("Idle");
                 // ギミックを取得
                 gimmick = hit2d.transform.GetComponent<Gimmick>();
+                Debug.Log(gimmick);
                 if (gimmick && gimmick.IsLock)
                 {
                     gimmick = null;

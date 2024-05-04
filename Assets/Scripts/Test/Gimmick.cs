@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Gimmick : MonoBehaviour
 {
-    public bool IsLock { get; protected set; }
+    public bool IsLock { get; set; }
     public float Size { get; protected set; }
     public bool IsMove { get; protected set; }
 
