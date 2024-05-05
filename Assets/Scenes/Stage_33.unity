@@ -1810,6 +1810,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 774011727796262675, guid: e8a93272af00f38488b447550afa4ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 774011728635551457, guid: e8a93272af00f38488b447550afa4ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2192489627686416233, guid: e8a93272af00f38488b447550afa4ac5,
         type: 3}
       propertyPath: id
@@ -1854,6 +1864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: eventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998225250259252662, guid: e8a93272af00f38488b447550afa4ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13000011
       objectReference: {fileID: 0}
     - target: {fileID: 7704819710112882600, guid: e8a93272af00f38488b447550afa4ac5,
         type: 3}

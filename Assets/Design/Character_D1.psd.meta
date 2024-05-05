@@ -459,7 +459,7 @@ TextureImporter:
       name: Handsup_3
       rect:
         serializedVersion: 2
-        x: 281
+        x: 280
         y: 424
         width: 140
         height: 200
@@ -477,33 +477,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lever_0
+      name: Panic_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 260
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d82afcd8a34720b4fb7878fe7930c9c1
-      internalID: -1448943553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lever_1
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 0
-        width: 260
+        x: 420
+        y: 424
+        width: 140
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -514,27 +493,6 @@ TextureImporter:
       bones: []
       spriteID: 20debdc38c26ac445bdf532070b5cf58
       internalID: 1413793044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lever_2
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 0
-        width: 260
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf88594907c665f42967ec6e8273a5ef
-      internalID: 885022837
       vertices: []
       indices: 
       edges: []
@@ -562,8 +520,8 @@ TextureImporter:
       Idle_0: 1708571928
       Kick_0: -914343175
       Lever_0: -1448943553
-      Lever_1: 1413793044
       Lever_2: 885022837
+      Panic_1: 1413793044
       Push_0: -2106437448
       Switch_R_1: -129376256
       Switch_R_2: -1199969981

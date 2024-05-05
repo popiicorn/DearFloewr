@@ -152,7 +152,7 @@ PrefabInstance:
     - target: {fileID: 7000328106199977116, guid: 7dcbbbeb72e03e14588bf679d4eec7f8,
         type: 3}
       propertyPath: m_Name
-      value: GS05_5_V
+      value: GS05_6_V
       objectReference: {fileID: 0}
     - target: {fileID: 7000328106199977118, guid: 7dcbbbeb72e03e14588bf679d4eec7f8,
         type: 3}
@@ -223,7 +223,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8929199274579809541}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &-3587616838122315004
+--- !u!60 &-573697817532175226
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,7 +306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb78c9d8a5d44914b172aa6895144a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
   leftPos: {fileID: 5465199792436105557}
   rightPos: {fileID: 6040690051147167388}
 --- !u!114 &104855951926489747
@@ -321,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d6dbce2c31d46a78224417bafe6677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 43bbe164c5218954cb2b1498b0a1ca05, type: 3}
 --- !u!114 &5731383759544832796
 MonoBehaviour:
   m_ObjectHideFlags: 0
