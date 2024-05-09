@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class RockSwitch : MonoBehaviour
 {
     [SerializeField] int id;
+    [SerializeField] CameraShake cameraShake;
     public UnityEvent ClearEvent;
     // もしRockがぶつかったら
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,6 +17,10 @@ public class RockSwitch : MonoBehaviour
             collision.GetComponentInParent<IRockable>().SetLock(true);
             //設置
             ClearEvent?.Invoke();
+            if (cameraShake)
+            {
+                StartCoroutine(cameraShake.Shake(0.02f, 0.7f, 10f / 60f));
+            }
         }
     }
 }

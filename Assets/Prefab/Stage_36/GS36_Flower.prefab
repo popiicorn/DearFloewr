@@ -60,9 +60,10 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Flower_DanceLoop
+            m_StringArgument: Flower_DanceLoop_GS36
             m_BoolArgument: 0
           m_CallState: 2
+  animator: {fileID: 0}
 --- !u!1 &774011728635551458
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484f57e0aaa44f149a47d9322a9e0cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   rightPos: {fileID: 2088839782639500859}
   eventDatas:
   - delay: 0

@@ -3063,6 +3063,11 @@ PrefabInstance:
       objectReference: {fileID: 1832101916}
     - target: {fileID: 3298752280493017454, guid: 6bb6592ed02c66c4da9ad0269fb5d6dc,
         type: 3}
+      propertyPath: delayTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298752280493017454, guid: 6bb6592ed02c66c4da9ad0269fb5d6dc,
+        type: 3}
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 1575598580}

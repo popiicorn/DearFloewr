@@ -105,7 +105,7 @@ public class Character : MonoBehaviour
             Vector3 clickPos = Camera.main.ScreenToWorldPoint(touchScreenPosition);
 
 
-
+            
             if (hit2d)
             {
                 if (gimmick && isWalking)
@@ -131,6 +131,7 @@ public class Character : MonoBehaviour
             }
             else if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)))
             {
+                Debug.Log("1");
                 // 進行方向と逆をクリックしたら
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
@@ -139,6 +140,7 @@ public class Character : MonoBehaviour
             }
             else if (gimmick && mode != Mode.Push)
             {
+                Debug.Log("2");
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
                 gimmick = null;
@@ -148,6 +150,7 @@ public class Character : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
+            Debug.Log("3"+ targetPos);
             isClicking = false;
         }
         
@@ -156,6 +159,7 @@ public class Character : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
+                Debug.Log("4");
                 SetTarget();
                 if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
                 {

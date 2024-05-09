@@ -14,6 +14,7 @@ public class GS36_EnemyAttack : MonoBehaviour
     [SerializeField] CameraShake cameraShake;
     public UnityAction<bool> OnAttacked;
     [SerializeField] Character character;
+    [SerializeField] float delayTime = 0.5f;
     int[] attackPosList = new int[3] { -7, 0, 7 };
 
     private void Awake()
@@ -45,6 +46,7 @@ public class GS36_EnemyAttack : MonoBehaviour
     {
         Debug.Log("CharacterMove");
         StartCoroutine(cameraShake.Shake(0.02f, 0.7f, 100f / 60f));
+        character.KickGimmick();
         // ˆÚ“®
         yield return character.transform.DOMoveX(GetTargetPos(index), 100f/60f).SetEase(Ease.Linear).WaitForCompletion();
         character.enabled = true;
@@ -86,6 +88,7 @@ public class GS36_EnemyAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         flowerManager.ResetFlower();
+        yield return new WaitForSeconds(delayTime);
         OnAttacked?.Invoke(attack);
     }
 
