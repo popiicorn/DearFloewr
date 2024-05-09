@@ -155,7 +155,7 @@ public class Character : MonoBehaviour
         }
         
 
-        if (!isClicking &&(mode == Mode.Normal || mode == Mode.Push))
+        if (!isClicking && CheckCanWalkMode())
         {
             if (Input.GetMouseButton(0))
             {
@@ -168,18 +168,21 @@ public class Character : MonoBehaviour
                     gimmick = null;
                     CriManager.instance.StopSE();
                 }
-            }
-            if (!isClicking && (mode == Mode.Normal || mode == Mode.Push))
-            {
-                if (mode == Mode.Push && gimmick && gimmick.IsMove)
+                if (mode == Mode.Sit)
                 {
-                    if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
-                    {
-                        animator.SetTrigger("OnNormal");
-                        mode = Mode.Normal;
-                        gimmick = null;
-                        CriManager.instance.StopSE();
-                    }
+                    animator.SetTrigger("OnNormal");
+                    mode = Mode.Normal;
+                    gimmick = null;
+                }
+            }
+            if (mode == Mode.Push && gimmick && gimmick.IsMove)
+            {
+                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
+                {
+                    animator.SetTrigger("OnNormal");
+                    mode = Mode.Normal;
+                    gimmick = null;
+                    CriManager.instance.StopSE();
                 }
             }
         }
@@ -224,6 +227,19 @@ public class Character : MonoBehaviour
         else
         {
             // CriManager.instance.StopSE();
+        }
+    }
+
+    bool CheckCanWalkMode()
+    {
+        switch (mode)
+        {
+            case Mode.Normal:
+            case Mode.Push:
+            case Mode.Sit:
+                return true;
+            default:
+                return false;
         }
     }
 
