@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Rock : Gimmick,IRockable
 {
     [SerializeField] int id;
-    [SerializeField] Transform leftPos;
-    [SerializeField] Transform rightPos;
+    public Transform leftPos;
+    public Transform rightPos;
+
+    // 移動範囲の制限
+    // 限界が来たら押しているCharacterに通知する
+
+
 
     public int Id { get => id; }
 

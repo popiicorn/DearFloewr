@@ -28,6 +28,7 @@ public class GS5_Shadow : MonoBehaviour
         else
         {
             spriteRenderer.DOFade(0, Stage05Params.Instance.fadeDurationOfShadow);
+            Debug.Log("Fade out");
         }
     }
 }

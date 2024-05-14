@@ -14,7 +14,7 @@ public class RockSwitch : MonoBehaviour
         IRockable rock = collision.GetComponentInParent<IRockable>();
         if (rock != null &&  rock.Id == id)
         {
-            collision.GetComponentInParent<IRockable>().SetLock(true);
+            rock.SetLock(true);
             //設置
             ClearEvent?.Invoke();
             if (cameraShake)

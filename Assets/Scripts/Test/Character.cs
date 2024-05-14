@@ -16,6 +16,8 @@ public class Character : MonoBehaviour
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+    Transform initLeftPos;
+    Transform initRightPos;
     [SerializeField] GameObject emoticon;
     [SerializeField] GameObject emoticonv2;
 
@@ -57,11 +59,19 @@ public class Character : MonoBehaviour
     {
         defaultSpeed = speed;
         targetPos = transform.position;
+        initLeftPos = leftPos;
+        initRightPos = rightPos;
     }
 
     public void SetParams(float speed)
     {
         this.speed = speed;
+    }
+
+    public void SetLimitObj(Transform left, Transform right)
+    {
+        leftPos = left;
+        rightPos = right;
     }
 
 
@@ -127,30 +137,34 @@ public class Character : MonoBehaviour
                     mode = Mode.ReachGimmick;
                     
                     targetPos = gimmick.GetTargetPosition(transform.position).position;
+                    if (gimmick.isLimit)
+                    {
+                        SetLimitObj(gimmick.GetLeftLimit(), gimmick.GetRightLimit());
+                        // gimmick.OnLimit = StopMode;
+                    }
                 }
             }
-            else if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.transform.position.x)))
+            else if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && clickPos.x < gimmick.CenterTransform.position.x) || (faceDirection == FaceDirection.Left && clickPos.x > gimmick.CenterTransform.position.x)))
             {
-                Debug.Log("1");
                 // 進行方向と逆をクリックしたら
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
                 gimmick = null;
                 CriManager.instance.StopSE();
+                SetLimitObj(initLeftPos, initRightPos);
             }
             else if (gimmick && mode != Mode.Push)
             {
-                Debug.Log("2");
                 animator.SetTrigger("OnNormal");
                 mode = Mode.Normal;
                 gimmick = null;
+                SetLimitObj(initLeftPos, initRightPos);
             }
         }
 
 
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("3"+ targetPos);
             isClicking = false;
         }
         
@@ -159,30 +173,33 @@ public class Character : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                Debug.Log("4");
                 SetTarget();
-                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
+                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.CenterTransform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.CenterTransform.position.x)))
                 {
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
                     CriManager.instance.StopSE();
+                    SetLimitObj(initLeftPos, initRightPos);
+
                 }
                 if (mode == Mode.Sit)
                 {
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
+                    SetLimitObj(initLeftPos, initRightPos);
                 }
             }
             if (mode == Mode.Push && gimmick && gimmick.IsMove)
             {
-                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.transform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.transform.position.x)))
+                if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.CenterTransform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.CenterTransform.position.x)))
                 {
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
                     CriManager.instance.StopSE();
+                    SetLimitObj(initLeftPos, initRightPos);
                 }
             }
         }
@@ -230,6 +247,7 @@ public class Character : MonoBehaviour
         }
     }
 
+
     bool CheckCanWalkMode()
     {
         switch (mode)
@@ -250,7 +268,7 @@ public class Character : MonoBehaviour
         if (!isWalking && mode == Mode.ReachGimmick)
         {
             mode = Mode.Busy;
-            SetDirection(gimmick.transform.position);
+            SetDirection(gimmick.CenterTransform.position);
             gimmick.OnGameCharacter(this);
         }
         else if (mode == Mode.Normal || mode == Mode.ReachGimmick || mode == Mode.Push)
@@ -400,7 +418,11 @@ public class Character : MonoBehaviour
         {
             offsetX = gimmick.Size*2f;
         }
-        if (exitLimit)
+        if (gimmick && gimmick.isLimit)
+        {
+            targetPos.x = Mathf.Clamp(targetPos.x, leftPos.position.x + gimmick.limitOffsetL, rightPos.position.x - gimmick.limitOffsetR);
+        }
+        else if (exitLimit)
         {
             targetPos.x = Mathf.Clamp(targetPos.x, leftPos.position.x + offsetX, rightPos.position.x - offsetX);
         }
@@ -436,7 +458,11 @@ public class Character : MonoBehaviour
         speed = defaultSpeed;
         animator.SetBool("IsWalking", isWalking);
         targetPos = transform.position;
-        CriManager.instance.StopSE();
+        SetLimitObj(initLeftPos, initRightPos);
+        if (CriManager.instance)
+        {
+            CriManager.instance.StopSE();
+        }
     }
 
     public void SetAnim(AnimatorOverrideController animatorOverrideController)
