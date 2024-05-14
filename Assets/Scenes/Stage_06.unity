@@ -1693,6 +1693,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201f230a69b5c07418c8c63b3fa9c4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   OnClear:
     m_PersistentCalls:
       m_Calls:
@@ -1926,6 +1932,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb78c9d8a5d44914b172aa6895144a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   id: 0
   leftPos: {fileID: 1912058561}
   rightPos: {fileID: 689250247}
@@ -2394,12 +2406,12 @@ PrefabInstance:
     - target: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.11
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4312976780252568561, guid: aa827d1ed3362494ebb41817b9967310,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.3
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 4312976780333055608, guid: aa827d1ed3362494ebb41817b9967310,
         type: 3}
