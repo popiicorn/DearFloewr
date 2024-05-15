@@ -776,6 +776,7 @@ GameObject:
   - component: {fileID: 304081379}
   - component: {fileID: 304081378}
   - component: {fileID: 304081380}
+  - component: {fileID: 304081381}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -827,6 +828,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d6dbce2c31d46a78224417bafe6677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &304081381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304081377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30079460d33fe664e82cd409c8424741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera2D: {fileID: 786419925}
 --- !u!1001 &370424672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3263,7 +3277,7 @@ PrefabInstance:
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
@@ -3284,6 +3298,21 @@ PrefabInstance:
         type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
@@ -3312,6 +3341,21 @@ PrefabInstance:
       objectReference: {fileID: 1176516268}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 304081381}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 1832101908}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Target
+      value: 
+      objectReference: {fileID: 1832101908}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -3328,6 +3372,21 @@ PrefabInstance:
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
@@ -3357,6 +3416,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: MoveCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: SetDefaultMode
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -3382,6 +3456,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: GS5_ClearAction, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
+      value: Character, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -3398,6 +3487,21 @@ PrefabInstance:
     - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
         type: 3}
       propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852739276985668428, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
+        type: 3}
+      propertyPath: ClearEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7484323228988862692, guid: b40ea8c11b1bb4a099de7b92d97c62cc,
@@ -6575,6 +6679,7 @@ MonoBehaviour:
   rightLimit: []
   limitOffsetR: 0
   limitOffsetL: 0
+  cameraShake: {fileID: 786419926}
   leftPos: {fileID: 2014089031}
   rightPos: {fileID: 1239808738}
   flower: {fileID: 1264257512}

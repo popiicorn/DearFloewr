@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GS5_GetFlowerStone : Gimmick
 {
+    // Î‚ğR‚Á‚½‚ç‰æ–ÊƒuƒŒ
+    [SerializeField] CameraShake cameraShake;
     public Transform leftPos;
     public Transform rightPos;
     // Î‚ğ‚T‰ñR‚Á‚½‚ç‰Ô‚ğæ“¾
@@ -56,6 +58,10 @@ public class GS5_GetFlowerStone : Gimmick
         character.KickGimmick();
         kickCount++;
         yield return new WaitForSeconds(0.2f);
+        if (cameraShake)
+        {
+            StartCoroutine(cameraShake.Shake(0.02f, 0.7f, 10f / 60f));
+        }
         if (kickCount == 5)
         {
             flower.SetActive(true);
