@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GS5_GetFlowerStone : Gimmick
 {
-    // Î‚ğR‚Á‚½‚ç‰æ–ÊƒuƒŒ
-    [SerializeField] CameraShake cameraShake;
+    // Î‚ªR‚ç‚ê‚½‚çÎ‚ğ—h‚ç‚·
     public Transform leftPos;
     public Transform rightPos;
     // Î‚ğ‚T‰ñR‚Á‚½‚ç‰Ô‚ğæ“¾
@@ -53,15 +52,16 @@ public class GS5_GetFlowerStone : Gimmick
 
     IEnumerator Anim(Character character)
     {
+        kickCount++;
+        if (kickCount == 5)
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
         character.BusyMode();
         yield return new WaitForSeconds(0.5f);
         character.KickGimmick();
-        kickCount++;
         yield return new WaitForSeconds(0.2f);
-        if (cameraShake)
-        {
-            StartCoroutine(cameraShake.Shake(0.02f, 0.7f, 10f / 60f));
-        }
+        StartCoroutine(Shake());
         if (kickCount == 5)
         {
             flower.SetActive(true);
@@ -69,5 +69,37 @@ public class GS5_GetFlowerStone : Gimmick
             wasGetFlower = true;
         }
         character.SetDefaultMode();
+    }
+
+    [Header("Shake")]
+    public float ShakeIntensity = 0.02f;   // ƒJƒƒ‰‚Ì—h‚ê‚Ì‹­‚³
+    public float ShakeDecay = 0.002f;      // —h‚ê‚ÌŒ¸Z’l
+    public float ShakeAmount = 0.2f;       // —h‚ê‚Ì‹­‚³ŒW”
+
+    private Vector3 originPosition;
+    private Quaternion originRotation;
+
+    void Start()
+    {
+        originPosition = transform.localPosition;
+        originRotation = transform.localRotation;
+    }
+
+    public IEnumerator Shake()
+    {
+        float shakeIntensity = ShakeIntensity;
+        while (shakeIntensity > 0)
+        {
+            transform.localPosition = originPosition + Random.insideUnitSphere * shakeIntensity;
+            transform.localRotation = new Quaternion(
+                originRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
+                originRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount);
+            shakeIntensity -= ShakeDecay;
+            yield return false;
+        }
+        transform.localPosition = originPosition;
+        transform.localRotation = originRotation;
     }
 }
