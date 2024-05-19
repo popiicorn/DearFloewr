@@ -649,8 +649,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d301ea7087b984d4c897ea5989d8e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionName: 2
   fadeTime: 1
-  nextSceneName: Stage_04
+  nextSceneName: Transition_2
   nextTime: 3
   IsGameClear: 0
   IsPreGameClear: 0
@@ -787,6 +788,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c454fa6b61175b45ac1e4a95aa3c23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   leftPos: {fileID: 2046477103}
   rightPos: {fileID: 2046477103}
 --- !u!212 &369339394
@@ -2142,6 +2149,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcd333255492436793394aab5940fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   leftPos: {fileID: 1391123160}
   rightPos: {fileID: 1360678377}
   timeOfActive: 1
@@ -2993,6 +3006,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c454fa6b61175b45ac1e4a95aa3c23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   leftPos: {fileID: 1100785120}
   rightPos: {fileID: 1100785120}
 --- !u!212 &1526008458

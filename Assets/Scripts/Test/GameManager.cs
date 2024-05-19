@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    enum TransitionName
+    {
+        None,
+        Transition_1,
+        Transition_2,
+        Transition_3,
+        Transition_4,
+    }
+    [SerializeField] TransitionName transitionName;
     [SerializeField] float fadeTime = 1f;
     [SerializeField] string nextSceneName;
     [SerializeField] float nextTime = 3;
@@ -60,7 +69,24 @@ public class GameManager : MonoBehaviour
             EventSaveDatas.Instance.StopwatchStop();
         }
         yield return new WaitForSeconds(time);
-        FadeManager.Instance.LoadScene(nextSceneName, fadeTime);
+        FadeManager.Instance.LoadScene(GetNextSceneName(), fadeTime);
+    }
+
+    string GetNextSceneName()
+    {
+        switch (transitionName)
+        {
+            case TransitionName.Transition_1:
+                return "Transition_1";
+            case TransitionName.Transition_2:
+                return "Transition_2";
+            case TransitionName.Transition_3:
+                return "Transition_3";
+            case TransitionName.Transition_4:
+                return "Transition_4";
+            default:
+                return "Title";
+        }
     }
 
     public void GameOver()
@@ -69,3 +95,4 @@ public class GameManager : MonoBehaviour
         FadeManager.Instance.LoadScene(sceneName, fadeTime);
     }
 }
+

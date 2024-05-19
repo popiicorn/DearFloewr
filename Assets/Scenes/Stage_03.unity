@@ -955,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d301ea7087b984d4c897ea5989d8e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionName: 3
   fadeTime: 1
   nextSceneName: Stage_05
   nextTime: 3
@@ -2758,6 +2759,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb78c9d8a5d44914b172aa6895144a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerTransform: {fileID: 0}
+  isLimit: 0
+  leftLimit: []
+  rightLimit: []
+  limitOffsetR: 0
+  limitOffsetL: 0
   id: 0
   leftPos: {fileID: 1912058561}
   rightPos: {fileID: 689250247}
