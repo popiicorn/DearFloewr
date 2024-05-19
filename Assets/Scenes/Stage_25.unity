@@ -6384,6 +6384,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.90588236
       objectReference: {fileID: 0}
+    - target: {fileID: 4371133185507557472, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4901082997422675923, guid: 4105645935e3dc54da28095dcd16d912,
         type: 3}
       propertyPath: EventDatas.Array.data[0].unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
