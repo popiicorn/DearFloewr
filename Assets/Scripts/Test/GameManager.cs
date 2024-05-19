@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
             case TransitionName.Transition_4:
                 return "Transition_4";
             default:
-                return "Title";
+                return "Title_Demo";
         }
     }
 
