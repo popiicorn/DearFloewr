@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
         Transition_2,
         Transition_3,
         Transition_4,
+        Ending,
     }
     [SerializeField] TransitionName transitionName;
     [SerializeField] float fadeTime = 1f;
@@ -84,6 +85,8 @@ public class GameManager : MonoBehaviour
                 return "Transition_3";
             case TransitionName.Transition_4:
                 return "Transition_4";
+            case TransitionName.Ending:
+                return "End_Demo";
             default:
                 return "Title_Demo";
         }
