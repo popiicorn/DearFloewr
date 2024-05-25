@@ -22,17 +22,17 @@ public class FootStepSE : MonoBehaviour
         string cueName;
         if (sTAGE_TYPE==STAGE_TYPE.FACTRY)
         {
-            cueName = "footStep00";
+            cueName = "footStep_floor";
             atomSource.Play(cueName);
         }
         else if (sTAGE_TYPE ==STAGE_TYPE.WILDNESS)
         {
-            cueName = "footstep_dirt-001";
+            cueName = "footstep_dirt";
             atomSource.Play(cueName);
         }
         else if (sTAGE_TYPE == STAGE_TYPE.ROBOT)
         {
-            cueName = "footstep_dirt-robo";
+            cueName = "footstep_dirt_robo";
             atomSource.Play(cueName);
         }
         else

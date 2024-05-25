@@ -7,20 +7,39 @@ public class CriManager : MonoBehaviour
 {
     public static CriManager instance;
     private void Awake()
-    {
+    { 
         instance = this;
-        
     }
-
+   
+       
+       
+    
 
     [SerializeField] CriAtomSource playerAtomSource;
-    [SerializeField] CriAtomSource demoStage01atomSource;
+    [SerializeField] CriAtomSource stageSEatomSource;
     [SerializeField] CriAtomSource bGIAtomSource;
+    [SerializeField] PLAYER_TYPE pLAYER_TYPE;
+    [SerializeField] bool bgi;
+    public enum PLAYER_TYPE
+    {
+        GIRL,
+        ROBOT,
+        NULL,
+
+    }
+
     bool push = false;
 
     private void Start()
     {
-        StartBGI(0);
+        if (bgi==true)
+        {
+            StartBGI(0);
+        }
+        else
+        {
+
+        }
     }
 
     public void PlayPlayerSE(string  cueName)
@@ -33,7 +52,19 @@ public class CriManager : MonoBehaviour
         if (push == false)
         {
             push = true;
-            PlayPlayerSE("blockMove");
+            if (pLAYER_TYPE==PLAYER_TYPE.ROBOT)
+            {
+                PlayPlayerSE("blockMove_rovo");
+            }
+            else if (pLAYER_TYPE == PLAYER_TYPE.GIRL)
+            {
+                PlayPlayerSE("blockMove_girl");
+            }
+            else
+            {
+
+            }
+            
         }
 
         //if (push==false)
@@ -43,7 +74,7 @@ public class CriManager : MonoBehaviour
         // else { return; }
     }
 
-    IEnumerator loopSE()
+    /*IEnumerator loopSE()
     {
         push = true;
         yield return null;
@@ -52,11 +83,11 @@ public class CriManager : MonoBehaviour
         push = false;
 
 
-    }
+    }*/
     public void StopSE()
     {
         push = false;
-        playerAtomSource?.Stop();
+        playerAtomSource.Stop();
     }
 
     public void StartBGI(int cueNum)
@@ -71,11 +102,11 @@ public class CriManager : MonoBehaviour
 
     public void PlayObjSE(string cueName)
     {
-        demoStage01atomSource.Play(cueName);
+        stageSEatomSource.Play(cueName);
     }
     public void StopObjSE()
     {
-        demoStage01atomSource.Stop();
+        stageSEatomSource.Stop();
     }
 
 }
