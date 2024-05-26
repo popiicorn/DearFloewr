@@ -18,6 +18,7 @@ public class CriManager : MonoBehaviour
     [SerializeField] CriAtomSource playerAtomSource;
     [SerializeField] CriAtomSource stageSEatomSource;
     [SerializeField] CriAtomSource bGIAtomSource;
+    [SerializeField] CriAtomSource uiAtomSource;
     [SerializeField] PLAYER_TYPE pLAYER_TYPE;
     [SerializeField] bool bgi;
     public enum PLAYER_TYPE
@@ -107,6 +108,11 @@ public class CriManager : MonoBehaviour
     public void StopObjSE()
     {
         stageSEatomSource.Stop();
+    }
+
+    public void PlayUISE(string cueName)
+    {
+        uiAtomSource.Play(cueName);
     }
 
 }

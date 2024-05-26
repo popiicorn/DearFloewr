@@ -48,8 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAtomSource: {fileID: 8003812210439107966}
-  demoStage01atomSource: {fileID: 8003812210439107962}
+  stageSEatomSource: {fileID: 8003812210439107962}
   bGIAtomSource: {fileID: 8003812210439107963}
+  pLAYER_TYPE: 0
+  bgi: 0
 --- !u!114 &8003812210439107966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +84,7 @@ MonoBehaviour:
     - 0
     - 0
   _cueName: 
-  _cueSheet: playerAction
+  _cueSheet: Girl
 --- !u!114 &8003812210439107962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +100,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -131,7 +133,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1

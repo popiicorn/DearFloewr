@@ -67,6 +67,7 @@ public class GS5_GetFlowerStone : Gimmick
             flower.SetActive(true);
             GetComponent<Collider2D>().enabled = false;
             wasGetFlower = true;
+            CriManager.instance.PlayUISE("flowerGet");
         }
         character.SetDefaultMode();
     }

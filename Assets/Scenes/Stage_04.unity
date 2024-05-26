@@ -367,6 +367,10 @@ MonoBehaviour:
     acbFile: wildness.acb
     awbFile: wildness.awb
     loaderStatus: 0
+  - name: Flower
+    acbFile: Flower.acb
+    awbFile: 
+    loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
@@ -1069,6 +1073,7 @@ GameObject:
   - component: {fileID: 422625769}
   - component: {fileID: 422625773}
   - component: {fileID: 422625772}
+  - component: {fileID: 422625774}
   m_Layer: 0
   m_Name: CriManager
   m_TagString: Untagged
@@ -1124,6 +1129,7 @@ MonoBehaviour:
   playerAtomSource: {fileID: 422625769}
   stageSEatomSource: {fileID: 422625773}
   bGIAtomSource: {fileID: 422625772}
+  uiAtomSource: {fileID: 422625774}
   pLAYER_TYPE: 1
   bgi: 1
 --- !u!4 &422625771
@@ -1207,6 +1213,39 @@ MonoBehaviour:
     - 0
   _cueName: 
   _cueSheet: Stage04
+--- !u!114 &422625774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422625768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: Flower
 --- !u!1 &426715546
 GameObject:
   m_ObjectHideFlags: 0
