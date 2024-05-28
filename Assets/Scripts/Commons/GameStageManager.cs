@@ -39,5 +39,9 @@ public class GameStageManager : MonoBehaviour
         {
             Time.timeScale = 4.0f;
         }
+        else
+        {
+            Time.timeScale = 1.0f;
+        }
     }
 } 
