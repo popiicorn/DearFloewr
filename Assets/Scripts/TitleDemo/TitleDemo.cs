@@ -1,10 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class TitleDemo : MonoBehaviour
 {
+    [SerializeField] 
     bool canClick = true;
+    [SerializeField] DOTweenAnimation fadeObj;
+    string nextSceneName = "Transition_1";
+
+
+    private void Awake()
+    {
+        fadeObj.onComplete.AddListener(Transition);
+    }
+
     public void OnStartGameButton()
     {
         if (!canClick)
@@ -12,7 +22,8 @@ public class TitleDemo : MonoBehaviour
             return;
         }
         canClick = false;
-        FadeManager.Instance.LoadScene("Transition_1", 1.0f);
+        nextSceneName = "Transition_1";
+        fadeObj.gameObject.SetActive(true);
     }
 
     public void OnCreditButton()
@@ -22,7 +33,9 @@ public class TitleDemo : MonoBehaviour
             return;
         }
         canClick = false;
-        FadeManager.Instance.LoadScene("Title_Credit", 1.0f);
+        nextSceneName = "Title_Credit";
+        fadeObj.gameObject.SetActive(true);
+
     }
 
     public void OnExitButton()
@@ -33,5 +46,10 @@ public class TitleDemo : MonoBehaviour
         }
         canClick = false;
         Application.Quit();
+    }
+
+    void Transition()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 }

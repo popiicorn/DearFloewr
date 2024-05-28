@@ -9,8 +9,5 @@ public class Stage22Params : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        GameManager.Instance.SetNextTime(fadeTime);
     }
-    // fade‚ª‚Í‚¶‚Ü‚é‚Ü‚Å‚ÌŽžŠÔ
-    public float fadeTime = 1f;
 }

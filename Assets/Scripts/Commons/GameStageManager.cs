@@ -24,6 +24,7 @@ public class GameStageManager : MonoBehaviour
     public string GetNextStageName()
     {
         stageIndex++;
+        Debug.Log("stageIndex: " + stageIndex);
         if (stageCount < stageIndex)
         {
             stageIndex = 0;
@@ -32,5 +33,11 @@ public class GameStageManager : MonoBehaviour
         return "Stage_" + stageIndex.ToString("D2");
     }
 
-    // シーン間ステージでの遷移
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Time.timeScale = 4.0f;
+        }
+    }
 } 

@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,32 +12,30 @@ public class GameManager : MonoBehaviour
         Transition_3,
         Transition_4,
         Ending,
+        Title,
     }
     [SerializeField] TransitionName transitionName;
-    [SerializeField] float fadeTime = 1f;
-    [SerializeField] string nextSceneName;
-    [SerializeField] float nextTime = 3;
+    [SerializeField] DOTweenAnimation fadeObj;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     public bool IsPreGameClear;
+    string nextSceneName = "Transition_1";
     private void Awake()
     {
         Instance = this;
+        fadeObj.onComplete.AddListener(() => Transition());
+        Debug.Log("GameManager");
     }
 
-    public void SetNextTime(float time)
+    public void NextStage()
     {
-        nextTime = time;
-    }
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        if (IsGameClear)
         {
-            string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-            EventSaveDatas.Instance.SaveData(sceneName+"XX");
-            EventSaveDatas.Instance.StopwatchStop();
-            FadeManager.Instance.LoadScene("Stage_EV00", 1f);
+            return;
         }
+        IsGameClear = true;
+        nextSceneName = GameStageManager.Instance.GetNextStageName();
+        ToNextScene();
     }
 
     public void GameClear()
@@ -47,8 +45,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         IsGameClear = true;
-
-        StartCoroutine(ToNextScene(nextTime));
+        nextSceneName = GetNextTransitionSceneName();
+        ToNextScene();
     }
     public void PreGameClear()
     {
@@ -57,11 +55,18 @@ public class GameManager : MonoBehaviour
             return;
         }
         IsPreGameClear = true;
-        StartCoroutine(ToNextScene(0));
+        nextSceneName = GetNextTransitionSceneName();
+        ToNextScene();
+    }
+
+    public void GameOver()
+    {
+        nextSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        ToNextScene();
     }
 
 
-    IEnumerator ToNextScene(float time)
+    void ToNextScene()
     {
         string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         if (EventSaveDatas.Instance)
@@ -69,11 +74,10 @@ public class GameManager : MonoBehaviour
             EventSaveDatas.Instance.SaveData(sceneName);
             EventSaveDatas.Instance.StopwatchStop();
         }
-        yield return new WaitForSeconds(time);
-        FadeManager.Instance.LoadScene(GetNextSceneName(), fadeTime);
+        fadeObj.gameObject.SetActive(true);
     }
 
-    string GetNextSceneName()
+    string GetNextTransitionSceneName()
     {
         switch (transitionName)
         {
@@ -87,15 +91,27 @@ public class GameManager : MonoBehaviour
                 return "Transition_4";
             case TransitionName.Ending:
                 return "End_Demo";
+            case TransitionName.Title:
             default:
                 return "Title_Demo";
         }
     }
 
-    public void GameOver()
+    void Transition()
     {
-        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        FadeManager.Instance.LoadScene(sceneName, fadeTime);
+        Debug.Log("Transition" + nextSceneName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        {
+            string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            EventSaveDatas.Instance.SaveData(sceneName + "XX");
+            EventSaveDatas.Instance.StopwatchStop();
+            FadeManager.Instance.LoadScene("Stage_EV00", 1f);
+        }
     }
 }
 
