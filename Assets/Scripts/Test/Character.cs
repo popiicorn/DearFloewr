@@ -87,7 +87,7 @@ public class Character : MonoBehaviour
         {
             return;
         }
-        if (mode == Mode.Busy)
+        if (mode == Mode.Busy || mode == Mode.PushSwitch)
         {
             transform.localScale = new Vector3(1, 1, 1);
             return;

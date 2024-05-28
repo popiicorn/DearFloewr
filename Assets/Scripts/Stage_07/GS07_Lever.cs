@@ -43,6 +43,7 @@ public class GS07_Lever : Gimmick
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().enabled = false;
         character.PushLeverButtonGimmick();
+        character.enabled = false;
         yield return new WaitForSeconds(0.5f);
         if (!isClear)
         {
@@ -50,7 +51,7 @@ public class GS07_Lever : Gimmick
         }
         GetComponent<SpriteRenderer>().enabled = true;
         yield return new WaitForSeconds(2f);
-
+        character.enabled = true;
         // ŠG•¿‚ğØ‚è‘Ö‚¦‚é
         character.SetDefaultMode();
         character.canMove = true;
