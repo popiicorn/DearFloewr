@@ -12,7 +12,7 @@ public class TitleDemo : MonoBehaviour
 
     private void Awake()
     {
-        fadeObj.onComplete.AddListener(Transition);
+        // fadeObj.onComplete.AddListener(Transition);
     }
 
     public void OnStartGameButton()
@@ -48,7 +48,7 @@ public class TitleDemo : MonoBehaviour
         Application.Quit();
     }
 
-    void Transition()
+    public void Transition()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }

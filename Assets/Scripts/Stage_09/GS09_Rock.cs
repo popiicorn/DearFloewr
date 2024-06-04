@@ -24,7 +24,6 @@ public class GS09_Rock : Rock
         }
         if (!isSet && leftArea <= transform.localPosition.x && transform.localPosition.x <= rightArea)
         {
-            Debug.Log("Rock");
             transform.localPosition = Vector3.MoveTowards(transform.localPosition, new Vector3(setPointX, transform.localPosition.y, transform.localPosition.z), timeOfActive * Time.deltaTime * 3);
         }
     }

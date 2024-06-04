@@ -2390,6 +2390,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 302442205478312241, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2019899831}
+    - target: {fileID: 302442205478312241, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Transition
+      objectReference: {fileID: 0}
+    - target: {fileID: 302442205478312241, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TitleDemo, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7790044343414229490, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
         type: 3}
       propertyPath: hasOnStart
@@ -2397,8 +2412,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7790044343414229490, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
         type: 3}
+      propertyPath: autoGenerate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790044343414229490, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
       propertyPath: hasOnComplete
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7790044343414229490, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
         type: 3}
