@@ -8895,8 +8895,8 @@ MonoBehaviour:
   shadowSpeed: 5.5
   cameraShakeParams:
     spanTime: 0.02
-    power: 0.7
-    time: 0.16666667
+    power: 1.2
+    time: 1
 --- !u!4 &1402184704
 Transform:
   m_ObjectHideFlags: 0
