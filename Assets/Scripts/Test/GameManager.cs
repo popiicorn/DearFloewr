@@ -23,8 +23,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        fadeObj.onComplete.AddListener(() => Transition());
-        Debug.Log("GameManager");
     }
 
     public void NextStage()
@@ -97,9 +95,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Transition()
+    public void Transition()
     {
-        Debug.Log("Transition" + nextSceneName);
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 
