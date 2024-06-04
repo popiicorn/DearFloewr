@@ -112,7 +112,7 @@ public class CriManager : MonoBehaviour
 
     public void PlayUISE(string cueName)
     {
-        uiAtomSource.Play(cueName);
+        uiAtomSource?.Play(cueName);
     }
 
 }

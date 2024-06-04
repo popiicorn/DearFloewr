@@ -50,6 +50,7 @@ public class GS07_Lever : Gimmick
             OnPush?.Invoke();
         }
         GetComponent<SpriteRenderer>().enabled = true;
+        character.SetDefaultMode();
         yield return new WaitForSeconds(2f);
         character.enabled = true;
         // ŠG•¿‚ğØ‚è‘Ö‚¦‚é

@@ -28,7 +28,7 @@ public class FootStepSE : MonoBehaviour
         else if (sTAGE_TYPE ==STAGE_TYPE.WILDNESS)
         {
             cueName = "footstep_dirt";
-            atomSource.Play(cueName);
+            atomSource?.Play(cueName);
         }
         else if (sTAGE_TYPE == STAGE_TYPE.ROBOT)
         {
@@ -44,7 +44,7 @@ public class FootStepSE : MonoBehaviour
 
     public void PlayPlayerSE(string cueName)
     {
-        atomSource.Play(cueName);
+        atomSource?.Play(cueName);
     }
 
 }
