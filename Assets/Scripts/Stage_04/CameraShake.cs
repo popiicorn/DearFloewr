@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class CameraShake : MonoBehaviour
 {
     [Header("Shake")]
-    public Transform ShakeObject = null;   // ここにカメラオブジェクトを設定する
     public float ShakeIntensity = 0.02f;   // カメラの揺れの強さ
     public float ShakeDecay = 0.002f;      // 揺れの減算値
     public float ShakeAmount = 0.2f;       // 揺れの強さ係数
@@ -20,8 +19,8 @@ public class CameraShake : MonoBehaviour
 
     void Start()
     {
-        originPosition = ShakeObject.localPosition;
-        originRotation = ShakeObject.localRotation;
+        originPosition = transform.localPosition;
+        originRotation = transform.localRotation;
     }
 
 
@@ -37,8 +36,8 @@ public class CameraShake : MonoBehaviour
         float shakeIntensity = ShakeIntensity;
         while (shakeIntensity > 0)
         {
-            ShakeObject.localPosition = originPosition + Random.insideUnitSphere * shakeIntensity;
-            ShakeObject.localRotation = new Quaternion(
+            transform.localPosition = originPosition + Random.insideUnitSphere * shakeIntensity;
+            transform.localRotation = new Quaternion(
                 originRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
                 originRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
                 originRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * ShakeAmount,
@@ -46,8 +45,8 @@ public class CameraShake : MonoBehaviour
             shakeIntensity -= ShakeDecay;
             yield return false;
         }
-        ShakeObject.localPosition = originPosition;
-        ShakeObject.localRotation = originRotation;
+        transform.localPosition = originPosition;
+        transform.localRotation = originRotation;
         OnShakedEvent?.Invoke();
     }
     public IEnumerator ShakeLoop(float spanTime, float power)
@@ -56,9 +55,9 @@ public class CameraShake : MonoBehaviour
 
         while (true)
         {
-            ShakeObject.localRotation = Quaternion.Euler(0, 0, power);
+            transform.localRotation = Quaternion.Euler(0, 0, power);
             yield return new WaitForSeconds(spanTime);
-            ShakeObject.localRotation = Quaternion.Euler(0, 0, -power);
+            transform.localRotation = Quaternion.Euler(0, 0, -power);
             yield return new WaitForSeconds(spanTime);
         }
     }
@@ -69,18 +68,24 @@ public class CameraShake : MonoBehaviour
         float sumTime = 0;
         while (sumTime < time)
         {
-            ShakeObject.localRotation = Quaternion.Euler(0, 0, power);
+            transform.localRotation = Quaternion.Euler(0, 0, power);
             yield return new WaitForSeconds(spanTime);
             if (sumTime > time)
             {
                 break;
             }
-            ShakeObject.localRotation = Quaternion.Euler(0, 0, -power);
+            transform.localRotation = Quaternion.Euler(0, 0, -power);
             yield return new WaitForSeconds(spanTime);
             sumTime += spanTime * 2;
         }
-        ShakeObject.localRotation = Quaternion.Euler(0, 0, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
-
+    [System.Serializable]
+    public class Params
+    {
+        public float spanTime;
+        public float power;
+        public float time;
+    }
 }

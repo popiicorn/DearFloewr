@@ -11,6 +11,7 @@ public class GS07_3_Shadow : MonoBehaviour
     float f;
     Vector2 defaultPosition;
     [SerializeField] Transform character;
+    [SerializeField] CameraShake cameraShake;
     public UnityEvent OnCharacter;
     bool onCharacter;
     private void Start()
@@ -36,8 +37,20 @@ public class GS07_3_Shadow : MonoBehaviour
     {
         if (collision.GetComponent<Character>())
         {
+            if (GameManager.Instance.IsGameClear)
+            {
+                return;
+            }
             OnCharacter?.Invoke();
             onCharacter = true;
+            if (cameraShake)
+            {
+                StartCoroutine(cameraShake.Shake(
+                    Stage07_3Params.Instance.CameraShakeParams.spanTime,
+                    Stage07_3Params.Instance.CameraShakeParams.power,
+                    Stage07_3Params.Instance.CameraShakeParams.time
+                    ));
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] DOTweenAnimation fadeObj;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
+    public bool IsCamMoveCleared;
     public bool IsPreGameClear;
     string nextSceneName = "Transition_1";
     private void Awake()

@@ -83,7 +83,7 @@ public class Character : MonoBehaviour
     private void Update()
     {
 
-        if (GameManager.Instance.IsGameClear)
+        if (GameManager.Instance.IsGameClear && !GameManager.Instance.IsCamMoveCleared)
         {
             return;
         }
