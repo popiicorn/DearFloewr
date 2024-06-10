@@ -3324,6 +3324,18 @@ MonoBehaviour:
           m_StringArgument: floorStep
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 141034129}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: StopBGI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1772770112
 BoxCollider2D:
   m_ObjectHideFlags: 0

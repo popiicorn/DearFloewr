@@ -450,7 +450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197034705
 PrefabInstance:
@@ -1001,6 +1001,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: setObject00
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2091093552}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: StopBGI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &455577028 stripped
@@ -1641,7 +1653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45f5af64a646243fcadcc232e79c2361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShakeObject: {fileID: 786419922}
   ShakeIntensity: 0.02
   ShakeDecay: 0.002
   ShakeAmount: 0.2
@@ -2952,7 +2963,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526008453
 GameObject:

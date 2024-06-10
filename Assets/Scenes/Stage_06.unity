@@ -1859,6 +1859,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1097575703}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: StopBGI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1097575702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8003812210439107967, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
@@ -1910,6 +1922,18 @@ MonoBehaviour:
     - 0
   _cueName: 
   _cueSheet: Flower
+--- !u!114 &1097575707 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8003812210439107966, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1422174615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097575702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1143627811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2858,8 +2882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488b7f426fa58ba43934df017c011294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atomSource: {fileID: 0}
-  sTAGE_TYPE: 0
+  atomSource: {fileID: 1097575707}
+  sTAGE_TYPE: 2
 --- !u!114 &1832101908 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
