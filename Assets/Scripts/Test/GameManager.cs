@@ -28,10 +28,12 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
+        Debug.Log("NextStage");
         if (IsGameClear)
         {
             return;
         }
+        Debug.Log("NextStage2");
         IsGameClear = true;
         nextSceneName = GameStageManager.Instance.GetNextStageName();
         ToNextScene();
