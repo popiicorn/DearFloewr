@@ -22,6 +22,7 @@ public class TitleDemo : MonoBehaviour
             return;
         }
         canClick = false;
+        BGMManager.Instance.StopBGM();
         nextSceneName = "Transition_1";
         fadeObj.gameObject.SetActive(true);
     }

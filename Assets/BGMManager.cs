@@ -8,7 +8,7 @@ public class BGMManager : MonoBehaviour
     
 
     [SerializeField] CriAtomSource bGMAtomSource;
-    [SerializeField] string  bGMCueName;
+    public string  bGMCueName;
     public static BGMManager Instance { get; private set; }
 
     private void Awake()
@@ -30,6 +30,7 @@ public class BGMManager : MonoBehaviour
     {
         if (bGMCueName != null)
         {
+            Debug.Log("StartBGM");
             StartBGM(bGMCueName);
         }
         
@@ -44,7 +45,7 @@ public class BGMManager : MonoBehaviour
 
     public void StopBGM()
     {
-        Debug.Log("STOPBGM");
+        
         bGMAtomSource.Stop();
     }
 }
