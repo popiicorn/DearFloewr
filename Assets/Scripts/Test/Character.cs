@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    [SerializeField]
     float speed = 3;
     Vector3 targetPos;
     Animator animator;
@@ -29,7 +30,7 @@ public class Character : MonoBehaviour
     FaceDirection faceDirection = FaceDirection.Right;
 
 
-    enum Mode
+    public enum Mode
     {
         Busy,
         Normal,
@@ -44,6 +45,7 @@ public class Character : MonoBehaviour
     [SerializeField] Gimmick gimmick;
 
     public bool ExitLimit { get => exitLimit; set => exitLimit = value; }
+    public Mode CharaMode { get => mode; }
 
     public void SetExitLimit(bool value)
     {

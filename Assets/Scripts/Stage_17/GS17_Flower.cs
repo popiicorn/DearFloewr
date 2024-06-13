@@ -9,6 +9,7 @@ public class GS17_Flower : MonoBehaviour
     Animator animator;
     bool isDancing;
     [SerializeField] EventData[] vacuumEvent;
+    [SerializeField] CameraShake cameraShake;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class GS17_Flower : MonoBehaviour
         foreach (var item in vacuumEvent)
         {
             yield return item.Play();
+            StartCoroutine(cameraShake.Shake(Stage17Params.Instance.shakeSpan, Stage17Params.Instance.shakeAmount, Stage17Params.Instance.shakeAmount));
         }
     }
 
