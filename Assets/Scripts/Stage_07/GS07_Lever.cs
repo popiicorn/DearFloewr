@@ -9,7 +9,7 @@ public class GS07_Lever : Gimmick
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
-    bool isClear = false;
+    protected bool isClear = false;
 
     public override Transform GetTargetPosition(Vector3 playerPos)
     {
@@ -35,7 +35,7 @@ public class GS07_Lever : Gimmick
         StartCoroutine(Anim(character));
     }
 
-    IEnumerator Anim(Character character)
+    protected virtual IEnumerator Anim(Character character)
     {
         Debug.Log("Anim");
         character.canMove = false;

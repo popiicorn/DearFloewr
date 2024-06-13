@@ -5,6 +5,7 @@ public class GS14_DropPosition : MonoBehaviour, IDropHandler
 {
     [SerializeField] GS14_Parts part;
     [SerializeField] float correctAngle = 0f;
+    [SerializeField] GameObject clearPart;
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -37,6 +38,7 @@ public class GS14_DropPosition : MonoBehaviour, IDropHandler
                     part.gameObject.SetActive(false);
                     GS14_MiniGameManager.Instance.SetNextPart();
                     gameObject.SetActive(false);
+                    clearPart.SetActive(true);
                 });
         }
     }
