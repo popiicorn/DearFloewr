@@ -8,6 +8,7 @@ public class GS07_Lever : Gimmick
 
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
+    [SerializeField] List<EventData> eventDatas;
     public UnityEvent OnPush;
     protected bool isClear = false;
 
@@ -48,15 +49,19 @@ public class GS07_Lever : Gimmick
         if (!isClear)
         {
             OnPush?.Invoke();
+            foreach (var eventData in eventDatas)
+            {
+                yield return eventData?.Play();
+            }
         }
         GetComponent<SpriteRenderer>().enabled = true;
         character.SetDefaultMode();
         yield return new WaitForSeconds(2f);
-        character.enabled = true;
         // ŠG•¿‚ğØ‚è‘Ö‚¦‚é
         character.SetDefaultMode();
         character.canMove = true;
     }
+
 
     public void SetClearFlag()
     {

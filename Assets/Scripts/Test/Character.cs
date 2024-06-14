@@ -13,6 +13,7 @@ public class Character : MonoBehaviour
     float defaultSpeed;
     float gimmickSize;
     public bool canMove = true;
+    public bool canClick = true;
 
     [SerializeField] bool exitLimit;
     [SerializeField] Transform leftPos;
@@ -107,7 +108,7 @@ public class Character : MonoBehaviour
         {
             return;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canClick)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit2d = Physics2D.Raycast((Vector2)ray.origin, (Vector2)ray.direction);

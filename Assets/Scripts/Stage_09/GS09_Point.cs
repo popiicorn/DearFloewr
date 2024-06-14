@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.TextCore.Text;
 
 public class GS09_Point : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GS09_Point : MonoBehaviour
 
     float timeCount;
     Character character;
+    [SerializeField] GS11_AutoMove autoMove;
 
     private void Update()
     {
@@ -31,9 +33,16 @@ public class GS09_Point : MonoBehaviour
             if (timeCount >= waitTime)
             {
                 isClear = true;
+                character.enabled = false;
+                character.canClick = false;
                 StartCoroutine(ClearAction());
-                character.SetTarget(transform.position);
+                autoMove.SetTarget(transform.position);
+                // character.SetTarget(transform.position);
             }
+        }
+        else
+        {
+            timeCount = 0;
         }
     }
 
