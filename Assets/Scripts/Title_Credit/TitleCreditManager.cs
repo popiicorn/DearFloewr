@@ -12,6 +12,7 @@ public class TitleCreditManager : MonoBehaviour
             return;
         }
         canClick = false;
+        BGMManager.Instance.OffAisac();
         FadeManager.Instance.LoadScene("Title_Demo", 1.0f);
     }
 }

@@ -36,6 +36,7 @@ public class TitleDemo : MonoBehaviour
         canClick = false;
         nextSceneName = "Title_Credit";
         fadeObj.gameObject.SetActive(true);
+        BGMManager.Instance.OnAisac();
 
     }
 
