@@ -817,10 +817,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d301ea7087b984d4c897ea5989d8e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 1
-  nextSceneName: 
-  nextTime: 0
+  transitionName: 0
+  fadeObj: {fileID: 0}
   IsGameClear: 0
+  IsCamMoveCleared: 0
   IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
@@ -1165,8 +1165,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAtomSource: {fileID: 0}
-  demoStage01atomSource: {fileID: 0}
+  stageSEatomSource: {fileID: 0}
   bGIAtomSource: {fileID: 0}
+  uiAtomSource: {fileID: 0}
+  pLAYER_TYPE: 0
+  bgi: 0
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -2841,6 +2844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BornuthFlower
       objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133281, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7caf65dccd3c844b7ee63cd81c9e97, type: 3}
 --- !u!1 &1725585864 stripped
@@ -3085,7 +3093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473571e2b3b3be843b909ed266933a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 2
 --- !u!4 &1791905153
 Transform:
   m_ObjectHideFlags: 0
