@@ -909,9 +909,9 @@ MonoBehaviour:
     acbFile: startUI.acb
     awbFile: 
     loaderStatus: 0
-  - name: Nomal
-    acbFile: Nomal.acb
-    awbFile: Nomal.awb
+  - name: softWind
+    acbFile: softWind.acb
+    awbFile: softWind.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -3508,7 +3508,7 @@ PrefabInstance:
     - target: {fileID: 8003812210439107963, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: _cueSheet
-      value: Nomal
+      value: softWind
       objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107964, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
@@ -3568,7 +3568,7 @@ PrefabInstance:
     - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: bgi
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
