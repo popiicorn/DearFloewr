@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 150458504, guid: 0f3bc5756f3923744a739a7a49786256, type: 3}
+      propertyPath: autoKill
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 150458504, guid: 0f3bc5756f3923744a739a7a49786256, type: 3}
       propertyPath: hasOnComplete
       value: 1
       objectReference: {fileID: 0}
