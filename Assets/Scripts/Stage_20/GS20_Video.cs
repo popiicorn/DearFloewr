@@ -8,6 +8,7 @@ public class GS20_Video : MonoBehaviour
 {
     [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] RawImage rawImage;
+    [SerializeField] GameObject fadeObj;
 
     void Start()
     {
@@ -35,5 +36,7 @@ public class GS20_Video : MonoBehaviour
         videoPlayer.Stop();
         // “®‰æÄ¶Š®—¹‚Ìˆ—
         rawImage.gameObject.SetActive(false);
+        fadeObj.GetComponentInChildren<Image>().color = new Color(0, 0, 0, 1);
+        fadeObj.SetActive(true);
     }
 }
