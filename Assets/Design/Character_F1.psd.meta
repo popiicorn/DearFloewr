@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1e56bbd9377f474b9ebaf2459dda7ee
+guid: d04aafe3dde54a54ca792979c5e92034
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -141,160 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Shadow_2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 796
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb469df9204d26c41bf89f8bbbe70394
-      internalID: 1730264218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 796
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a611f34e06237e44a945e03d33b1f0f
-      internalID: 411974330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 796
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0384a2131284adb4486a94d2d29f6641
-      internalID: 507093736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kick_1
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 796
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5df919b17b96dce488b5af22843e87bc
-      internalID: -71658842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kick_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 568
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 090eddf29391e084fb0cc98d23e33213
-      internalID: -462845360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kick_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 568
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96a9d13fb142d1545ac86b95cfa1b04c
-      internalID: -466832181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kick_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 568
-        width: 256
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09f495527a788b0409a8d996cfd27bb4
-      internalID: 1146634147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkBlack_0
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 568
-        width: 256
-        height: 228
+        y: 285
+        width: 785
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +155,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9c35ee2cb278f14a9bb722ca1fff127
-      internalID: -1160954670
+      spriteID: 2d634cb2701b43f4d838fe083d67f908
+      internalID: -320195033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkBlack_1
+      name: Shadow_2_1
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 285
+        width: 785
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1e18de141328e46bee80d8aabfe921
+      internalID: -1636941467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_2_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 340
-        width: 256
-        height: 228
+        y: 0
+        width: 785
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45f573acd73e1a842ac6ca0851d595e9
-      internalID: 997473166
+      spriteID: f1b5a96d7ea15974994e1e9945a11ea2
+      internalID: 1595928845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkBlack_2
+      name: Shadow_2_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 340
-        width: 256
-        height: 228
+        x: 785
+        y: 0
+        width: 785
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +218,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2455cf6c28ad0254aa1d18452078c731
-      internalID: -70628824
+      spriteID: 61295bcedd622e042bf6890211b8f1bc
+      internalID: -805439936
       vertices: []
       indices: 
       edges: []
@@ -353,7 +227,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 53f8b892e0f6d4c41afe5de7c7f9bb2e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -361,36 +235,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GimmickBg: 1452462912
-      GimmickMark_1: -934553831
-      GimmickMark_2: -800786762
-      GimmickMark_3: -301938115
-      Gimmick_1: -2135931112
-      Gimmick_2: 1174842953
-      Kick_0: -914343175
-      Kick_1: -71658842
-      Kick_2: -462845360
-      Kick_3: -466832181
-      Kick_4: 1146634147
-      Push_0: 1708571928
-      Push_1: -1773315073
-      Push_2: 762634394
-      Push_3: 1776346985
-      Push_4: -360852184
-      Push_5: -125062706
-      Push_6: -367302352
-      Push_7: 1321333862
-      Switch_L_0: 31716869
-      Switch_R_0: -129376256
-      WalkBlack_0: 1647925322
-      WalkBlack_1: 997473166
-      WalkBlack_2: -70628824
-      Walk_0: 1730264218
-      Walk_1: 411974330
-      Walk_2: 507093736
-      Walk_7: 436898564
-      cursor_1: -1325533665
-      cursor_2: -1515672902
+      Shadow_2_0: -320195033
+      Shadow_2_1: -1636941467
+      Shadow_2_2: 1595928845
+      Shadow_2_3: -805439936
   spritePackingTag: 
   pSDRemoveMatte: 1
   pSDShowRemoveMatteOption: 1
