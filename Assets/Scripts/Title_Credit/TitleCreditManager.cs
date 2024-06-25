@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TitleCreditManager : MonoBehaviour
 {
@@ -13,6 +14,5 @@ public class TitleCreditManager : MonoBehaviour
         }
         canClick = false;
         BGMManager.Instance.OffAisac();
-        FadeManager.Instance.LoadScene("Title_Demo", 1.0f);
     }
 }
