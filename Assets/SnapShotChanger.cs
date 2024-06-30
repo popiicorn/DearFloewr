@@ -7,10 +7,11 @@ public class SnapShotChanger : MonoBehaviour
 {
     //[SerializeField] CriAtomSource[] atomsource;
 
-    private void Start()
+    private void Awake()
     {
         ChangeSnapshotOn();
     }
+    
 
     public void ChangeSnapshotOn()
     {
