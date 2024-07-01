@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     }
     [SerializeField] TransitionName transitionName;
     [SerializeField] DOTweenAnimation fadeObj;
+    [SerializeField] string nextStageName;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     public bool IsCamMoveCleared;
@@ -28,12 +29,10 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
-        Debug.Log("NextStage");
         if (IsGameClear)
         {
             return;
         }
-        Debug.Log("NextStage2");
         IsGameClear = true;
         nextSceneName = GameStageManager.Instance.GetNextStageName();
         ToNextScene();
@@ -45,6 +44,17 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+        if (nextStageName == "")
+        {
+            // 現在のシーン名を取得して、最後の数字をインクリメントして次のシーン名を取得する
+            string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            // 最後の数字を取得
+            string last = sceneName.Substring(sceneName.Length - 2, 2);
+            int stageNum = int.Parse(last);
+            stageNum++;
+            nextStageName = "Stage_" + stageNum.ToString("D2");
+        }
+        GameStageManager.Instance.SetNextStageName(nextStageName);
         IsGameClear = true;
         nextSceneName = GetNextTransitionSceneName();
         ToNextScene();

@@ -1054,10 +1054,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d301ea7087b984d4c897ea5989d8e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 1
-  nextSceneName: 
-  nextTime: 7
+  transitionName: 0
+  fadeObj: {fileID: 0}
+  nextStageName: 
   IsGameClear: 0
+  IsCamMoveCleared: 0
   IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
@@ -1086,6 +1087,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d6dbce2c31d46a78224417bafe6677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &310046700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950122, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_Name
+      value: GameStageManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e75c9f97946c8ff4093e0778e99a293b, type: 3}
 --- !u!4 &415954269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6511337421013994505, guid: c4c116a26c9ddc6448afdc7ca277d1ca,
@@ -1156,8 +1226,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAtomSource: {fileID: 0}
-  demoStage01atomSource: {fileID: 0}
+  stageSEatomSource: {fileID: 0}
   bGIAtomSource: {fileID: 0}
+  uiAtomSource: {fileID: 0}
+  pLAYER_TYPE: 0
+  bgi: 0
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -1601,7 +1674,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &501964605
 Rigidbody2D:
@@ -4090,7 +4163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45f5af64a646243fcadcc232e79c2361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShakeObject: {fileID: 1343781687}
   ShakeIntensity: 0.1
   ShakeDecay: 0.001
   ShakeAmount: 0.05

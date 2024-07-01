@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class TitleDemo : MonoBehaviour
 {
+    [SerializeField] string nextStageName;
     [SerializeField] 
     bool canClick = true;
     [SerializeField] DOTweenAnimation fadeObj;
@@ -52,6 +53,7 @@ public class TitleDemo : MonoBehaviour
 
     public void Transition()
     {
+        GameStageManager.Instance.SetNextStageName(nextStageName);
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 }
