@@ -44,7 +44,11 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        if (nextStageName == "")
+        if(transitionName == TransitionName.Ending || transitionName == TransitionName.Title)
+        {
+
+        }
+        else if (nextStageName == "")
         {
             // 現在のシーン名を取得して、最後の数字をインクリメントして次のシーン名を取得する
             string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;

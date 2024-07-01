@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GameStageManager : MonoBehaviour
 {
-    int stageIndex = 0;
-    const int stageCount = 7;
+
     string nextStageName = "";
 
     public static GameStageManager Instance { get; private set; }
@@ -30,14 +29,6 @@ public class GameStageManager : MonoBehaviour
     public string GetNextStageName()
     {
         return nextStageName;
-        //stageIndex++;
-        //Debug.Log("stageIndex: " + stageIndex);
-        //if (stageCount < stageIndex)
-        //{
-        //    stageIndex = 0;
-        //    return "Title_Demo";
-        //}
-        // return "Stage_" + stageIndex.ToString("D2");
     }
 
     private void Update()
