@@ -32,7 +32,7 @@ public class GS07_Lever : Gimmick
 
     public override void OnGameCharacter(Character character)
     {
-
+        StopAllCoroutines();
         StartCoroutine(Anim(character));
     }
 
