@@ -49,10 +49,8 @@ public class GS07_Lever : Gimmick
         if (!isClear)
         {
             OnPush?.Invoke();
-            foreach (var eventData in eventDatas)
-            {
-                yield return eventData?.Play();
-            }
+            StartCoroutine(PlayEvent());
+
         }
         GetComponent<SpriteRenderer>().enabled = true;
         character.SetDefaultMode();
@@ -60,6 +58,14 @@ public class GS07_Lever : Gimmick
         // ŠG•¿‚ğØ‚è‘Ö‚¦‚é
         character.SetDefaultMode();
         character.canMove = true;
+    }
+
+    IEnumerator PlayEvent()
+    {
+        foreach (var eventData in eventDatas)
+        {
+            yield return eventData?.Play();
+        }
     }
 
 
