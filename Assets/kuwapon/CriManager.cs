@@ -11,10 +11,6 @@ public class CriManager : MonoBehaviour
         instance = this;
     }
    
-       
-       
-    
-
     [SerializeField] CriAtomSource playerAtomSource;
     [SerializeField] CriAtomSource stageSEatomSource;
     [SerializeField] CriAtomSource bGIAtomSource;
@@ -35,7 +31,7 @@ public class CriManager : MonoBehaviour
     {
         if (bgi==true)
         {
-            StartBGI(0);
+            StartCoroutine("DeleyBGI"); 
         }
         else
         {
@@ -113,6 +109,12 @@ public class CriManager : MonoBehaviour
     public void PlayUISE(string cueName)
     {
         uiAtomSource?.Play(cueName);
+    }
+
+    IEnumerator DeleyBGI()
+    {
+        yield return new WaitForSeconds(0.1f);
+        StartBGI(0);
     }
 
 }
