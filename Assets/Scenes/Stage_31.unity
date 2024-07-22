@@ -1519,10 +1519,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d301ea7087b984d4c897ea5989d8e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 1
-  nextSceneName: Stage_35
-  nextTime: 5
+  transitionName: 1
+  fadeObj: {fileID: 0}
+  nextStageName: 
   IsGameClear: 0
+  IsCamMoveCleared: 0
   IsPreGameClear: 0
 --- !u!4 &304081379
 Transform:
