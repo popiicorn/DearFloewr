@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
+using Com.LuisPedroFonseca.ProCamera2D.TopDownShooter;
 public class GS36_EnemyAttack : MonoBehaviour
 {
     [SerializeField] bool debugMode;
@@ -90,11 +91,16 @@ public class GS36_EnemyAttack : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         OnAttacked?.Invoke(attack);
     }
-
+    bool isGameOver;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isGameOver)
+        {
+            return;
+        }
         if (collision.GetComponent<Character>())
         {
+            isGameOver = true;
             Debug.Log("‚Ô‚Â‚©‚Á‚½");
             GameManager.Instance.GameOver();
         }
