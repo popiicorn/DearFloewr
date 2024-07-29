@@ -2791,8 +2791,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2090646517115697577, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
+      propertyPath: delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090646517115697577, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: autoKill
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090646517115697577, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
       propertyPath: duration
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2090646517115697577, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
@@ -2863,6 +2873,16 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionName
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442778661378550122, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442778661378550122, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: autoKill
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8442778661378550122, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
