@@ -53,11 +53,11 @@ public class GS28_Box : Gimmick, IRockable
         character.SetPushMode();
         if (transform.position.x < character.transform.position.x)
         {
-            character.ExitLimit = false;
+            // character.ExitLimit = false;
         }
         else
         {
-            character.ExitLimit = true;
+            // character.ExitLimit = true;
         }
     }
 }

@@ -1981,6 +1981,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 761875348}
+          m_TargetAssemblyTypeName: SetDefaultCursor, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - eventID: 0
     callback:
       m_PersistentCalls:
@@ -2617,7 +2630,19 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1078153417}
+          m_TargetAssemblyTypeName: Character, Assembly-CSharp
+          m_MethodName: ResetLimit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1254009890}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1 &909388335 stripped
 GameObject:
@@ -3525,6 +3550,12 @@ MonoBehaviour:
   id: 0
   leftPos: {fileID: 1912058561}
   rightPos: {fileID: 689250247}
+--- !u!4 &1254009890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,
+    type: 3}
+  m_PrefabInstance: {fileID: 1514637026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259866295
 GameObject:
   m_ObjectHideFlags: 0

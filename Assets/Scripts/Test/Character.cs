@@ -53,6 +53,11 @@ public class Character : MonoBehaviour
         exitLimit = value;
     }
 
+    public void ResetLimit(Transform tf)
+    {
+        leftPos = tf;
+    }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -181,9 +186,12 @@ public class Character : MonoBehaviour
                 {
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
+                    gimmick.CenterTransform.position = new Vector3(targetPos.x, gimmick.CenterTransform.position.y, 0);
+
                     gimmick = null;
                     CriManager.instance.StopSE();
                     SetLimitObj(initLeftPos, initRightPos);
+
 
                 }
                 if (mode == Mode.Sit)
@@ -198,6 +206,7 @@ public class Character : MonoBehaviour
             {
                 if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.CenterTransform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.CenterTransform.position.x)))
                 {
+                    Debug.Log("PushMode22222");
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
