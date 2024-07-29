@@ -30,6 +30,14 @@ public class CameraShake : MonoBehaviour
         StartCoroutine(Shake());
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Do();
+        }
+    }
+
     public IEnumerator Shake()
     {
         yield return new WaitForSeconds(delayTimeOfShake);
