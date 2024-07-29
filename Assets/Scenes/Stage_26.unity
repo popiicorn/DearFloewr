@@ -2558,6 +2558,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.392
       objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: hasOnComplete
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1303108170}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004803357672133342, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7caf65dccd3c844b7ee63cd81c9e97, type: 3}
 --- !u!1001 &468513567
@@ -3212,7 +3252,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 463384867}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1303108170}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f629371253e2e5649b4197fc8ac6498d, type: 3}
@@ -3400,6 +3440,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 798269327}
+          m_TargetAssemblyTypeName: GS29_MiniGame, Assembly-CSharp
+          m_MethodName: ResetFade
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4430,6 +4482,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   cameraShake: {fileID: 1343781688}
+  fadeImage: {fileID: 1332982867}
 --- !u!1 &832601283
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,6 +6445,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,
     type: 3}
   m_PrefabInstance: {fileID: 1973537429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1303108170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2786485804027401281, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 463384867}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310267663
 GameObject:

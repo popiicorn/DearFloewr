@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GS29_MiniGame : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GS29_MiniGame : MonoBehaviour
     bool isPlaying = false;
     bool isClear;
     [SerializeField] CameraShake cameraShake;
+    [SerializeField] Image fadeImage;
 
 
     public void Show()
@@ -40,5 +42,10 @@ public class GS29_MiniGame : MonoBehaviour
         {
             yield return item.Play();
         }
+    }
+
+    public void ResetFade()
+    {
+        fadeImage.color = new Color(0, 0, 0, 1);
     }
 }
