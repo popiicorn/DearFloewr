@@ -44,7 +44,8 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        if(transitionName == TransitionName.Ending || transitionName == TransitionName.Title)
+        Debug.Log("GameClear");
+        if (transitionName == TransitionName.Ending || transitionName == TransitionName.Title)
         {
 
         }
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        Debug.Log("GameOver");
         nextSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         ToNextScene();
     }
@@ -89,6 +91,7 @@ public class GameManager : MonoBehaviour
             EventSaveDatas.Instance.SaveData(sceneName);
             EventSaveDatas.Instance.StopwatchStop();
         }
+        Debug.Log("ToNextScene");
         fadeObj.gameObject.SetActive(true);
     }
 
