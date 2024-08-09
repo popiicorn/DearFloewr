@@ -41,7 +41,7 @@ MonoBehaviour:
     defaultValue: {fileID: 0}
   videoClip: {fileID: 32900000, guid: c4baaba03be750841ab9d95aad826319, type: 3}
   mute: 0
-  loop: 1
+  loop: 0
   preloadTime: 0.3
   clipInTime: 0
 --- !u!114 &-3807684960906996925
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: "\u30B7\u30B0\u30CA\u30EB\u30A8\u30DF\u30C3\u30BF\u30FC"
   m_EditorClassIdentifier: 
-  m_Time: 19.9
+  m_Time: 22
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 02906108778411c4ea109a1cb6623310, type: 2}
@@ -75,12 +75,37 @@ MonoBehaviour:
   m_Version: 0
   m_Tracks:
   - {fileID: 2376225303413189863}
+  - {fileID: 3236224209276824125}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 30
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: -6047706975592349158}
+--- !u!114 &333490917492718152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec394b19c2203cb44aec13d50aa7361d, type: 3}
+  m_Name: CriAtomClip
+  m_EditorClassIdentifier: 
+  stopWithoutRelease: 0
+  muted: 0
+  ignoreBlend: 0
+  loopWithinClip: 0
+  stopAtClipEnd: 1
+  templateBehaviour:
+    volume: 1
+    pitch: 0
+    AISACValue: 0
+  clipDuration: 21.647791666666667
+  cueSheet: Stage29
+  cueName: ST29_Movie00-24lkfs
 --- !u!114 &2376225303413189863
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,3 +198,99 @@ MonoBehaviour:
     m_DisplayName: Movie08
   m_Markers:
     m_Objects: []
+--- !u!114 &3236224209276824125
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d76e8978fa3b442a107420348f6623, type: 3}
+  m_Name: Cri Atom Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 333490917492718152}
+    m_Duration: 22
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 3236224209276824125}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ST29_Movie00-24lkfs
+  m_Markers:
+    m_Objects: []
+  m_AisacControls: 
+  m_StopOnWrapping: 1
+  m_StopAtGraphEnd: 1
+  m_IsRenderMono: 1
