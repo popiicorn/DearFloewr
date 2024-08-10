@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionName: 0
   fadeObj: {fileID: 8442778661378550122}
+  nextStageName: 
   IsGameClear: 0
   IsCamMoveCleared: 0
   IsPreGameClear: 0
@@ -84,6 +85,16 @@ PrefabInstance:
         type: 3}
       propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790044343414229491, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790044343414229491, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 8030215786354071424, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
         type: 3}
@@ -199,6 +210,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FadeInOutCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030215786417935540, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030215786417935540, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca, type: 3}
