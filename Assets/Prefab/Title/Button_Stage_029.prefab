@@ -13,11 +13,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 739916417, guid: d3f9eee9c49a13d419279a1fdb12c8c9,
         type: 3}
-    - target: {fileID: 3778370488866234249, guid: 96fc4e3f85708e94e9a0506eeeaaff21,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3778370488968045556, guid: 96fc4e3f85708e94e9a0506eeeaaff21,
         type: 3}
       propertyPath: m_Pivot.x
@@ -127,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_029
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993780109798963335, guid: 96fc4e3f85708e94e9a0506eeeaaff21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96fc4e3f85708e94e9a0506eeeaaff21, type: 3}

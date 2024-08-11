@@ -83,7 +83,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: 29
     textureCompression: 1
-    compressionQuality: 30
+    compressionQuality: 80
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 1
@@ -371,6 +371,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: icon_06
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 278
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd0318291f531419cef3b90500304d
+      internalID: 1914946614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -393,6 +414,7 @@ TextureImporter:
       icon_03: -1581148004
       icon_04: 843549347
       icon_05: -1575489789
+      icon_06: 1914946614
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
