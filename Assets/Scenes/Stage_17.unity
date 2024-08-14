@@ -1974,6 +1974,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1093291348}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: tap
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &610442071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3382,6 +3394,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1093291348}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: tap
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &1533019389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4764,6 +4788,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1093291348}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: tap
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &1941130197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5633,8 +5669,13 @@ PrefabInstance:
     - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
         type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093291348}
     - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
         type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -5642,8 +5683,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
         type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayObjSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
+        type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GS20_Button, Assembly-CSharp
+      value: CriManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: tap
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166624608264433883, guid: 330330e6ecdbfbb48a840d68e94085c4,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 330330e6ecdbfbb48a840d68e94085c4, type: 3}
