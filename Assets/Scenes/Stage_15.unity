@@ -123,71 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &248038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 248039}
-  - component: {fileID: 248040}
-  m_Layer: 0
-  m_Name: nomal(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &248039
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248038}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 605112792}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &248040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: nomal
-  _cueSheet: Nomal
 --- !u!1001 &29617365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -674,71 +609,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &89505152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 89505153}
-  - component: {fileID: 89505154}
-  m_Layer: 0
-  m_Name: flowerGet(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &89505153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89505152}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 129310174}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &89505154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89505152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: flowerGet
-  _cueSheet: Flower
 --- !u!1 &94111570
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +763,10 @@ MonoBehaviour:
     acbFile: Nomal.acb
     awbFile: Nomal.awb
     loaderStatus: 0
+  - name: Stage15
+    acbFile: Stage15.acb
+    awbFile: 
+    loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
@@ -907,9 +781,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 89505153}
-  - {fileID: 605112792}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2755,72 +2627,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &605112791
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 605112792}
-  - component: {fileID: 605112793}
-  m_Layer: 0
-  m_Name: footStep_floor(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &605112792
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605112791}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 248039}
-  m_Father: {fileID: 129310174}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &605112793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605112791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: footStep_floor
-  _cueSheet: Girl
 --- !u!1 &664210963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3036,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786419919}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &786419921
 Camera:
   m_ObjectHideFlags: 0
@@ -3808,13 +3614,13 @@ MonoBehaviour:
   path:
     wpLengths:
     - 0
-    - 11.206868
-    - 10.892583
+    - 27.641098
+    - 10.920964
     - 15.964134
     - 16.166733
     - 14.894663
     wps:
-    - {x: -32.6, y: 4.27, z: 0}
+    - {x: -48.899998, y: 6.4049997, z: 0}
     - {x: -21.52393, y: 2.614349, z: 0}
     - {x: -11.459531, y: -1.2375627, z: 0}
     - {x: 3.9158454, y: 2.8810492, z: 0}
@@ -3828,7 +3634,7 @@ MonoBehaviour:
       b: {x: 0, y: 0, z: 0}
     - a: {x: 49.852127, y: 3.4579294, z: 0}
       b: {x: 0, y: 0, z: 0}
-    length: 69.12714
+    length: 85.590164
     isFinalized: 1
     timesTable:
     - 0.016666668
@@ -3892,66 +3698,66 @@ MonoBehaviour:
     - 0.9833334
     - 1
     lengthsTable:
-    - 0.15139577
-    - 0.57877254
-    - 1.2419431
-    - 2.1007235
-    - 3.1149573
-    - 4.244523
-    - 5.4493313
-    - 6.689372
-    - 7.9247274
-    - 9.115652
-    - 10.222683
-    - 11.206928
-    - 12.1055
-    - 12.989772
-    - 13.868466
-    - 14.746349
-    - 15.625544
-    - 16.506985
-    - 17.391897
-    - 18.283228
-    - 19.187027
-    - 20.113577
-    - 21.078093
-    - 22.10069
-    - 23.196259
-    - 24.365915
-    - 25.606611
-    - 26.91023
-    - 28.265509
-    - 29.65934
-    - 31.077692
-    - 32.506287
-    - 33.93125
-    - 35.339733
-    - 36.720642
-    - 38.065605
-    - 39.39685
-    - 40.739388
-    - 42.09183
-    - 43.4521
-    - 44.817528
-    - 46.185
-    - 47.551098
-    - 48.912186
-    - 50.26453
-    - 51.604393
-    - 52.928165
-    - 54.232475
-    - 55.51767
-    - 56.787598
-    - 58.04444
-    - 59.29039
-    - 60.52761
-    - 61.758293
-    - 62.984615
-    - 64.20876
-    - 65.43291
-    - 66.659225
-    - 67.889915
-    - 69.12714
+    - 0.42248327
+    - 1.6060748
+    - 3.4250147
+    - 5.7535257
+    - 8.4658575
+    - 11.4362545
+    - 14.538995
+    - 17.64837
+    - 20.638723
+    - 23.384491
+    - 25.76027
+    - 27.64116
+    - 29.109966
+    - 30.361015
+    - 31.4354
+    - 32.3712
+    - 33.20222
+    - 33.957565
+    - 34.66301
+    - 35.344456
+    - 36.03265
+    - 36.766605
+    - 37.593266
+    - 38.56373
+    - 39.659294
+    - 40.82895
+    - 42.069645
+    - 43.373264
+    - 44.728542
+    - 46.122375
+    - 47.54073
+    - 48.969326
+    - 50.39429
+    - 51.802773
+    - 53.18368
+    - 54.528645
+    - 55.85989
+    - 57.202427
+    - 58.55487
+    - 59.91514
+    - 61.280563
+    - 62.648037
+    - 64.01414
+    - 65.37522
+    - 66.72756
+    - 68.06743
+    - 69.391205
+    - 70.69551
+    - 71.980705
+    - 73.25063
+    - 74.50748
+    - 75.753426
+    - 76.99065
+    - 78.22133
+    - 79.44765
+    - 80.67179
+    - 81.895935
+    - 83.12225
+    - 84.35294
+    - 85.590164
   inspectorMode: 0
   pathType: 1
   handlesType: 0
@@ -3965,6 +3771,39 @@ MonoBehaviour:
   lastSrcRotation: {x: 0, y: 0, z: -0.040829387, w: 0.9991662}
   wpsDropdown: 1
   dropToFloorOffset: 0
+--- !u!114 &1053963255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053963250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: ShadowLoop
+  _cueSheet: Stage15
 --- !u!1 &1070173175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,6 +4782,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2012012369}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1231562934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231562926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: ShadowLoop
+  _cueSheet: Stage15
 --- !u!1 &1259866295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,10 +5552,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8003812210439107962, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: _cueSheet
+      value: Stage15
+      objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107963, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: _cueSheet
-      value: Normal
+      value: Nomal
       objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107964, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
@@ -6572,13 +6449,13 @@ MonoBehaviour:
   path:
     wpLengths:
     - 0
-    - 5.699921
-    - 9.905457
+    - 30.867811
+    - 9.908458
     - 11.0629
     - 15.01543
     - 15.1730175
     wps:
-    - {x: 30.99, y: 5.43, z: 0}
+    - {x: 55.781998, y: 9.773999, z: 0}
     - {x: 25.35826, y: 4.5576286, z: 0}
     - {x: 15.685169, y: 2.4279232, z: 0}
     - {x: 5.0360613, y: -0.37071347, z: 0}
@@ -6592,7 +6469,7 @@ MonoBehaviour:
       b: {x: 0, y: 0, z: 0}
     - a: {x: -39.77569, y: -1.7736259, z: 0}
       b: {x: 0, y: 0, z: 0}
-    length: 56.85789
+    length: 82.02881
     isFinalized: 1
     timesTable:
     - 0.016666668
@@ -6656,66 +6533,66 @@ MonoBehaviour:
     - 0.9833334
     - 1
     lengthsTable:
-    - 0.06256014
-    - 0.24187854
-    - 0.5254079
-    - 0.9006085
-    - 1.3549457
-    - 1.875885
-    - 2.4509075
-    - 3.0675004
-    - 3.713163
-    - 4.3754206
-    - 5.0418143
-    - 5.69993
-    - 6.3743315
-    - 7.0942225
-    - 7.854196
-    - 8.648844
-    - 9.472759
-    - 10.320531
-    - 11.186756
-    - 12.066017
-    - 12.952917
-    - 13.842047
-    - 14.728004
-    - 15.605393
-    - 16.475615
-    - 17.346745
-    - 18.222
-    - 19.103579
-    - 19.99312
-    - 20.892187
-    - 21.802711
-    - 22.727407
-    - 23.670158
-    - 24.636322
-    - 25.63291
-    - 26.668705
-    - 27.754929
-    - 28.896265
-    - 30.089102
-    - 31.326658
-    - 32.600136
-    - 33.899544
-    - 35.214386
-    - 36.534187
-    - 37.849022
-    - 39.15004
-    - 40.430134
-    - 41.68471
-    - 42.927635
-    - 44.17517
-    - 45.42856
-    - 46.68815
-    - 47.95355
-    - 49.223797
-    - 50.497505
-    - 51.77302
-    - 53.04853
-    - 54.322243
-    - 55.592495
-    - 56.85789
+    - 0.47761473
+    - 1.8147275
+    - 3.8677454
+    - 6.493071
+    - 9.547115
+    - 12.886283
+    - 16.366978
+    - 19.845615
+    - 23.1786
+    - 26.222351
+    - 28.833271
+    - 30.867825
+    - 32.42336
+    - 33.718483
+    - 34.79152
+    - 35.680798
+    - 36.424664
+    - 37.061462
+    - 37.629524
+    - 38.167114
+    - 38.712433
+    - 39.303623
+    - 39.978848
+    - 40.77629
+    - 41.64651
+    - 42.51764
+    - 43.392895
+    - 44.274475
+    - 45.164017
+    - 46.063084
+    - 46.97361
+    - 47.898308
+    - 48.84106
+    - 49.807224
+    - 50.803814
+    - 51.83961
+    - 52.925835
+    - 54.06717
+    - 55.260006
+    - 56.497562
+    - 57.771038
+    - 59.070446
+    - 60.38529
+    - 61.70509
+    - 63.019924
+    - 64.320946
+    - 65.60104
+    - 66.85562
+    - 68.09855
+    - 69.346085
+    - 70.59947
+    - 71.85906
+    - 73.12446
+    - 74.39471
+    - 75.66842
+    - 76.94394
+    - 78.21945
+    - 79.493164
+    - 80.76341
+    - 82.02881
   inspectorMode: 0
   pathType: 1
   handlesType: 0
@@ -6729,6 +6606,39 @@ MonoBehaviour:
   lastSrcRotation: {x: -0, y: -0, z: -0, w: 1}
   wpsDropdown: 1
   dropToFloorOffset: 0
+--- !u!114 &1779431730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779431725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 1
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: ShadowLoop
+  _cueSheet: Stage15
 --- !u!1 &1808047749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,6 +6788,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7a8f27baea04d1b9687a093b5547f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1832101915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7d42e042e4c9c4db4bde98b863e167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionOnStart: {fileID: 0}
+  activateListenerOnEnable: 0
 --- !u!1 &1870308406
 GameObject:
   m_ObjectHideFlags: 0
