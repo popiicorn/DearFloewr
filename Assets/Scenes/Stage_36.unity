@@ -1464,6 +1464,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6831775990601669119, guid: 37841337faf1a413e86c6782c28524d2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 7.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831775990601669119, guid: 37841337faf1a413e86c6782c28524d2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.85
+      objectReference: {fileID: 0}
     - target: {fileID: 8213643622158785079, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: atomSource
@@ -4343,6 +4353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4330697114465453748, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4330697114465453750, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
       propertyPath: m_RootOrder
@@ -7165,9 +7180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1832101910}
-  animatorOverrideController: {fileID: 22100000, guid: edbfa4d895566074daa6044228bfbd1e,
+  animatorOverrideController: {fileID: 22100000, guid: 6ce9889700f87a049a2b52f87bc65e96,
     type: 2}
-  defaultAnimatorOverrideController: {fileID: 22100000, guid: 9432a53f54c47464bb0055900171eb90,
+  defaultAnimatorOverrideController: {fileID: 22100000, guid: edbfa4d895566074daa6044228bfbd1e,
     type: 2}
   triggerObj: {fileID: 2056256781}
 --- !u!68 &1902523724
