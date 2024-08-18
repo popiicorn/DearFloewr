@@ -98,10 +98,11 @@ public class GS36_EnemyAttack : MonoBehaviour
         {
             return;
         }
-        if (collision.GetComponent<Character>())
+        if (collision.TryGetComponent(out Character chatacter))
         {
             isGameOver = true;
             Debug.Log("‚Ô‚Â‚©‚Á‚½");
+            chatacter.gameObject.SetActive(false);
             GameManager.Instance.GameOver();
         }
     }
