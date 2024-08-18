@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
         Transition_4,
         Ending,
         Title,
+        LastStage,
+        LastMove,
+        Selection,
     }
     [SerializeField] TransitionName transitionName;
     [SerializeField] DOTweenAnimation fadeObj;
@@ -109,6 +112,12 @@ public class GameManager : MonoBehaviour
                 return "Transition_4";
             case TransitionName.Ending:
                 return "End_Demo";
+            case TransitionName.LastStage:
+                return "Stage_36";
+            case TransitionName.LastMove:
+                return "Stage_37";
+            case TransitionName.Selection:
+                return "Title_StageSelect";
             case TransitionName.Title:
             default:
                 return "Title_Demo";
