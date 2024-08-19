@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
-    enum TransitionName
+    public enum TransitionName
     {
         None,
         Transition_1,
@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void SetTrandition(TransitionName name)
+    {
+        transitionName = name;
     }
 
     public void NextStage()
@@ -87,14 +92,7 @@ public class GameManager : MonoBehaviour
 
 
     void ToNextScene()
-    {
-        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        if (EventSaveDatas.Instance)
-        {
-            EventSaveDatas.Instance.SaveData(sceneName);
-            EventSaveDatas.Instance.StopwatchStop();
-        }
-        Debug.Log("ToNextScene");
+    {        
         fadeObj.gameObject.SetActive(true);
     }
 
@@ -127,6 +125,14 @@ public class GameManager : MonoBehaviour
     public void Transition()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
+    }
+
+    public void StageSelect(int stageNumber, TransitionName transitionName)
+    {
+        GameStageManager.Instance.SetNextStageName($"Stage_{stageNumber.ToString("D2")}");
+        SetTrandition(transitionName);
+        nextSceneName = GetNextTransitionSceneName();
+        NextStage();
     }
 }
 

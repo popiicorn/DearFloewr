@@ -117,6 +117,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_001
       objectReference: {fileID: 0}
+    - target: {fileID: 6880556926002511328, guid: 96fc4e3f85708e94e9a0506eeeaaff21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6993780109798963335, guid: 96fc4e3f85708e94e9a0506eeeaaff21,
         type: 3}
       propertyPath: m_IsActive
