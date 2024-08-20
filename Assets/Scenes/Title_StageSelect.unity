@@ -384,6 +384,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_034
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: fd72382e56f66734fa2fb5890b087b20,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: fd72382e56f66734fa2fb5890b087b20,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd72382e56f66734fa2fb5890b087b20, type: 3}
 --- !u!224 &70249755 stripped
@@ -652,6 +662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 24ef5ebccb1539c438bce76eb1f363fc,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24ef5ebccb1539c438bce76eb1f363fc, type: 3}
@@ -938,6 +953,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_027
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: bfc5f7bb6db7e4248acf934f4ef1799c,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: bfc5f7bb6db7e4248acf934f4ef1799c,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfc5f7bb6db7e4248acf934f4ef1799c, type: 3}
 --- !u!224 &103003859 stripped
@@ -1062,6 +1087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: e02fdc036c1a766469fc3a06c733748e,
+        type: 3}
+      propertyPath: transitionName
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e02fdc036c1a766469fc3a06c733748e, type: 3}
@@ -1476,6 +1506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_025
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 6d0b34874a76f0a418f6d74113655903,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d0b34874a76f0a418f6d74113655903, type: 3}
 --- !u!224 &157862958 stripped
@@ -1600,6 +1635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 00b4bcb0f75018d45a91b517a26fd30d,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00b4bcb0f75018d45a91b517a26fd30d, type: 3}
@@ -1885,6 +1925,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_009
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: b650b526dbdd407459fd55908d51a440,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: b650b526dbdd407459fd55908d51a440,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b650b526dbdd407459fd55908d51a440, type: 3}
@@ -2227,6 +2277,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_017
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: b0d357e913dfb15468c4eb4452146715,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d357e913dfb15468c4eb4452146715, type: 3}
 --- !u!224 &250516620 stripped
@@ -2351,6 +2406,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_016
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: cf9e9b211f0ece646b574ea7fdd1abd4,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: cf9e9b211f0ece646b574ea7fdd1abd4,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf9e9b211f0ece646b574ea7fdd1abd4, type: 3}
@@ -2781,6 +2846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_019
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: e6296db7c13817545b875b4fac9809a9,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6296db7c13817545b875b4fac9809a9, type: 3}
@@ -3355,6 +3425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_030
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 9726a885989ab754fa50db5a1c4d801a,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9726a885989ab754fa50db5a1c4d801a, type: 3}
 --- !u!224 &421398148 stripped
@@ -3609,6 +3684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_008
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 2ab07660806c2a246b8dd3782251eb54,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ab07660806c2a246b8dd3782251eb54, type: 3}
@@ -5195,6 +5275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_012
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: a60538548fbd5ac468c092553e493d17,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60538548fbd5ac468c092553e493d17, type: 3}
 --- !u!224 &820306126 stripped
@@ -5798,6 +5883,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_022
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 7a0b2b5ec0e12b54b9471b0311341a31,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 7a0b2b5ec0e12b54b9471b0311341a31,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a0b2b5ec0e12b54b9471b0311341a31, type: 3}
 --- !u!224 &892026982 stripped
@@ -5923,6 +6018,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_014
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 4191fe26d19d3504b8c2d12e5289d8f7,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4191fe26d19d3504b8c2d12e5289d8f7, type: 3}
 --- !u!224 &893837354 stripped
@@ -6047,6 +6147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: f0e3618120375c74e81535b6a21fdda4,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0e3618120375c74e81535b6a21fdda4, type: 3}
@@ -7601,6 +7706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_024
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 4f841d168b16dbc41829696c525f9e76,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f841d168b16dbc41829696c525f9e76, type: 3}
 --- !u!224 &1169841842 stripped
@@ -8144,6 +8254,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_005
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: e4dd4b10ded798a4a86f184edf6586cc,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4dd4b10ded798a4a86f184edf6586cc, type: 3}
 --- !u!224 &1245571674 stripped
@@ -8268,6 +8383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 23a979b4382f3ce4c8c01d82970221ec,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23a979b4382f3ce4c8c01d82970221ec, type: 3}
@@ -8837,6 +8957,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_029
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 1593f50a566fac94fb907ce2bd3afe91,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 1593f50a566fac94fb907ce2bd3afe91,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1593f50a566fac94fb907ce2bd3afe91, type: 3}
 --- !u!224 &1321538920 stripped
@@ -8961,6 +9091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: cae80fe0fc6c9b8408504de77deeeb02,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cae80fe0fc6c9b8408504de77deeeb02, type: 3}
@@ -10042,6 +10177,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_007
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 433470a3a1ce1554b8e1e5f6e7074ef3,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 433470a3a1ce1554b8e1e5f6e7074ef3,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 433470a3a1ce1554b8e1e5f6e7074ef3, type: 3}
 --- !u!224 &1473810666 stripped
@@ -10470,6 +10615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_023
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 76f84a422df88e34283d81b6377d106e,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f84a422df88e34283d81b6377d106e, type: 3}
@@ -11523,6 +11673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_031
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 2903d848f7d956644b0ca303ab76aab7,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2903d848f7d956644b0ca303ab76aab7, type: 3}
 --- !u!224 &1654812913 stripped
@@ -12330,6 +12485,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_020
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 06cce7e210809dc46a767034805508e5,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 06cce7e210809dc46a767034805508e5,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cce7e210809dc46a767034805508e5, type: 3}
 --- !u!224 &1832222052 stripped
@@ -12454,6 +12619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_018
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 5b806894aa9e46e4080d8c8da0ac29fc,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b806894aa9e46e4080d8c8da0ac29fc, type: 3}
@@ -12660,6 +12830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_026
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 2bd9085cc9a15ad43a82bc0afb43b16f,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bd9085cc9a15ad43a82bc0afb43b16f, type: 3}
 --- !u!224 &1868595852 stripped
@@ -12784,6 +12959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_010
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 5b5598af73ec9004e84f8c5e19fb6afa,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b5598af73ec9004e84f8c5e19fb6afa, type: 3}
@@ -13133,6 +13313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 1d6e6d1ef8a31914e8ae8d92212730c9,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6e6d1ef8a31914e8ae8d92212730c9, type: 3}
@@ -14067,6 +14252,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_028
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: b43d5712ceafbee46a733b3320637116,
+        type: 3}
+      propertyPath: transitionName
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43d5712ceafbee46a733b3320637116, type: 3}
 --- !u!224 &2004315453 stripped
@@ -14408,6 +14598,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Stage_032
       objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: ab269f1fc20faa44eb299cb65f0cc0cd,
+        type: 3}
+      propertyPath: isMovieStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: ab269f1fc20faa44eb299cb65f0cc0cd,
+        type: 3}
+      propertyPath: transitionName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab269f1fc20faa44eb299cb65f0cc0cd, type: 3}
 --- !u!224 &2014851706 stripped
@@ -14532,6 +14732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_Stage_021
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927492627504666170, guid: 7df824220b5be404cabc165b640469c6,
+        type: 3}
+      propertyPath: transitionName
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7df824220b5be404cabc165b640469c6, type: 3}
