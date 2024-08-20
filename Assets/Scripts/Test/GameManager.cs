@@ -71,7 +71,18 @@ public class GameManager : MonoBehaviour
         IsGameClear = true;
         nextSceneName = GetNextTransitionSceneName();
         ToNextScene();
+        Save();
     }
+
+    void Save()
+    {
+        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        // ç≈å„ÇÃêîéöÇéÊìæ
+        string last = sceneName.Substring(sceneName.Length - 2, 2);
+        int stageNum = int.Parse(last)-1;
+        SaveManager.Instance.SetCleared(stageNum);
+    }
+
     public void PreGameClear()
     {
         if (IsPreGameClear)
@@ -85,7 +96,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("GameOver");
         nextSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         ToNextScene();
     }
@@ -118,7 +128,8 @@ public class GameManager : MonoBehaviour
                 return "Title_StageSelect";
             case TransitionName.Title:
             default:
-                return "Title_Demo";
+                return "Title";
+                // return "Title_Demo";
         }
     }
 
@@ -132,7 +143,13 @@ public class GameManager : MonoBehaviour
         GameStageManager.Instance.SetNextStageName($"Stage_{stageNumber.ToString("D2")}");
         SetTrandition(transitionName);
         nextSceneName = GetNextTransitionSceneName();
-        NextStage();
+        ToNextScene();
+    }
+
+    public void ToTitle()
+    {
+        nextSceneName = "Title";
+        ToNextScene();
     }
 }
 

@@ -16,6 +16,7 @@ public class SaveManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Load();
         }
         else
         {
@@ -23,9 +24,14 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void SetBonus(int stageNumber)
+    public void SetBonus()
     {
-        saveData.stages[stageNumber].getBonus = true;
+        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        // ÅŒã‚Ì”š‚ğæ“¾
+        string last = sceneName.Substring(sceneName.Length - 2, 2);
+        int stageNum = int.Parse(last) - 1;
+
+        saveData.stages[stageNum].getBonus = true;
     }
     public void SetCleared(int stageNumber)
     {
@@ -33,28 +39,56 @@ public class SaveManager : MonoBehaviour
         if (stageNumber + 1 < saveData.stages.Length)
         {
             saveData.stages[stageNumber + 1].isOpened = true;
+            if ((stageNumber + 1 == 34) && IsAllBonusGet())
+            {
+                saveData.stages[34].isOpened = true;
+            }
         }
+        Save();
     }
+
+    // stageNumber34‚ğ‚Ì‚¼‚¢‚Ä‘S‚Ä‚ÌBonus‚ğæ“¾‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğ”»’è‚·‚é
+    public bool IsAllBonusGet()
+    {
+        for (int i = 0; i < saveData.stages.Length - 1; i++)
+        {
+            if(i == 34)
+            {
+                continue;
+            }
+            if (!saveData.stages[i].getBonus)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void SetMovieStage(int stageNumber)
     {
         saveData.stages[stageNumber].isMovieStage = true;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Debug.Log("Save");
-            Save();
-        }
-    }
-
-    public void Save()
+    void Save()
     {
 
         string saveDataJson = JsonUtility.ToJson(saveData, true);
-        // PlayerPrefs.SetString(SAVE_KEY, saveDataJson);
+        PlayerPrefs.SetString(SAVE_KEY, saveDataJson);
         Debug.Log(saveDataJson);
+    }
+
+    void Load()
+    {
+        if (PlayerPrefs.HasKey(SAVE_KEY))
+        {
+            string saveDataJson = PlayerPrefs.GetString(SAVE_KEY);
+            Debug.Log(saveDataJson);
+            saveData = JsonUtility.FromJson<SaveData>(saveDataJson);
+        }
+        else
+        {
+            saveData = new SaveData();
+        }
     }
 
     [System.Serializable]
@@ -69,14 +103,6 @@ public class SaveManager : MonoBehaviour
                 stages[i] = new Stage(i);
             }
             stages[0].isOpened = true;
-            stages[0].isCleared = true;
-            stages[0].getBonus = true;
-            stages[0].isMovieStage = true;
-            stages[1].isOpened = true;
-            stages[1].isCleared = true;
-            stages[1].getBonus = false;
-            stages[2].isOpened = true;
-
         }
         // ‰Šú‰»
     }

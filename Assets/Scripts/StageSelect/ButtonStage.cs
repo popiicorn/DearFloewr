@@ -52,7 +52,10 @@ public class ButtonStage : MonoBehaviour
 
     public void OnClick()
     {
-        OnClickButton?.Invoke(stageData.stageNumber);
+        if (!stageData.isOpened)
+        {
+            return;
+        }
         GameManager.Instance.StageSelect(stageData.stageNumber + 1, transitionName);
     }
 }

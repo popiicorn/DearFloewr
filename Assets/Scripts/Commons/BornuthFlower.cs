@@ -14,5 +14,6 @@ public class BornuthFlower : MonoBehaviour
         wasGet = true;
         flowerObj.SetActive(true);
         GetComponent<Collider2D>().enabled = false;
+        SaveManager.Instance.SetBonus();
     }
 }

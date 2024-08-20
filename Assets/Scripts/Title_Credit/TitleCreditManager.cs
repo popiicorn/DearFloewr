@@ -14,5 +14,6 @@ public class TitleCreditManager : MonoBehaviour
         }
         canClick = false;
         BGMManager.Instance.OffAisac();
+        GameManager.Instance.ToTitle();
     }
 }
