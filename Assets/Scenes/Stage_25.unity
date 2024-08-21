@@ -611,6 +611,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1514637026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &122166881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: 8f975dd5ed2afd040b972fe5e4e52aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1743545266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122166884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122166881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
 --- !u!1 &129310172
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +672,14 @@ MonoBehaviour:
   - name: wildness
     acbFile: wildness.acb
     awbFile: wildness.awb
+    loaderStatus: 0
+  - name: Stage25
+    acbFile: Stage25.acb
+    awbFile: 
+    loaderStatus: 0
+  - name: BGSdemoStage02
+    acbFile: BGSdemoStage02.acb
+    awbFile: BGSdemoStage02.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -1153,6 +1180,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e75c9f97946c8ff4093e0778e99a293b, type: 3}
+--- !u!1 &377425703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: e4c1209b1d1053b4ebbfe5185f3cc231,
+    type: 3}
+  m_PrefabInstance: {fileID: 1747154970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &377425706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377425703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
+--- !u!1 &404021814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: c7fcef656d0a5554e810b30e04a8450d,
+    type: 3}
+  m_PrefabInstance: {fileID: 235354321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &404021817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404021814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
 --- !u!1 &416454591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2212,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8003812210439107962, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: _cueSheet
+      value: Stage25
+      objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107964, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -2499,6 +2569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798269326}
   - component: {fileID: 798269327}
+  - component: {fileID: 798269328}
   m_Layer: 0
   m_Name: MiniGame
   m_TagString: Untagged
@@ -2644,6 +2715,58 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+--- !u!114 &798269328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798269325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: factoryNoise
+  _cueSheet: BGSdemoStage02
+--- !u!1 &846052635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: 33ef7fe1af4b22b43827533ad638a638,
+    type: 3}
+  m_PrefabInstance: {fileID: 45916112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &846052638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846052635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
 --- !u!1 &909388335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3808031123696687723, guid: 1206a4e231dc1424084b7d118911b0b3,
@@ -2902,6 +3025,52 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 3549025489089640120}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &957957061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957957049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: CpselShine02
+  _cueSheet: Stage25
+--- !u!114 &957957062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957957049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 957957061}
 --- !u!1 &991402336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,6 +3454,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1159152112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4980152479247524503, guid: 1206a4e231dc1424084b7d118911b0b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3808031124367098347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1159152116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159152112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: CpselShine02
+  _cueSheet: Stage25
+--- !u!114 &1159152117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159152112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1159152116}
 --- !u!1 &1188611581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,6 +4480,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1469263061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: d8e0c794a4613f94fadbbbf7b30e55de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1245402002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1469263064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469263061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
 --- !u!1 &1482417510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,6 +5476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1845854386}
   - component: {fileID: 1845854387}
+  - component: {fileID: 1845854388}
   m_Layer: 0
   m_Name: Boad
   m_TagString: Untagged
@@ -5316,6 +5557,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1845854388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845854385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: 
+  _cueSheet: Stage25
 --- !u!1 &1882845647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,6 +6013,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2007478907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: 13bd0f5d8cd1f0a49a7208794bda53e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2014581577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007478910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007478907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1845854388}
 --- !u!1001 &2009820925
 PrefabInstance:
   m_ObjectHideFlags: 0
