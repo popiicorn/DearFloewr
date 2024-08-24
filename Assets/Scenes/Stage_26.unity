@@ -1287,10 +1287,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acfFile: DearFlower.acf
   cueSheets:
-  - name: TestSE
-    acbFile: TestSE.acb
-    awbFile: 
-    loaderStatus: 0
   - name: Flower
     acbFile: Flower.acb
     awbFile: 
@@ -1302,6 +1298,10 @@ MonoBehaviour:
   - name: wildness
     acbFile: wildness.acb
     awbFile: wildness.awb
+    loaderStatus: 0
+  - name: Stage26
+    acbFile: Stage26.acb
+    awbFile: 
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -2607,6 +2607,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8003812210439107962, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: _cueSheet
+      value: Stage26
+      objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107964, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: m_RootOrder
