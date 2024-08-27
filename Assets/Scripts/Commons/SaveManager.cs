@@ -73,16 +73,16 @@ public class SaveManager : MonoBehaviour
     {
 
         string saveDataJson = JsonUtility.ToJson(saveData, true);
-        PlayerPrefs.SetString(SAVE_KEY, saveDataJson);
-        Debug.Log(saveDataJson);
+        ES3.Save<string>(SAVE_KEY, saveDataJson);
+        // PlayerPrefs.SetString(SAVE_KEY, saveDataJson);
     }
 
     void Load()
     {
-        if (PlayerPrefs.HasKey(SAVE_KEY))
+        // PlayerPrefsのコードをES3に変更
+        if (ES3.KeyExists(SAVE_KEY))
         {
-            string saveDataJson = PlayerPrefs.GetString(SAVE_KEY);
-            Debug.Log(saveDataJson);
+            string saveDataJson = ES3.Load<string>(SAVE_KEY);
             saveData = JsonUtility.FromJson<SaveData>(saveDataJson);
         }
         else
