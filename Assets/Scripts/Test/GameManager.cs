@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TransitionName transitionName;
     [SerializeField] DOTweenAnimation fadeObj;
     [SerializeField] string nextStageName;
+    [SerializeField] GameObject optionPanel;
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     public bool IsCamMoveCleared;
@@ -151,5 +152,31 @@ public class GameManager : MonoBehaviour
         nextSceneName = "Title";
         ToNextScene();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            optionPanel.SetActive(true);
+        }
+    }
+
+    public void OnHomeButton()
+    {
+        // ƒ^ƒCƒgƒ‹‚Ö–ß‚é
+
+        if (IsGameClear)
+        {
+            return;
+        }
+        ToTitle();
+    }
+
+    public void OnBackButton()
+    {
+        optionPanel.SetActive(false);
+    }
+
+
 }
 
