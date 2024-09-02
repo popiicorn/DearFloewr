@@ -17,7 +17,8 @@ public class Title : MonoBehaviour
             return;
         }
         canClick = false;
-        BGMManager.Instance.StopBGM();
+        //BGMManager.Instance.StopBGM();
+        BGMManager.Instance.OnAisac();
         nextSceneName = "Title_StageSelect";
         fadeObj.gameObject.SetActive(true);
     }

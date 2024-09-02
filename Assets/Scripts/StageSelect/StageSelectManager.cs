@@ -25,5 +25,6 @@ public class StageSelectManager : MonoBehaviour
     public void OnBackButton()
     {
         GameManager.Instance.ToTitle();
+        BGMManager.Instance.OffAisac();
     }
 }

@@ -56,6 +56,8 @@ public class ButtonStage : MonoBehaviour
         {
             return;
         }
+        BGMManager.Instance.StopBGM();
+        CriManager.instance.PlayObjSE("startUI");
         GameManager.Instance.StageSelect(stageData.stageNumber + 1, transitionName);
     }
 }
