@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] DOTweenAnimation fadeObj;
     [SerializeField] string nextStageName;
     [SerializeField] GameObject optionPanel;
+    public bool IsOptionPanelActive { get => optionPanel.activeSelf; }
+
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
     public bool IsCamMoveCleared;

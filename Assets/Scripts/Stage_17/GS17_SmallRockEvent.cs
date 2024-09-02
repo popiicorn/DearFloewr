@@ -6,7 +6,7 @@ public class GS17_SmallRockEvent : MonoBehaviour
 {
     // ボーナスの花
     [SerializeField] float getTime;
-    [SerializeField] GameObject getFlower;
+    [SerializeField] BornuthFlower getFlower;
     [SerializeField] Character character;
     bool isGetFlower;
 
@@ -14,19 +14,23 @@ public class GS17_SmallRockEvent : MonoBehaviour
 
     float timer;
 
+    void Start()
+    {
+        isGetFlower = getFlower.WasGet;
+    }
+
     private void Update()
     {
         if (isGetFlower)
         {
             return;
         }
-        Debug.Log(character.CharaMode);
         if (character.CharaMode == Character.Mode.Sit)
         {
             timer += Time.deltaTime;
             if (timer >= getTime)
             {
-                getFlower.SetActive(true);
+                getFlower.ShowFlower();
                 isGetFlower = true;
             }
         }

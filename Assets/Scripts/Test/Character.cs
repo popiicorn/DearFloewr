@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Character : MonoBehaviour
 {
@@ -113,6 +114,9 @@ public class Character : MonoBehaviour
         {
             return;
         }
+
+        if (GameManager.Instance.IsOptionPanelActive) return;
+
         if (Input.GetMouseButtonDown(0) && canClick)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

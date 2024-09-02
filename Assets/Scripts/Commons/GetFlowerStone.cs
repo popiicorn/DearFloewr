@@ -8,7 +8,7 @@ public class GetFlowerStone : Gimmick
     public Transform leftPos;
     public Transform rightPos;
     // Î‚ğ‚T‰ñR‚Á‚½‚ç‰Ô‚ğæ“¾
-    [SerializeField] protected GameObject flower;
+    [SerializeField] protected BornuthFlower flower;
     // Î‚ğR‚é‰ñ”
     [SerializeField] protected int kickCount = 5;
     protected int currentKickCount = 0;
@@ -57,7 +57,7 @@ public class GetFlowerStone : Gimmick
         Debug.Log("Anim");
         if (currentKickCount == kickCount)
         {
-            flower.SetActive(true);
+            flower.ShowFlower();
             GetComponent<Collider2D>().enabled = false;
             wasGetFlower = true;
             CriManager.instance.PlayUISE("flowerGet");
@@ -77,6 +77,11 @@ public class GetFlowerStone : Gimmick
     {
         originPosition = transform.localPosition;
         originRotation = transform.localRotation;
+        wasGetFlower = flower.WasGet;
+        if (wasGetFlower)
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
     }
 
     public IEnumerator Shake()

@@ -24,6 +24,15 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+    public bool CheckGetBonus()
+    {
+        string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        // ÅŒã‚Ì”š‚ğæ“¾
+        string last = sceneName.Substring(sceneName.Length - 2, 2);
+        int stageNum = int.Parse(last) - 1;
+        return saveData.stages[stageNum].getBonus;
+    }
+
     public void SetBonus()
     {
         string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;

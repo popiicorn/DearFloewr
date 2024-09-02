@@ -2093,6 +2093,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 197034705}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &818449261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506305235038492151, guid: 1911eff5083090e4b85e22dda67fd24c,
+        type: 3}
+      propertyPath: m_Name
+      value: SaveManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1911eff5083090e4b85e22dda67fd24c, type: 3}
 --- !u!1001 &822695786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4907,6 +4976,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2002982373}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1264257513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264257512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f629371253e2e5649b4197fc8ac6498d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowerObj: {fileID: 1264257512}
 --- !u!1001 &1265760035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7072,7 +7154,7 @@ PrefabInstance:
     - target: {fileID: 6511337421013994505, guid: c4c116a26c9ddc6448afdc7ca277d1ca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 6511337421013994505, guid: c4c116a26c9ddc6448afdc7ca277d1ca,
         type: 3}
@@ -7739,7 +7821,7 @@ PrefabInstance:
     - target: {fileID: 1990118472, guid: 73207e3610e2e554ea29fe9400cc6193, type: 3}
       propertyPath: flower
       value: 
-      objectReference: {fileID: 1264257512}
+      objectReference: {fileID: 1264257513}
     - target: {fileID: 1990118472, guid: 73207e3610e2e554ea29fe9400cc6193, type: 3}
       propertyPath: target
       value: 
