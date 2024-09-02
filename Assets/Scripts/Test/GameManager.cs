@@ -160,6 +160,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             optionPanel.SetActive(true);
+            CriManager.instance.OnPauseCRI();
+            MovieSoundManager.instance.MovieOnPause();
         }
     }
 
@@ -177,6 +179,8 @@ public class GameManager : MonoBehaviour
     public void OnBackButton()
     {
         optionPanel.SetActive(false);
+        CriManager.instance.OffPauseCRI();
+        MovieSoundManager.instance.MovieOffPause();
     }
 
 

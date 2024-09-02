@@ -17,6 +17,7 @@ public class CriManager : MonoBehaviour
     [SerializeField] CriAtomSource uiAtomSource;
     [SerializeField] PLAYER_TYPE pLAYER_TYPE;
     [SerializeField] bool bgi;
+    bool bGIISPause = false;
     public enum PLAYER_TYPE
     {
         GIRL,
@@ -115,6 +116,69 @@ public class CriManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         StartBGI(0);
+    }
+
+    /*public void OnPauseCRI()
+    {
+        CriAtomSource.Status status00 = bGIAtomSource.status;
+        if (status00 == CriAtomSource.Status.Playing)
+        {
+            bGIAtomSource.Pause(true);
+        }
+        else { return; }
+
+        CriAtomSource.Status status01 = stageSEatomSource.status;
+        if (status01 == CriAtomSource.Status.Playing)
+        {
+            stageSEatomSource.Pause(true);
+        }
+        else { return; }
+
+        CriAtomSource.Status status02 = playerAtomSource.status;
+        if (status02 == CriAtomSource.Status.Playing)
+        {
+            playerAtomSource.Pause(true);
+        }
+        else { return; }
+
+        CriAtomSource.Status status03 = uiAtomSource.status;
+        if (status03 == CriAtomSource.Status.Playing)
+        {
+            uiAtomSource.Pause(true);
+        }
+        else { return; }*/
+
+    public void OnPauseCRI()
+    {
+        CriAtomSource.Status status00 = bGIAtomSource.status;
+        if (status00 == CriAtomSource.Status.Playing)
+        {
+            bGIAtomSource.Pause(true);
+            bGIISPause = true;
+        }
+        else { return; }
+        
+        stageSEatomSource.Pause(true);
+        playerAtomSource.Pause(true);
+        uiAtomSource.Pause(true);
+        MovieSoundManager.instance.MovieOnPause();
+
+    }
+
+    public void OffPauseCRI()
+    {
+        if (bGIISPause==true)
+        {
+            bGIAtomSource.Pause(false);
+            bGIISPause = false;
+        }
+        else { return; }
+
+        stageSEatomSource.Pause(false);
+        playerAtomSource.Pause(false);
+        uiAtomSource.Pause(false);
+        MovieSoundManager.instance.MovieOffPause();
+
     }
 
 }

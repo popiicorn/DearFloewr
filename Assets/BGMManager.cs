@@ -68,5 +68,16 @@ public class BGMManager : MonoBehaviour
         
     }
 
-    
+    public void PauseBGM()
+    {
+        CriAtomSource.Status status = bGMAtomSource.status;
+        if (status== CriAtomSource.Status.Playing)
+        {
+            bGMAtomSource.Pause(true);
+        }
+        
+
+    }
+
+
 }
