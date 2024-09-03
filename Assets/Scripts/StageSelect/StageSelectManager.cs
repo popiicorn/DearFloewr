@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Steamworks;
 
 public class StageSelectManager : MonoBehaviour
 {
@@ -14,6 +15,28 @@ public class StageSelectManager : MonoBehaviour
         {
             buttonStages[i].SetStageData(SaveManager.Instance.saveData.stages[i]);
             buttonStages[i].OnClickButton = OnClickStageButton;
+        }
+
+        if (SteamManager.Initialized)
+        {
+            Debug.Log("SteamManager.Initialized");
+            if (SteamUserStats.RequestCurrentStats())
+            {
+                Debug.Log("SteamUserStats.RequestCurrentStats");
+                // ユーザーの現在のデータと実績を非同期に要求後（必須）
+
+                // statsを更新
+                SteamUserStats.SetAchievement("ACHIEVEMENT_Test");
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R) && Input.GetKey(KeyCode.LeftShift))
+        {
+            SteamUserStats.ResetAllStats(true);
+            SteamUserStats.RequestCurrentStats();
         }
     }
 
