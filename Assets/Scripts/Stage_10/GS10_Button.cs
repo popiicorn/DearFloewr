@@ -42,6 +42,7 @@ public class GS10_Button : Gimmick
     IEnumerator Anim(Character character)
     {
         character.BusyMode();
+        CriManager.instance.PlayObjSE("switch00");
         yield return new WaitForSeconds(0.2f);
         character.PushButtonGimmick();
         yield return new WaitForSeconds(0.1f);

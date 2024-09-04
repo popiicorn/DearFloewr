@@ -5,20 +5,20 @@ using CriWare;
 
 public class BGMPlay : MonoBehaviour
 {
-    [SerializeField] CriAtomSource bGMSource;
+    //[SerializeField] CriAtomSource bGMSource;
     [SerializeField] string queName;
     // Start is called before the first frame update
     void Start()
     {
-        PlayBGM();
+        Invoke("PlayBGM",0.2f);
     }
 
-    void PlayBGM()
+    public void PlayBGM()
     {
-        CriAtomSource.Status status00 = bGMSource.status;
+        CriAtomSource.Status status00 = BGMManager.Instance.bGMAtomSource.status;
         if (status00 != CriAtomSource.Status.Playing)
         {
-            bGMSource.Play(queName);
+            BGMManager.Instance.StartBGM(queName);
         }
         else { }
     }

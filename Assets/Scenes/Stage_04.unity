@@ -492,7 +492,7 @@ MonoBehaviour:
     acbFile: Flower.acb
     awbFile: 
     loaderStatus: 0
-  dspBusSetting: 
+  dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
 --- !u!4 &129310174
@@ -1159,6 +1159,8 @@ MonoBehaviour:
   bGIAtomSource: {fileID: 422625772}
   uiAtomSource: {fileID: 422625774}
   pLAYER_TYPE: 1
+  noiseManager: {fileID: 0}
+  movieSoundManager: {fileID: 0}
   bgi: 1
 --- !u!4 &422625771
 Transform:

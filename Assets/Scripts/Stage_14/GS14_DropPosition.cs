@@ -35,6 +35,7 @@ public class GS14_DropPosition : MonoBehaviour, IDropHandler
             dragPart.transform.DOMove(transform.position, 0.3f).OnComplete(
                 ()=>
                 {
+                    CriManager.instance.PlayObjSE("ObjSet");
                     part.gameObject.SetActive(false);
                     GS14_MiniGameManager.Instance.SetNextPart();
                     gameObject.SetActive(false);

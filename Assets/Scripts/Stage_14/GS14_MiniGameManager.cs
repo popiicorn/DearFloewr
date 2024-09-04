@@ -24,6 +24,7 @@ public class GS14_MiniGameManager : MonoBehaviour
         {
             // ゲームクリアクリア
             StartCoroutine(Play());
+            CriManager.instance.PlayObjSE("quake00");
             return;
         }
         CurrentPart.gameObject.SetActive(true);

@@ -8,7 +8,7 @@ public class BGMManager : MonoBehaviour
 {
     
 
-    [SerializeField] CriAtomSource bGMAtomSource;
+    public CriAtomSource bGMAtomSource;
     public string  bGMCueName;
     public static BGMManager Instance { get; private set; }
 
