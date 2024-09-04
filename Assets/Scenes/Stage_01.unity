@@ -680,7 +680,7 @@ MonoBehaviour:
     acbFile: Movie01.acb
     awbFile: 
     loaderStatus: 0
-  dspBusSetting: MovieFilter
+  dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
 --- !u!4 &1385195460
@@ -828,6 +828,11 @@ PrefabInstance:
       propertyPath: pLAYER_TYPE
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: movieSoundManager
+      value: 
+      objectReference: {fileID: 217944030}
     - target: {fileID: 8003812210439107966, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: _cueSheet

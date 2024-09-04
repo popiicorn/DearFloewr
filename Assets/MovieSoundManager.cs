@@ -16,8 +16,8 @@ public class MovieSoundManager : MonoBehaviour
 
     public void MovieOnPause()
     {
-        CriAtomSource.Status status00 = movieAtomSource.status;
-        if (status00 == CriAtomSource.Status.Playing)
+        
+        if (movieISPause == false)
         {
             //movieAtomSource.Pause(true);
             movieISPause = true;

@@ -5,7 +5,7 @@ using CriWare;
 
 public class NoiseManager : MonoBehaviour
 {
-    [SerializeField] CriAtomSource atomSource;
+    public CriAtomSource atomSource;
     bool push=false;
     
 

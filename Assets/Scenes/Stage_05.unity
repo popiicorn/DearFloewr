@@ -3968,6 +3968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
+      propertyPath: noiseManager
+      value: 
+      objectReference: {fileID: 212501110}
+    - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
       propertyPath: uiAtomSource
       value: 
       objectReference: {fileID: 497226193}

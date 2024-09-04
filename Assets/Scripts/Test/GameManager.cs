@@ -161,7 +161,7 @@ public class GameManager : MonoBehaviour
         {
             optionPanel.SetActive(true);
             CriManager.instance.OnPauseCRI();
-            MovieSoundManager.instance.MovieOnPause();
+            //MovieSoundManager.instance.MovieOnPause();
         }
     }
 
@@ -178,9 +178,10 @@ public class GameManager : MonoBehaviour
 
     public void OnBackButton()
     {
-        optionPanel.SetActive(false);
         CriManager.instance.OffPauseCRI();
-        MovieSoundManager.instance.MovieOffPause();
+        optionPanel.SetActive(false);
+        
+        //MovieSoundManager.instance.MovieOffPause();
     }
 
 

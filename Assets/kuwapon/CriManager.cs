@@ -16,6 +16,8 @@ public class CriManager : MonoBehaviour
     [SerializeField] CriAtomSource bGIAtomSource;
     [SerializeField] CriAtomSource uiAtomSource;
     [SerializeField] PLAYER_TYPE pLAYER_TYPE;
+    [SerializeField] NoiseManager noiseManager;
+    [SerializeField] MovieSoundManager movieSoundManager;
     [SerializeField] bool bgi;
     bool bGIISPause = false;
     public enum PLAYER_TYPE
@@ -153,15 +155,27 @@ public class CriManager : MonoBehaviour
         CriAtomSource.Status status00 = bGIAtomSource.status;
         if (status00 == CriAtomSource.Status.Playing)
         {
-            bGIAtomSource.Pause(true);
+            //bGIAtomSource.Pause(true);
+            CriAtomEx.ApplyDspBusSnapshot("on", 1);
             bGIISPause = true;
         }
-        else { return; }
+        
+
+        if (noiseManager != null)
+        {
+            noiseManager.atomSource.Pause(true);
+        }
+        
+
+        if (movieSoundManager != null)
+        {
+            movieSoundManager.MovieOnPause(); ;
+        }
         
         stageSEatomSource.Pause(true);
         playerAtomSource.Pause(true);
         uiAtomSource.Pause(true);
-        MovieSoundManager.instance.MovieOnPause();
+        //movieSoundManager.MovieOnPause();
 
     }
 
@@ -169,15 +183,28 @@ public class CriManager : MonoBehaviour
     {
         if (bGIISPause==true)
         {
-            bGIAtomSource.Pause(false);
+            //bGIAtomSource.Pause(false);
+            CriAtomEx.ApplyDspBusSnapshot("off", 1);
             bGIISPause = false;
         }
-        else { return; }
+       
+
+        if (noiseManager != null)
+        {
+            noiseManager.atomSource.Pause(false);
+        }
+        
+
+        if (movieSoundManager != null)
+        {
+            movieSoundManager.MovieOffPause(); ;
+        }
+        
 
         stageSEatomSource.Pause(false);
         playerAtomSource.Pause(false);
         uiAtomSource.Pause(false);
-        MovieSoundManager.instance.MovieOffPause();
+        //MovieSoundManager.instance.MovieOffPause();
 
     }
 
