@@ -7,7 +7,7 @@ public class BGMPlay : MonoBehaviour
 {
     //[SerializeField] CriAtomSource bGMSource;
     [SerializeField] string queName;
-    // Start is called before the first frame update
+    
     void Start()
     {
         Invoke("PlayBGM",0.2f);
