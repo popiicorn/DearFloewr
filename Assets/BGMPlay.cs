@@ -5,21 +5,26 @@ using CriWare;
 
 public class BGMPlay : MonoBehaviour
 {
-    //[SerializeField] CriAtomSource bGMSource;
+    [SerializeField] CriAtomSource bGMSource;
     [SerializeField] string queName;
     
     void Start()
     {
-        Invoke("PlayBGM",0.2f);
+        Invoke("PlayBGM",0.1f);
     }
 
     public void PlayBGM()
     {
-        CriAtomSource.Status status00 = BGMManager.Instance.bGMAtomSource.status;
+        CriAtomSource.Status status00 = bGMSource.status;
         if (status00 != CriAtomSource.Status.Playing)
         {
-            BGMManager.Instance.StartBGM(queName);
+            bGMSource.Play(queName);
         }
         else { }
+    }
+
+    public void StopBGM()
+    {
+        bGMSource.Stop();
     }
 }
