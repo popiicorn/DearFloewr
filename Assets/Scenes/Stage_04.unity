@@ -336,6 +336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4330697114465453748, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4330697114465453750, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
       propertyPath: m_RootOrder
@@ -993,7 +998,7 @@ PrefabInstance:
     - target: {fileID: 1931140702154709402, guid: d245e7e179b604b9887fc9ff50afdc4a,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1931140702154709403, guid: d245e7e179b604b9887fc9ff50afdc4a,
         type: 3}
@@ -3568,6 +3573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameStageManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950122, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e75c9f97946c8ff4093e0778e99a293b, type: 3}
