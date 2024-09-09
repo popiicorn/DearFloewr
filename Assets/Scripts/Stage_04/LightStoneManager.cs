@@ -10,6 +10,8 @@ public class LightStoneManager : MonoBehaviour
     int[] correctID = new int[] {1,3,0,2};
     public static LightStoneManager Instance { get; private set; }
     int index;
+    // ˆê“x‚àŠÔˆá‚¦‚¸‚ÉƒNƒŠƒA‚µ‚½‚©‚Ç‚¤‚©
+    bool isNoMissClear = true;
 
     private void Awake()
     {
@@ -23,12 +25,16 @@ public class LightStoneManager : MonoBehaviour
             index++;
             if (index == correctID.Length)
             {
-                // ???
                 OnClearEvent?.Invoke();
+                if (isNoMissClear)
+                {
+                    SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_3");
+                }
             }
             return true;
         }
         AllLightOff();
+        isNoMissClear = false;
         return false;
     }
 

@@ -42,6 +42,7 @@ public class GS17_Flower : MonoBehaviour
             yield return item.Play();
             StartCoroutine(cameraShake.Shake(Stage17Params.Instance.shakeSpan, Stage17Params.Instance.shakeAmount, Stage17Params.Instance.shakeAmount));
         }
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_5");
     }
 
     IEnumerator DanceFlower()

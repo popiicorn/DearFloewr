@@ -356,8 +356,7 @@ public class Character : MonoBehaviour
         animator.Play("Sit");
         mode = Mode.Sit;
         transform.localScale = new Vector3(1, 1, 1);
-
-        // gimmick = null;
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_1");
     }
 
     public void ShowQuestionEmotion()

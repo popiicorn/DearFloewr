@@ -1552,6 +1552,8 @@ MonoBehaviour:
   bGIAtomSource: {fileID: 1506331295}
   uiAtomSource: {fileID: 0}
   pLAYER_TYPE: 2
+  noiseManager: {fileID: 0}
+  movieSoundManager: {fileID: 0}
   bgi: 1
 --- !u!114 &1506331293
 MonoBehaviour:
@@ -1945,6 +1947,75 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5963524217932633374}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1840986981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149216749033520857, guid: b42b46fd214cc2c4996daed87dca90f8,
+        type: 3}
+      propertyPath: m_Name
+      value: SteamAchievementManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b42b46fd214cc2c4996daed87dca90f8, type: 3}
 --- !u!1 &1945750590
 GameObject:
   m_ObjectHideFlags: 0

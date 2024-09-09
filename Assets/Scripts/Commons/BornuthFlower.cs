@@ -23,13 +23,12 @@ public class BornuthFlower : MonoBehaviour
     public virtual void ShowFlower()
     {
         wasGet = SaveManager.Instance.CheckGetBonus();
-
-        Debug.Log("ShowFlower"+wasGet);
         if (wasGet) return;
+
         wasGet = true;
         flowerObj.SetActive(true);
-        Debug.Log("ShowFlower" + wasGet);
         SaveManager.Instance.SetBonus();
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_1");
         if (TryGetComponent(out Collider2D col))
         {
             col.enabled = false;
