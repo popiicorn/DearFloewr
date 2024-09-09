@@ -41,6 +41,8 @@ public class SaveManager : MonoBehaviour
         int stageNum = int.Parse(last) - 1;
 
         saveData.stages[stageNum].getBonus = true;
+
+        Save();
     }
     public void SetCleared(int stageNumber)
     {
