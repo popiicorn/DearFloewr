@@ -28,10 +28,23 @@ public class GameManager : MonoBehaviour
     public bool IsCamMoveCleared;
     public bool IsPreGameClear;
     string nextSceneName = "Transition_1";
+    string currentSceneName;
+
     private void Awake()
     {
         Instance = this;
     }
+
+    private void Start()
+    {
+        currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+    }
+    // currentSceneName‚ÉTransition‚ª‚Ó‚­‚Ü‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ð”»’è‚·‚é
+    bool IsTransitionScene()
+    {
+        return currentSceneName.Contains("Transition");
+    }
+
 
     public void SetTrandition(TransitionName name)
     {
@@ -157,11 +170,14 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (IsTransitionScene())
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             optionPanel.SetActive(true);
             CriManager.instance.OnPauseCRI();
-            //MovieSoundManager.instance.MovieOnPause();
         }
     }
 
