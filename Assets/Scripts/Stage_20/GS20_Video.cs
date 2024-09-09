@@ -9,14 +9,29 @@ public class GS20_Video : MonoBehaviour
     [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] RawImage rawImage;
     [SerializeField] GameObject fadeObj;
+    public bool wasPlayed;
 
     void Start()
     {
+        GameManager.Instance.OnClearCkeckSteamAchievement = () =>
+        {
+            CheckAchievement();
+        };
+
         rawImage.gameObject.SetActive(false);
         videoPlayer.loopPointReached += LoopPointReached;
         videoPlayer.Prepare();
         // StartCoroutine(PlayStart());
     }
+
+    void CheckAchievement()
+    {
+        if (!wasPlayed)
+        {
+            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_7");
+        }
+    }
+
     IEnumerator PlayStart()
     {
         videoPlayer.Prepare();
@@ -27,6 +42,7 @@ public class GS20_Video : MonoBehaviour
 
     public void Play()
     {
+        wasPlayed = true;
         rawImage.gameObject.SetActive(true);
         videoPlayer.Play();
     }

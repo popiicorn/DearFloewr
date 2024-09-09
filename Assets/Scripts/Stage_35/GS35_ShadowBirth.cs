@@ -16,6 +16,7 @@ public class GS35_ShadowBirth : MonoBehaviour
     public void OnShadowBirth()
     {
         character.gameObject.SetActive(true);
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_15");
         gameObject.SetActive(false);
         attackedCollider.enabled = true;
     }

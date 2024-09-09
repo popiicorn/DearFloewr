@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,9 +30,10 @@ public class GameManager : MonoBehaviour
     public bool IsPreGameClear;
     string nextSceneName = "Transition_1";
     string currentSceneName;
+    public UnityAction OnClearCkeckSteamAchievement;
 
     private void Awake()
-    {
+    {        
         Instance = this;
     }
 
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+        OnClearCkeckSteamAchievement?.Invoke();
         Debug.Log("GameClear");
         if (transitionName == TransitionName.Ending || transitionName == TransitionName.Title)
         {

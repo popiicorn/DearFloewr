@@ -43,6 +43,11 @@ public class SaveManager : MonoBehaviour
         saveData.stages[stageNum].getBonus = true;
 
         Save();
+        // 全てのBonusを取得しているかどうかを判定
+        if(IsAllBonusGet() && saveData.stages[34].getBonus)
+        {
+            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_12");
+        }
     }
     public void SetCleared(int stageNumber)
     {
@@ -101,11 +106,25 @@ public class SaveManager : MonoBehaviour
             saveData = new SaveData();
         }
     }
+    // ?を表示した回数を記録
+    public void AddQuestionCount()
+    {
+        saveData.questionCount++;
+        Save();
+        if(saveData.questionCount == 30)
+        {
+            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_14");
+        }
+    }
 
     [System.Serializable]
     public class SaveData
     {
         public Stage[] stages = new Stage[35];
+        // ？を表示した回数
+        public int questionCount;
+        // 歩いた距離を記録
+        public float walkDistance;
 
         public SaveData()
         {

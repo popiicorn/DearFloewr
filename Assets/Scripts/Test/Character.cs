@@ -407,6 +407,7 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         emoticon.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
+        SaveManager.Instance.AddQuestionCount();
         emoticon.gameObject.SetActive(false);
         canMove = true;
     }
