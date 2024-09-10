@@ -28,7 +28,7 @@ public class BornuthFlower : MonoBehaviour
         wasGet = true;
         flowerObj.SetActive(true);
         SaveManager.Instance.SetBonus();
-        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_1");
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_2");
         if (TryGetComponent(out Collider2D col))
         {
             col.enabled = false;

@@ -16,6 +16,7 @@ public class StageSelectManager : MonoBehaviour
             buttonStages[i].SetStageData(SaveManager.Instance.saveData.stages[i]);
             buttonStages[i].OnClickButton = OnClickStageButton;
         }
+
     }
 
 

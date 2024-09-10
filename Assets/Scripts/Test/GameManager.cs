@@ -199,7 +199,7 @@ public class GameManager : MonoBehaviour
     {
         CriManager.instance.OffPauseCRI();
         optionPanel.SetActive(false);
-        
+        SaveManager.Instance.Save();
         //MovieSoundManager.instance.MovieOffPause();
     }
 

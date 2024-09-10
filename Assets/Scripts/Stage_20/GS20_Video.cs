@@ -13,10 +13,8 @@ public class GS20_Video : MonoBehaviour
 
     void Start()
     {
-        GameManager.Instance.OnClearCkeckSteamAchievement = () =>
-        {
-            CheckAchievement();
-        };
+
+        Debug.Log("Start");
 
         rawImage.gameObject.SetActive(false);
         videoPlayer.loopPointReached += LoopPointReached;
@@ -24,13 +22,7 @@ public class GS20_Video : MonoBehaviour
         // StartCoroutine(PlayStart());
     }
 
-    void CheckAchievement()
-    {
-        if (!wasPlayed)
-        {
-            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_7");
-        }
-    }
+
 
     IEnumerator PlayStart()
     {

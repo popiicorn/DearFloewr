@@ -2194,6 +2194,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   eventTrigger: {fileID: 1744332329}
+  video: {fileID: 1744332331}
 --- !u!1 &689250246
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,6 +4157,7 @@ MonoBehaviour:
   videoPlayer: {fileID: 1568110287}
   rawImage: {fileID: 1001729499}
   fadeObj: {fileID: 1782424698}
+  wasPlayed: 0
 --- !u!61 &1744332332
 BoxCollider2D:
   m_ObjectHideFlags: 0

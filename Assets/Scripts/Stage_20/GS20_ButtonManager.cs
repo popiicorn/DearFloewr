@@ -10,11 +10,29 @@ public class GS20_ButtonManager : MonoBehaviour
     [SerializeField] int[] answer = { 2, 0, 1, 3};
     [SerializeField] EventData[] OnClearEvent;
     [SerializeField] EventTrigger eventTrigger;
+    [SerializeField] GS20_Video video;
     private void Awake()
     {
         foreach (var button in buttons)
         {
             button.OnClickEvent += CheckClear;
+        }
+    }
+
+    private void Start()
+    {
+        GameManager.Instance.OnClearCkeckSteamAchievement = () =>
+        {
+            CheckAchievement();
+        };
+    }
+
+    void CheckAchievement()
+    {
+        Debug.Log("wasPlayed" + video.wasPlayed);
+        if (!video.wasPlayed)
+        {
+            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_7");
         }
     }
 

@@ -85,7 +85,7 @@ public class SaveManager : MonoBehaviour
         saveData.stages[stageNumber].isMovieStage = true;
     }
 
-    void Save()
+    public void Save()
     {
 
         string saveDataJson = JsonUtility.ToJson(saveData, true);
@@ -114,6 +114,28 @@ public class SaveManager : MonoBehaviour
         if(saveData.questionCount == 30)
         {
             SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_14");
+        }
+    }
+
+    public float GetWalkDistance()
+    {
+        return saveData.walkDistance;
+    }
+
+    public void SetWalkDistance(float distance)
+    {
+        saveData.walkDistance = distance;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.C))
+        {
+            // 全ステージを開放
+            for (int i = 0; i < saveData.stages.Length; i++)
+            {
+                saveData.stages[i].isOpened = true;
+            }
         }
     }
 

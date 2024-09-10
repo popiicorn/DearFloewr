@@ -5,6 +5,10 @@ using UnityEngine.EventSystems;
 
 public class Character : MonoBehaviour
 {
+    // 移動距離の累計
+    [SerializeField] float moveDistance;
+    Vector2 tmpPos = new Vector2();
+
     [SerializeField]
     float speed = 3;
     Vector3 targetPos;
@@ -70,6 +74,9 @@ public class Character : MonoBehaviour
         targetPos = transform.position;
         initLeftPos = leftPos;
         initRightPos = rightPos;
+
+        tmpPos = transform.position;
+        moveDistance = SaveManager.Instance.GetWalkDistance();
     }
 
     public void SetParams(float speed)
@@ -91,6 +98,20 @@ public class Character : MonoBehaviour
     // クリックした場所まで移動
     private void Update()
     {
+        if (moveDistance < 30)
+        {
+            // 移動距離の累計
+            if (tmpPos != (Vector2)transform.position)
+            {
+                moveDistance += (Vector2.Distance(this.tmpPos, transform.position));
+                tmpPos = transform.position;
+                SaveManager.Instance.SetWalkDistance(moveDistance);
+                if (moveDistance >= 30)
+                {
+                    SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_13");
+                }
+            }
+        }
 
         if (GameManager.Instance.IsGameClear && !GameManager.Instance.IsCamMoveCleared)
         {
