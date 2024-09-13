@@ -9,7 +9,7 @@ public class BornuthFlower : MonoBehaviour
 
     public bool WasGet { get => SaveManager.Instance.CheckGetBonus(); }
 
-    private void Awake()
+    private void Start()
     {
         wasGet = SaveManager.Instance.CheckGetBonus();
         Debug.Log(wasGet);
