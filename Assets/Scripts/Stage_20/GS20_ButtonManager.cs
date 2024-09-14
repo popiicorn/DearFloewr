@@ -21,6 +21,10 @@ public class GS20_ButtonManager : MonoBehaviour
 
     private void Start()
     {
+        if (video == null)
+        {
+            return;
+        }
         GameManager.Instance.OnClearCkeckSteamAchievement = () =>
         {
             CheckAchievement();
