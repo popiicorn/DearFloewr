@@ -40,6 +40,10 @@ public class ButtonStage : MonoBehaviour
                 flowerGet.SetActive(stage.getBonus);
             }
         }
+        if (stage.stageNumber == 34)
+        {
+            flowerLock.SetActive(false);
+        }
     }
     void SetDalut()
     {

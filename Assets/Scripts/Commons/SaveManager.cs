@@ -44,7 +44,7 @@ public class SaveManager : MonoBehaviour
 
         Save();
         // ‘S‚Ä‚ÌBonus‚ðŽæ“¾‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ð”»’è
-        if(IsAllBonusGet() && saveData.stages[34].getBonus)
+        if(IsAllBonusGet())
         {
             SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_12");
         }
