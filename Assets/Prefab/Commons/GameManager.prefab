@@ -48,9 +48,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionName: 0
-  fadeObj: {fileID: 8442778661378550122}
+  fadeObj: {fileID: 2090646517115697577}
+  fadeOutObj: {fileID: 8442778661378550122}
   nextStageName: 
   optionPanel: {fileID: 7650035088464540994}
+  optionParam:
+    durationColor: 1
+    delayColor: 0.5
+    duration: 1
+    delay: 0.5
   IsGameClear: 0
   IsCamMoveCleared: 0
   IsPreGameClear: 0
@@ -225,6 +231,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca, type: 3}
+--- !u!114 &2090646517115697577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 302442205478312241, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1815243649899323544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8442778661378550122 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7790044343414229490, guid: 9b9e0dc0ac64ef94bbc4509d7d8272ca,

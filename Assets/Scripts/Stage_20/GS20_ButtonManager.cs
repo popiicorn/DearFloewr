@@ -36,7 +36,7 @@ public class GS20_ButtonManager : MonoBehaviour
         Debug.Log("wasPlayed" + video.wasPlayed);
         if (!video.wasPlayed)
         {
-            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_7");
+            SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_6");
         }
     }
 

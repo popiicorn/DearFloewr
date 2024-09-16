@@ -20,8 +20,10 @@ public class GameManager : MonoBehaviour
     }
     [SerializeField] TransitionName transitionName;
     [SerializeField] DOTweenAnimation fadeObj;
+    [SerializeField] DOTweenAnimation fadeOutObj;
     [SerializeField] string nextStageName;
     [SerializeField] GameObject optionPanel;
+    [SerializeField] OptionParam optionParam;
     public bool IsOptionPanelActive { get => optionPanel.activeSelf; }
 
     public static GameManager Instance { get; private set; }
@@ -123,6 +125,7 @@ public class GameManager : MonoBehaviour
     void ToNextScene()
     {        
         fadeObj.gameObject.SetActive(true);
+        Debug.Log("ToNextScene");
     }
 
     string GetNextTransitionSceneName()
@@ -154,6 +157,7 @@ public class GameManager : MonoBehaviour
 
     public void Transition()
     {
+        Debug.Log("Transition");
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 
@@ -167,6 +171,28 @@ public class GameManager : MonoBehaviour
 
     public void ToTitle()
     {
+        if (fadeObj.animationType == DOTweenAnimation.AnimationType.Color)
+        {
+            fadeObj.delay = optionParam.delayColor;
+            fadeObj.duration = optionParam.durationColor;
+        }
+        else
+        {
+            fadeObj.delay = optionParam.delay;
+            fadeObj.duration = optionParam.duration;
+        }
+
+        if(fadeOutObj.animationType == DOTweenAnimation.AnimationType.Fade)
+        {
+            fadeOutObj.delay = optionParam.delayColor;
+            fadeOutObj.duration = optionParam.durationColor;
+        }
+        else
+        {
+            fadeOutObj.delay = optionParam.delay;
+            fadeOutObj.duration = optionParam.duration;
+        }
+
         nextSceneName = "Title";
         ToNextScene();
     }
@@ -203,6 +229,14 @@ public class GameManager : MonoBehaviour
         //MovieSoundManager.instance.MovieOffPause();
     }
 
-
+    [System.Serializable]
+    class OptionParam
+    {
+        public float durationColor;
+        public float delayColor;
+        [Space]
+        public float duration;
+        public float delay;
+    }
 }
 

@@ -106,7 +106,7 @@ public class Character : MonoBehaviour
                 moveDistance += (Vector2.Distance(this.tmpPos, transform.position));
                 tmpPos = transform.position;
                 SaveManager.Instance.SetWalkDistance(moveDistance);
-                if (moveDistance >= 30)
+                if (moveDistance >= 3000)
                 {
                     SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_13");
                 }

@@ -111,7 +111,7 @@ public class SaveManager : MonoBehaviour
     {
         saveData.questionCount++;
         Save();
-        if(saveData.questionCount == 30)
+        if(saveData.questionCount == 100)
         {
             SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_14");
         }
