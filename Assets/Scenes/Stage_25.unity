@@ -681,7 +681,7 @@ MonoBehaviour:
     acbFile: BGSdemoStage02.acb
     awbFile: BGSdemoStage02.awb
     loaderStatus: 0
-  dspBusSetting: 
+  dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
 --- !u!4 &129310174
@@ -1049,6 +1049,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cbcb5e8f3662d408239fcf0674fbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &286959447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4744700822261483834, guid: 5ed78430aaacc244eb21200d003809de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4744700820609235960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &286959449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286959447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage25
 --- !u!1 &290967135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2263,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d6dbce2c31d46a78224417bafe6677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &541241461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6641826368830012034, guid: 5ed78430aaacc244eb21200d003809de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4744700820609235960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &541241464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541241461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage25
 --- !u!1001 &668648089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3599,6 +3677,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atomSource: {fileID: 1159152116}
+--- !u!1 &1176148286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111756582928303628, guid: 5ed78430aaacc244eb21200d003809de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4744700820609235960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1176148289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176148286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage25
 --- !u!1 &1188611581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,6 +4681,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1437663051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6511337421013994613, guid: c4c116a26c9ddc6448afdc7ca277d1ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 430563662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1437663057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437663051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: flowerGet
+  _cueSheet: Flower
 --- !u!1 &1465989294
 GameObject:
   m_ObjectHideFlags: 0

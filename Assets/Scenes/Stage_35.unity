@@ -580,6 +580,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &68662853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -742,6 +754,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ShadowBorn
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &73858609
@@ -1474,6 +1498,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &189655216
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1885,6 +1921,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &223593575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1923,6 +1971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305859339}
   - component: {fileID: 305859340}
+  - component: {fileID: 305859341}
   m_Layer: 0
   m_Name: crack_1
   m_TagString: Untagged
@@ -1998,6 +2047,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &305859341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305859338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage35
 --- !u!4 &383558844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5482555530629660819, guid: 2a79120396afa1e4ba049d8018b8c8e5,
@@ -2467,6 +2549,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &670317959
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2505,6 +2599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673798479}
   - component: {fileID: 673798480}
+  - component: {fileID: 673798481}
   m_Layer: 0
   m_Name: crack_3
   m_TagString: Untagged
@@ -2580,6 +2675,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &673798481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673798478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage35
 --- !u!1 &690134604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,6 +4219,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &1240995499
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4976,6 +5116,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2136893315}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: flowers wither
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &1442512053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5015,6 +5167,8 @@ GameObject:
   - component: {fileID: 1461965744}
   - component: {fileID: 1461965745}
   - component: {fileID: 1461965746}
+  - component: {fileID: 1461965748}
+  - component: {fileID: 1461965747}
   m_Layer: 0
   m_Name: Disappear
   m_TagString: Untagged
@@ -5110,6 +5264,52 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1461965747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461965743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: brokenkWood-001
+  _cueSheet: Stage35
+--- !u!114 &1461965748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461965743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1461965747}
 --- !u!1 &1464743109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5484,6 +5684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516270803}
   - component: {fileID: 1516270804}
+  - component: {fileID: 1516270805}
   m_Layer: 0
   m_Name: crack_2
   m_TagString: Untagged
@@ -5559,6 +5760,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1516270805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516270802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: breakWood
+  _cueSheet: Stage35
 --- !u!1 &1518875479
 GameObject:
   m_ObjectHideFlags: 0
@@ -6200,7 +6434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atomSource: {fileID: 0}
-  sTAGE_TYPE: 1
+  sTAGE_TYPE: 3
 --- !u!114 &1832101910 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1014904612908342352, guid: 37841337faf1a413e86c6782c28524d2,
@@ -6213,6 +6447,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7a8f27baea04d1b9687a093b5547f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1832101915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: MiniShadowAttack
+  _cueSheet: Stage35
+--- !u!114 &1832101916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 1832101915}
 --- !u!1 &1838227875
 GameObject:
   m_ObjectHideFlags: 0
@@ -7112,6 +7392,18 @@ MonoBehaviour:
     - 0
   _cueName: 
   _cueSheet: Flower
+--- !u!114 &2136893315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091093551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183155653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4947207786696828417
 PrefabInstance:
   m_ObjectHideFlags: 0
