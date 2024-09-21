@@ -229,6 +229,8 @@ GameObject:
   - component: {fileID: 42117813}
   - component: {fileID: 42117812}
   - component: {fileID: 42117814}
+  - component: {fileID: 42117816}
+  - component: {fileID: 42117815}
   m_Layer: 0
   m_Name: FlowerAnime
   m_TagString: Untagged
@@ -598,6 +600,52 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.36
+--- !u!114 &42117815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42117806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: FlowerPopOut
+  _cueSheet: Stage30
+--- !u!114 &42117816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42117806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129baacf3cdf3794caa6702f5cdc260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSource: {fileID: 42117815}
 --- !u!1001 &45056640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1112,6 +1160,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 458880060912328656, guid: 37841337faf1a413e86c6782c28524d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 458880060912328657, guid: 37841337faf1a413e86c6782c28524d2,
         type: 3}
       propertyPath: m_RootOrder
@@ -1708,6 +1761,18 @@ MonoBehaviour:
   panelBetween: 1
   isSelfSetting: 1
   selfSize: 1
+--- !u!114 &296886431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2424506894875482407, guid: 59801c25b2dd1ce41be8654071ce06b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 205541054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3060294f5887d1d4b97dbc5a26d40b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &324535208
 GameObject:
   m_ObjectHideFlags: 0
@@ -6146,6 +6211,7 @@ MonoBehaviour:
   defaultAnimatorOverrideController: {fileID: 22100000, guid: 9432a53f54c47464bb0055900171eb90,
     type: 2}
   triggerObj: {fileID: 2056256781}
+  bGMManager: {fileID: 296886431}
 --- !u!68 &1902523724
 EdgeCollider2D:
   m_ObjectHideFlags: 0

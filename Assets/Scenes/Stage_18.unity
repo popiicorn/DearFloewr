@@ -6694,6 +6694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
         type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
+        type: 3}
       propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1966271410}
@@ -6704,12 +6709,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
         type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
+        type: 3}
       propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GameClear
       objectReference: {fileID: 0}
     - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
         type: 3}
       propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6988517805288634253, guid: 247a078c51c262141a17b815b3435cf2,

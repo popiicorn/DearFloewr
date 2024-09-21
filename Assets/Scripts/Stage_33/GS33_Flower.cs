@@ -10,5 +10,6 @@ public class GS33_Flower : MonoBehaviour
     public void OnClick()
     {
         OnClickAction?.Invoke();
+        CriManager.instance.PlayObjSE("GetPetal");
     }
 }

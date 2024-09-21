@@ -425,6 +425,10 @@ MonoBehaviour:
     acbFile: Nomal.acb
     awbFile: Nomal.awb
     loaderStatus: 0
+  - name: Stage24
+    acbFile: Stage24.acb
+    awbFile: 
+    loaderStatus: 0
   dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0

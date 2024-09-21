@@ -68,6 +68,25 @@ public class BGMManager : MonoBehaviour
         
     }
 
+    public void OnBGMAisac(string aisacName)
+    {
+        DOVirtual.Float(0f, 1f, 1f, value =>
+        {
+            bGMAtomSource.SetAisacControl(aisacName, value);
+        });
+
+
+    }
+
+    public void OffBGMAisac(string aisacName)
+    {
+        DOVirtual.Float(1f, 0f, 1f, value =>
+        {
+            bGMAtomSource.SetAisacControl(aisacName, value);
+        });
+
+    }
+
     public void PauseBGM()
     {
         CriAtomSource.Status status = bGMAtomSource.status;

@@ -8,16 +8,7 @@ public class AisacManager : MonoBehaviour
     [SerializeField] CriAtomSource atomSource;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void OnAisac()
     {
@@ -31,6 +22,14 @@ public class AisacManager : MonoBehaviour
         atomSource.SetAisacControl("Filter", 0);
     }
 
+    public void OnBGMAisac(string aisacName)
+    {
+        atomSource.SetAisacControl(aisacName, 1f);
+    }
 
+    public void OffBGMAisac(string aisacName)
+    {
+        atomSource.SetAisacControl(aisacName, 0);
+    }
 }
 

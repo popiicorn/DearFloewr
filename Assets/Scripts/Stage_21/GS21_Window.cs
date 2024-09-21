@@ -9,5 +9,6 @@ public class GS21_Window : MonoBehaviour
     private void OnDisable()
     {
         OnClickEvent?.Invoke();
+        CriManager.instance.PlayObjSE("ClickBug");
     }
 }

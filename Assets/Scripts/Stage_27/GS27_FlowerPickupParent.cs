@@ -40,6 +40,7 @@ public class GS27_FlowerPickupParent : MonoBehaviour, IDragHandler, IBeginDragHa
         offset = transform.position - mousePos;
         canvasGroup.blocksRaycasts = false;
         // GetComponent<Collider2D>().enabled = false;
+        CriManager.instance.PlayObjSE("ObjCatch");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -82,6 +83,7 @@ public class GS27_FlowerPickupParent : MonoBehaviour, IDragHandler, IBeginDragHa
             isClearPos = true;
             canMove = false;
             isClear = true;
+            CriManager.instance.PlayObjSE("GetPetal");
             GS27_Capsule.Instance.OnFlower();
             return;
         }

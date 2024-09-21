@@ -8,6 +8,7 @@ public class GS33_Background_WT : MonoBehaviour
     [SerializeField] AnimatorOverrideController animatorOverrideController;
     [SerializeField] AnimatorOverrideController defaultAnimatorOverrideController;
     [SerializeField] GameObject triggerObj;
+    [SerializeField] BGMManager bGMManager;
     public void Show()
     {
         gameObject.SetActive(true);
@@ -33,10 +34,13 @@ public class GS33_Background_WT : MonoBehaviour
             if (collision.transform.position.x < triggerObj.transform.position.x)
             {
                 ChangeAnimator();
+                bGMManager.OnBGMAisac("TimeHole");
+
             }
             else
             {
                 ChangeDefaultAnimator();
+                bGMManager.OffBGMAisac("TimeHole");
             }
         }
 
