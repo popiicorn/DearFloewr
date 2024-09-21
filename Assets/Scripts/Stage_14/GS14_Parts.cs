@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class GS14_Parts : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
+    [SerializeField] UnityEvent OnCatch;
     // オフセットを作る
     Vector3 offset;
     // 初期ポジション
@@ -33,6 +34,7 @@ public class GS14_Parts : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         offset = transform.position - mousePos;
         canvasGroup.blocksRaycasts = false;
         GetComponent<Collider2D>().enabled = false;
+        OnCatch?.Invoke();
     }
 
     public void OnDrag(PointerEventData eventData)
