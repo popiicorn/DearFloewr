@@ -35,7 +35,12 @@ public class GS07_3_Shadow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Character>())
+        if (GameManager.Instance.IsGameOver)
+        {
+            return;
+        }
+
+        if (collision.TryGetComponent(out Character chara))
         {
             if (GameManager.Instance.IsGameClear)
             {
@@ -43,6 +48,7 @@ public class GS07_3_Shadow : MonoBehaviour
             }
             OnCharacter?.Invoke();
             onCharacter = true;
+            chara.OnDamage();
             if (cameraShake)
             {
                 StartCoroutine(cameraShake.Shake(

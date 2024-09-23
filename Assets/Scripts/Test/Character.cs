@@ -45,6 +45,7 @@ public class Character : MonoBehaviour
         Kick,
         PushSwitch,
         Sit,
+        AutoRun,
     }
 
     Mode mode = Mode.Normal;
@@ -89,16 +90,25 @@ public class Character : MonoBehaviour
         leftPos = left;
         rightPos = right;
     }
-
+    bool isAutoRun = false;
+    // 右に走り続ける
+    public void RunRight()
+    {
+        isAutoRun = true;
+        faceDirection = FaceDirection.Right;
+        targetPos = new Vector3(10000, transform.position.y, transform.position.z);
+        animator.SetBool("IsWalking", true);
+    }
 
     // クリックしたものの近くまでいく
     // クリックしたものが「動かすもの」ならモードを「PrePush」に変更
     // クリックしたものが「キック」ならモードを「PrePush」に変更
 
     // クリックした場所まで移動
+
     private void Update()
     {
-        if (moveDistance < 30)
+        if (moveDistance < 3000)
         {
             // 移動距離の累計
             if (tmpPos != (Vector2)transform.position)
@@ -111,6 +121,14 @@ public class Character : MonoBehaviour
                     SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_13");
                 }
             }
+        }
+
+        if (isAutoRun)
+        {
+            targetPos.z = transform.position.z;
+            targetPos.y = transform.position.y;
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+            return;
         }
 
         if (GameManager.Instance.IsGameClear && !GameManager.Instance.IsCamMoveCleared)
@@ -505,5 +523,16 @@ public class Character : MonoBehaviour
     public void SetAnim(AnimatorOverrideController animatorOverrideController)
     {
         animator.runtimeAnimatorController = animatorOverrideController;
+    }
+
+    public void OnDamage()
+    {
+        // Sitアニメーションで移動不可にする
+        isWalking = false;
+        animator.SetBool("IsWalking", isWalking);
+        animator.Play("Sit");
+        mode = Mode.Sit;
+        transform.localScale = new Vector3(1, 1, 1);
+        canMove = false;
     }
 }

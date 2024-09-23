@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
+using Com.LuisPedroFonseca.ProCamera2D.TopDownShooter;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
     public bool IsGameClear;
+    public bool IsGameOver;
     public bool IsCamMoveCleared;
     public bool IsPreGameClear;
     string nextSceneName = "Transition_1";
@@ -35,7 +37,11 @@ public class GameManager : MonoBehaviour
     public UnityAction OnClearCkeckSteamAchievement;
 
     private void Awake()
-    {        
+    {
+        IsGameOver = false;
+        IsGameClear = false;
+        IsCamMoveCleared = false;
+        IsPreGameClear = false;
         Instance = this;
     }
 
@@ -57,6 +63,10 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
+        if (IsGameOver)
+        {
+            return;
+        }
         if (IsGameClear)
         {
             return;
@@ -68,6 +78,11 @@ public class GameManager : MonoBehaviour
 
     public void GameClear()
     {
+        if (IsGameOver)
+        {
+            return;
+        }
+
         if (IsGameClear)
         {
             return;
@@ -117,6 +132,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (IsGameClear)
+        {
+            return;
+        }
+        Debug.Log("GameOver");
+        IsGameOver = true;
         nextSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         ToNextScene();
     }
@@ -171,6 +192,7 @@ public class GameManager : MonoBehaviour
 
     public void ToTitle()
     {
+        Debug.Log("ToTitle");
         if (fadeObj.animationType == DOTweenAnimation.AnimationType.Color)
         {
             fadeObj.delay = optionParam.delayColor;
@@ -199,6 +221,7 @@ public class GameManager : MonoBehaviour
 
     public void ToStageSelect()
     {
+        Debug.Log("ToStageSelect");
         if (fadeObj.animationType == DOTweenAnimation.AnimationType.Color)
         {
             fadeObj.delay = optionParam.delayColor;
@@ -232,6 +255,7 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             optionPanel.SetActive(true);
@@ -242,7 +266,6 @@ public class GameManager : MonoBehaviour
     public void OnHomeButton()
     {
         // ƒ^ƒCƒgƒ‹‚Ö–ß‚é
-
         if (IsGameClear)
         {
             return;
