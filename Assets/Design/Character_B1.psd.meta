@@ -459,7 +459,7 @@ TextureImporter:
       name: Back
       rect:
         serializedVersion: 2
-        x: 281
+        x: 280
         y: 424
         width: 140
         height: 200
@@ -485,7 +485,7 @@ TextureImporter:
         width: 260
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -506,7 +506,7 @@ TextureImporter:
         width: 260
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -527,7 +527,7 @@ TextureImporter:
         width: 260
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,6 +535,90 @@ TextureImporter:
       bones: []
       spriteID: bf88594907c665f42967ec6e8273a5ef
       internalID: 885022837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageSit_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9996c6dbf3ff11141aec19dcc64739cb
+      internalID: 1345580955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageSit_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 208
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5fc875b002ebc4b9ef87e1b55eb063
+      internalID: -1397643526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageSit_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 208
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68ad867f12adc74691c304962ddecc2
+      internalID: 368764325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageSit_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 208
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355bcc00b7f961546add7a6763adf352
+      internalID: 1677745284
       vertices: []
       indices: 
       edges: []
@@ -551,6 +635,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Back: -363687945
+      DamageSit_1: 1345580955
+      DamageSit_2: -1397643526
+      DamageSit_3: 368764325
+      DamageSit_4: 1677745284
       GimmickBg: 1452462912
       GimmickMark_1: -934553831
       GimmickMark_2: -800786762
