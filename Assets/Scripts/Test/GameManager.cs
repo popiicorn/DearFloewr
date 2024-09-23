@@ -197,6 +197,35 @@ public class GameManager : MonoBehaviour
         ToNextScene();
     }
 
+    public void ToStageSelect()
+    {
+        if (fadeObj.animationType == DOTweenAnimation.AnimationType.Color)
+        {
+            fadeObj.delay = optionParam.delayColor;
+            fadeObj.duration = optionParam.durationColor;
+        }
+        else
+        {
+            fadeObj.delay = optionParam.delay;
+            fadeObj.duration = optionParam.duration;
+        }
+
+        if (fadeOutObj.animationType == DOTweenAnimation.AnimationType.Fade)
+        {
+            fadeOutObj.delay = optionParam.delayColor;
+            fadeOutObj.duration = optionParam.durationColor;
+        }
+        else
+        {
+            fadeOutObj.delay = optionParam.delay;
+            fadeOutObj.duration = optionParam.duration;
+        }
+
+        nextSceneName = "Title_StageSelect";
+        ToNextScene();
+    }
+
+
     private void Update()
     {
         if (IsTransitionScene())
@@ -220,6 +249,8 @@ public class GameManager : MonoBehaviour
         }
         ToTitle();
     }
+
+
 
     public void OnBackButton()
     {
