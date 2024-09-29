@@ -30,10 +30,12 @@ public class GS_31_Button : MonoBehaviour
         if (isCorrect)
         {
             animator.Play("Push_OK");
+            CriManager.instance.PlayObjSE("RockTrue");
         }
         else
         {
             animator.Play("Push_Only");
+            CriManager.instance.PlayObjSE("RockFalse");
         }
     }
 
