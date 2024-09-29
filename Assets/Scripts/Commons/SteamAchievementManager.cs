@@ -38,10 +38,5 @@ public class SteamAchievementManager : MonoBehaviour
             SteamUserStats.ResetAllStats(true);
             SteamUserStats.RequestCurrentStats();
         }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            UnlockAchievement("ACHIEVEMENT_12");
-        }
     }
 }

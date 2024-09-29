@@ -47,6 +47,7 @@ public class SaveManager : MonoBehaviour
         if(IsAllBonusGet())
         {
             SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_12");
+            saveData.stages[34].isOpened = true;
         }
     }
     public void SetCleared(int stageNumber)
@@ -129,12 +130,34 @@ public class SaveManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A))
+        {
+            // 全ステージを開放
+            for (int i = 0; i < saveData.stages.Length-1; i++)
+            {
+                saveData.stages[i].isOpened = true;
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.F))
+        {
+            // 全ステージを開放
+            for (int i = 0; i < saveData.stages.Length - 1; i++)
+            {
+                saveData.stages[i].getBonus = true;
+            }
+            if (IsAllBonusGet())
+            {
+                SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_12");
+                saveData.stages[34].isOpened = true;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.R))
         {
             // 全ステージを開放
             for (int i = 0; i < saveData.stages.Length; i++)
             {
-                saveData.stages[i].isOpened = true;
+                saveData.stages[i].isOpened = false;
             }
         }
     }
