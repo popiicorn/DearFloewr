@@ -1478,6 +1478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -120572674987661194, guid: e57d0bf3339fc4e75a26ce2fd10c629d,
         type: 3}
+      propertyPath: limitOffsetL
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -120572674987661194, guid: e57d0bf3339fc4e75a26ce2fd10c629d,
+        type: 3}
       propertyPath: limitOffsetR
       value: 2
       objectReference: {fileID: 0}
