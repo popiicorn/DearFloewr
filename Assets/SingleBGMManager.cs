@@ -7,6 +7,11 @@ using DG.Tweening;
 
 public class SingleBGMManager : MonoBehaviour
 {
+    public static SingleBGMManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
     public CriAtomSource bGMAtomSource;
     public string bGMCueName;
 
