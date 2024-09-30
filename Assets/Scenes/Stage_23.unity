@@ -388,6 +388,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &186424531 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 48208359458282837, guid: a30f579c82122d942954d4bf2fd8db0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 597244276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &197034705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -893,6 +899,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b537463451836334296acbf390574bcd, type: 3}
+--- !u!61 &439419793 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 48208358167214111, guid: a30f579c82122d942954d4bf2fd8db0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 597244276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &439608360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1045,19 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: KeySoil
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 506408947}
+          m_TargetAssemblyTypeName: CursorSelect, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 0
@@ -4375,6 +4400,55 @@ MonoBehaviour:
             m_StringArgument: Key_Move
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1174103431}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 186424531}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 439419793}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1324270954}
+          m_TargetAssemblyTypeName: SetDefaultCursor, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &618949262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5025,6 +5099,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7caf65dccd3c844b7ee63cd81c9e97, type: 3}
+--- !u!61 &1174103431 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7827949091600490347, guid: a30f579c82122d942954d4bf2fd8db0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 597244276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1176341137 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3860438868825858650, guid: a30f579c82122d942954d4bf2fd8db0e,
@@ -5170,6 +5250,18 @@ Transform:
   m_Father: {fileID: 1902523722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324270954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4933195845667084014, guid: 1f3fac64b58d0493f9f79060293db189,
+    type: 3}
+  m_PrefabInstance: {fileID: 346470644}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3278c517d0594dd9abe8ab53deffebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1518875479
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,6 +5770,19 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: KeySoil
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2057947300}
+          m_TargetAssemblyTypeName: CursorSelect, Assembly-CSharp
+          m_MethodName: SetCursor
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2800000, guid: 441cea20ca3e49847b7263683bf65f2f,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 0

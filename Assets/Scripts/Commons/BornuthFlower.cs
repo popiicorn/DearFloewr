@@ -12,7 +12,6 @@ public class BornuthFlower : MonoBehaviour
     private void Start()
     {
         wasGet = SaveManager.Instance.CheckGetBonus();
-        Debug.Log(wasGet);
         if (wasGet && TryGetComponent(out Collider2D col))
         {
             col.enabled = false;
