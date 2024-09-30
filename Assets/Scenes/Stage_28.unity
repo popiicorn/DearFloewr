@@ -3459,6 +3459,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bGMItomSource: {fileID: 1044730486}
+--- !u!114 &1044730493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 159841002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044730484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1045788814
 GameObject:
   m_ObjectHideFlags: 0
@@ -6441,6 +6453,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1044730493}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: setObject00
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!61 &1887018299

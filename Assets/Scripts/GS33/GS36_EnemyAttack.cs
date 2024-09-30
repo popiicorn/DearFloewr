@@ -104,6 +104,7 @@ public class GS36_EnemyAttack : MonoBehaviour
             Debug.Log("‚Ô‚Â‚©‚Á‚½");
             chatacter.gameObject.SetActive(false);
             GameManager.Instance.GameOver();
+            CriManager.instance.PlayObjSE("GameOver");
         }
     }
 }

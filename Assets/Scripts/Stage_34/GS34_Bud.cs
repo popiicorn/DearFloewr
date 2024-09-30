@@ -23,6 +23,7 @@ public class GS34_Bud : MonoBehaviour
         Debug.Log("OnClick");
         selfFlower.Bloom(true);
         groupFlowers.Bloom();
+        CriManager.instance.PlayObjSE("GetPetal");
     }
 
     // ‚Â‚Ú‚Ý‚Æ‚µ‚Ä•\Ž¦‚·‚é
