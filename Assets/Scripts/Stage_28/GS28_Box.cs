@@ -45,11 +45,20 @@ public class GS28_Box : Gimmick, IRockable
             return;
         }
         transform.position += distance;
+        if (distance.sqrMagnitude < float.Epsilon)
+        {
+            IsMove = false;
+        }
+        else
+        {
+            IsMove = true;
+        }
     }
 
     // ó‘Ô‚ð
     public override void OnGameCharacter(Character character)
     {
+        IsMove = false;
         character.SetPushMode();
         if (transform.position.x < character.transform.position.x)
         {
