@@ -44,4 +44,10 @@ public class GS29_Capsule : MonoBehaviour
     {
         rb.isKinematic = false;
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("ÚG");
+    }
+
 }
