@@ -158,6 +158,7 @@ public class SaveManager : MonoBehaviour
             for (int i = 0; i < saveData.stages.Length; i++)
             {
                 saveData.stages[i].isOpened = false;
+                saveData.stages[i].getBonus = false;
             }
         }
     }
