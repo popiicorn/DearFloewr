@@ -105,10 +105,11 @@ public class Character : MonoBehaviour
     // クリックしたものが「キック」ならモードを「PrePush」に変更
 
     // クリックした場所まで移動
+    int walkDistance = 1000000;
 
     private void Update()
     {
-        if (moveDistance < 3000)
+        if (moveDistance < walkDistance)
         {
             // 移動距離の累計
             if (tmpPos != (Vector2)transform.position)
@@ -116,7 +117,7 @@ public class Character : MonoBehaviour
                 moveDistance += (Vector2.Distance(this.tmpPos, transform.position));
                 tmpPos = transform.position;
                 SaveManager.Instance.SetWalkDistance(moveDistance);
-                if (moveDistance >= 3000)
+                if (moveDistance >= walkDistance)
                 {
                     SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_13");
                 }
