@@ -47,7 +47,7 @@ public class GS29_Capsule : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("ÚG");
+        CriManager.instance.PlayObjSE("CupcellHop");
     }
 
 }
