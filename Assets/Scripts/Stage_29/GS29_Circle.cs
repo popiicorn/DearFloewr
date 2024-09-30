@@ -41,6 +41,7 @@ public class GS29_Circle : MonoBehaviour
         }
         // rotationAngle‚¾‚¯‚È‚ß‚ç‚©‚É‰ñ“]
         transform.DORotate(new Vector3(0, 0, defaultRotationAngle), rotationSpeed).SetEase(Ease.Linear).OnComplete(Check);
+        CriManager.instance.PlayObjSE("blockMove_1");
     }
 
     void Check()
