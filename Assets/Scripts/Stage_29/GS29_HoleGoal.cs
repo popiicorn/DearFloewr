@@ -18,6 +18,7 @@ public class GS29_HoleGoal : MonoBehaviour
             capsule.gameObject.SetActive(false);
             capsule.transform.position = nextPos.position;
             StartCoroutine(Goal());
+            CriManager.instance.PlayObjSE("ObjSet");
 
             // capsule.StopForce();
             // collision.gameObject.transform.DOMove(transform.position, 0.5f);
