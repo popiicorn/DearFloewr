@@ -50,6 +50,10 @@ public class GS36_EnemyManager : MonoBehaviour
         {
             shadow.ReShow();
         }
+        if (shadows.Count == 1)
+        {
+            // 
+        }
         if (shadows.Count == 0)
         {
             GameManager.Instance.GameClear();
