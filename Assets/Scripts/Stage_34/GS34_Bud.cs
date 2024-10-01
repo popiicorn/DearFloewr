@@ -30,5 +30,6 @@ public class GS34_Bud : MonoBehaviour
     public void ShowBud()
     {
         gameObject.SetActive(true);
+       
     }
 }

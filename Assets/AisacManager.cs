@@ -6,9 +6,14 @@ using CriWare;
 public class AisacManager : MonoBehaviour
 {
     [SerializeField] CriAtomSource atomSource;
+    public static AisacManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
-    
+
 
     public void OnAisac()
     {
