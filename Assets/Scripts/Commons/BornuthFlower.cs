@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 public class BornuthFlower : MonoBehaviour
 {
     [SerializeField] GameObject flowerObj;
-    private bool wasGet;
+    [SerializeField] private bool wasGet;
 
     public bool WasGet { get => SaveManager.Instance.CheckGetBonus(); }
 
@@ -15,6 +16,10 @@ public class BornuthFlower : MonoBehaviour
         if (wasGet && TryGetComponent(out Collider2D col))
         {
             col.enabled = false;
+        }
+        if (wasGet && TryGetComponent(out Image image))
+        {
+            image.enabled = false;
         }
     }
 
@@ -32,5 +37,10 @@ public class BornuthFlower : MonoBehaviour
         {
             col.enabled = false;
         }
+        if (TryGetComponent(out Image image))
+        {
+            image.enabled = false;
+        }
+
     }
 }

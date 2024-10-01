@@ -53,6 +53,10 @@ public class GS29_Circle : MonoBehaviour
             isComplete = true;
             OnComplete?.Invoke();
         }
+        else
+        {
+            isComplete = false;
+        }
     }
 
     public void Stop()
