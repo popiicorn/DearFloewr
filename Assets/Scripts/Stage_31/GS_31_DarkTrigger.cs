@@ -20,6 +20,7 @@ public class GS_31_DarkTrigger : MonoBehaviour
             isExecuted = true;
             cameraShake.Do();
             darkPanel.SetActive(true);
+            CriManager.instance.PlayObjSE("Quake");
         }
     }
 }
