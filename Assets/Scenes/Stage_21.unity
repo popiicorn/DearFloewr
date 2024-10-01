@@ -1837,6 +1837,12 @@ Transform:
   m_Father: {fileID: 1245749603}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &721280822 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5195808396387903900, guid: 3326c0b20868380449ce7067e5d64419,
+    type: 3}
+  m_PrefabInstance: {fileID: 998737070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &728678267 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
@@ -6086,6 +6092,18 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 2992199755705984754}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 721280822}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
