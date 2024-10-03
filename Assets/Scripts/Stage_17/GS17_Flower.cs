@@ -8,6 +8,7 @@ public class GS17_Flower : MonoBehaviour
     ParticleSystem particle;
     Animator animator;
     bool isDancing;
+    bool isVacuuming;
     [SerializeField] EventData[] vacuumEvent;
     [SerializeField] CameraShake cameraShake;
 
@@ -30,6 +31,10 @@ public class GS17_Flower : MonoBehaviour
             }
             return;
         }
+        if (isVacuuming)
+        {
+            return;
+        }
         if (collision.GetComponent<Character>())
         {
             StartCoroutine(DanceFlower());
@@ -38,11 +43,15 @@ public class GS17_Flower : MonoBehaviour
 
     IEnumerator Vacuum()
     {
+        isDancing = false;
+        isVacuuming = true;
+        StopDance();
         foreach (var item in vacuumEvent)
         {
             yield return item.Play();
             StartCoroutine(cameraShake.Shake(Stage17Params.Instance.shakeSpan, Stage17Params.Instance.shakeAmount, Stage17Params.Instance.shakeAmount));
         }
+        isVacuuming = false;
         SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_5");
     }
 
@@ -53,6 +62,11 @@ public class GS17_Flower : MonoBehaviour
         particle.Play();
         // 3ïbå„Ç…è¡Ç¶ÇÈ
         yield return new WaitForSeconds(3);
+        StopDance();
+    }
+
+    public void StopDance()
+    {
         particle.Stop();
         animator.Play("Flower_Idle");
         isDancing = false;
