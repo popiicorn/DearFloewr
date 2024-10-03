@@ -1099,6 +1099,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventDatas:
+  - delay: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1044730493}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: disappear
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1044730493}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: StopBGI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - delay: 0.5
     unityEvent:
       m_PersistentCalls:
@@ -1151,7 +1179,19 @@ MonoBehaviour:
             m_StringArgument: TimeDoorOpen
             m_BoolArgument: 0
           m_CallState: 2
-  - delay: 2
+        - m_Target: {fileID: 1044730493}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: StartBGI
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - delay: 1
     unityEvent:
       m_PersistentCalls:
         m_Calls:
@@ -1170,6 +1210,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2090273083}
           m_TargetAssemblyTypeName: CriWare.CriAtomSourceBase, CriMw.CriWare.Runtime
           m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1044730493}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: StopBGI
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5054,6 +5106,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1459950413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712103022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7d42e042e4c9c4db4bde98b863e167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionOnStart: {fileID: 0}
+  activateListenerOnEnable: 0
 --- !u!1 &1465989294
 GameObject:
   m_ObjectHideFlags: 0
