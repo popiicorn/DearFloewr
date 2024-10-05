@@ -4499,6 +4499,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8442778661378550122, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8520815774881167108, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
       propertyPath: m_IsActive
@@ -7414,6 +7419,7 @@ MonoBehaviour:
   defaultAnimatorOverrideController: {fileID: 22100000, guid: edbfa4d895566074daa6044228bfbd1e,
     type: 2}
   triggerObj: {fileID: 2056256781}
+  bGMManager: {fileID: 0}
 --- !u!68 &1902523724
 EdgeCollider2D:
   m_ObjectHideFlags: 0
