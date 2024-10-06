@@ -48,6 +48,7 @@ public class GS36_EnemyAttack : MonoBehaviour
         StartCoroutine(cameraShake.Shake(0.02f, 0.7f, 100f / 60f));
         character.KickGimmick();
         // ˆÚ“®
+        CriManager.instance.PlayObjSE("ShadowQwake");
         yield return character.transform.DOMoveX(GetTargetPos(index), 100f/60f).SetEase(Ease.Linear).WaitForCompletion();
         character.enabled = true;
         character.SetDefaultMode();
