@@ -1939,6 +1939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4330697114465453748, guid: d89d1541cb306004c8f9466021a8e709,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4330697114465453750, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
       propertyPath: m_RootOrder
@@ -2027,6 +2032,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[32].x
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[33].x
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[34].x
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[35].x
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[36].x
+      value: 2.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[37].x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[38].x
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569567540329977121, guid: 49c96957a308e9c4f9456c4431e6818a,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[39].x
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 2377781075570744458, guid: 49c96957a308e9c4f9456c4431e6818a,
         type: 3}
@@ -2427,6 +2482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameStageManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947600154065950122, guid: e75c9f97946c8ff4093e0778e99a293b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e75c9f97946c8ff4093e0778e99a293b, type: 3}
@@ -4426,26 +4486,26 @@ MonoBehaviour:
   tweenRigidbody: 0
   wps:
   - {x: -8.635871, y: 1.3927321, z: 0}
-  - {x: -2.2974033, y: -0.56567335, z: 0}
+  - {x: -1.3168592, y: -0.13860273, z: 0}
   fullWps: []
   path:
     wpLengths:
     - 0
-    - 6.4474115
-    - 6.6479454
+    - 6.460678
+    - 7.496705
     wps:
     - {x: -13.66, y: 5.41, z: 0}
     - {x: -8.635871, y: 1.3927321, z: 0}
-    - {x: -2.2974033, y: -0.56567335, z: 0}
+    - {x: -1.3168592, y: -0.13860273, z: 0}
     type: 1
     subdivisionsXSegment: 10
     subdivisions: 30
     controlPoints:
     - a: {x: -8.635871, y: 1.3927321, z: 0}
       b: {x: 0, y: 0, z: 0}
-    - a: {x: 4.0410643, y: -2.5240788, z: 0}
+    - a: {x: 6.0021524, y: -1.6699376, z: 0}
       b: {x: 0, y: 0, z: 0}
-    length: 13.095791
+    length: 13.958098
     isFinalized: 1
     timesTable:
     - 0.033333335
@@ -4479,36 +4539,36 @@ MonoBehaviour:
     - 0.9666667
     - 1
     lengthsTable:
-    - 0.05603854
-    - 0.21628022
-    - 0.46892208
-    - 0.80217105
-    - 1.2042499
-    - 1.6633995
-    - 2.167883
-    - 2.7059972
-    - 3.2660813
-    - 3.836536
-    - 4.405844
-    - 4.9626207
-    - 5.4956717
-    - 5.9941216
-    - 6.447645
-    - 6.8765907
-    - 7.308088
-    - 7.7425776
-    - 8.180237
-    - 8.62101
-    - 9.064655
-    - 9.510775
-    - 9.958852
-    - 10.408281
-    - 10.8584
-    - 11.30852
-    - 11.75795
-    - 12.206026
-    - 12.652146
-    - 13.095791
+    - 0.055221636
+    - 0.21321626
+    - 0.4624889
+    - 0.79157174
+    - 1.1890217
+    - 1.643435
+    - 2.1434538
+    - 2.6777837
+    - 3.2352152
+    - 3.804655
+    - 4.375174
+    - 4.9360833
+    - 5.4770555
+    - 5.9883337
+    - 6.461099
+    - 6.9170194
+    - 7.3829947
+    - 7.8590226
+    - 8.344655
+    - 8.839085
+    - 9.341224
+    - 9.849765
+    - 10.363242
+    - 10.880071
+    - 11.398592
+    - 11.917114
+    - 12.433942
+    - 12.947419
+    - 13.45596
+    - 13.958098
   inspectorMode: 0
   pathType: 1
   handlesType: 0
@@ -6370,6 +6430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowerObj: {fileID: 1652944790}
+  wasGet: 0
 --- !u!4 &1681481164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4312976780105328991, guid: aa827d1ed3362494ebb41817b9967310,
