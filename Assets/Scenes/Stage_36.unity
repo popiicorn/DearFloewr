@@ -477,6 +477,18 @@ MonoBehaviour:
             m_StringArgument: movie
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2091093552}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FlowerPopOut
+            m_BoolArgument: 0
+          m_CallState: 2
   - delay: 3
     unityEvent:
       m_PersistentCalls:
@@ -533,6 +545,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: Character, Assembly-CSharp
           m_MethodName: SetExitLimit
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1966760633}
+          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+          m_MethodName: OffAisac
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -776,7 +800,7 @@ PrefabInstance:
     - target: {fileID: 269213834740381090, guid: 1f3fac64b58d0493f9f79060293db189,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 269213834740381090, guid: 1f3fac64b58d0493f9f79060293db189,
         type: 3}
@@ -1063,9 +1087,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acfFile: DearFlower.acf
   cueSheets:
-  - name: TestSE
-    acbFile: TestSE.acb
+  - name: Stage36
+    acbFile: Stage36.acb
     awbFile: 
+    loaderStatus: 0
+  - name: TimeHole_Shadw
+    acbFile: TimeHole_Shadw.acb
+    awbFile: TimeHole_Shadw.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -1164,6 +1192,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1966760633}
+          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+          m_MethodName: StopBGM
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2242,7 +2282,7 @@ PrefabInstance:
     - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7947600154065950120, guid: e75c9f97946c8ff4093e0778e99a293b,
         type: 3}
@@ -2632,7 +2672,7 @@ Transform:
   - {fileID: 2113721180}
   - {fileID: 1296054089}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &604422470
 MonoBehaviour:
@@ -2689,6 +2729,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1966760633}
+        m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+        m_MethodName: OnAisac
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3039,7 +3091,7 @@ PrefabInstance:
     - target: {fileID: 4312976780333055611, guid: aa827d1ed3362494ebb41817b9967310,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4312976780333055611, guid: aa827d1ed3362494ebb41817b9967310,
         type: 3}
@@ -4362,7 +4414,7 @@ PrefabInstance:
     - target: {fileID: 47198002669305550, guid: b537463451836334296acbf390574bcd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 47198002669305550, guid: b537463451836334296acbf390574bcd,
         type: 3}
@@ -4442,7 +4494,7 @@ PrefabInstance:
     - target: {fileID: 4330697114465453750, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4330697114465453750, guid: d89d1541cb306004c8f9466021a8e709,
         type: 3}
@@ -5115,7 +5167,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1236717465
 PrefabInstance:
@@ -6215,7 +6267,7 @@ PrefabInstance:
     - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3506305235038492145, guid: 1911eff5083090e4b85e22dda67fd24c,
         type: 3}
@@ -6736,7 +6788,7 @@ PrefabInstance:
     - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3128843646311631115, guid: b42b46fd214cc2c4996daed87dca90f8,
         type: 3}
@@ -7399,7 +7451,7 @@ Transform:
   - {fileID: 117747673}
   - {fileID: 2056256782}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1902523723
 MonoBehaviour:
@@ -7419,7 +7471,7 @@ MonoBehaviour:
   defaultAnimatorOverrideController: {fileID: 22100000, guid: edbfa4d895566074daa6044228bfbd1e,
     type: 2}
   triggerObj: {fileID: 2056256781}
-  bGMManager: {fileID: 0}
+  bGMManager: {fileID: 1966760633}
 --- !u!68 &1902523724
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -7641,6 +7693,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2030293553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1966760628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966760632}
+  - component: {fileID: 1966760631}
+  - component: {fileID: 1966760633}
+  m_Layer: 0
+  m_Name: Timehole(CriAtomSource)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1966760631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966760628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: Timehole
+  _cueSheet: TimeHole_Shadw
+--- !u!4 &1966760632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966760628}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1966760633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966760628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3060294f5887d1d4b97dbc5a26d40b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGMAtomSource: {fileID: 1966760631}
+  bGMCueName: Timehole
 --- !u!1 &1972973539
 GameObject:
   m_ObjectHideFlags: 0
@@ -8022,7 +8154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2049276873
 PrefabInstance:
@@ -8158,6 +8290,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8003812210439107962, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: _cueSheet
+      value: Stage36
+      objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107964, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -8220,6 +8357,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c6f622d2ba66d4aaefc0915432c5d6, type: 3}
+--- !u!114 &2091093552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091093551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff7c9e6b200cea4d86887f49c7a8377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2100894536
 PrefabInstance:
   m_ObjectHideFlags: 0
