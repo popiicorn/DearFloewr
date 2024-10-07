@@ -25,6 +25,10 @@ public class EV01_SmallRock : Gimmick
     {
         // 座るアニメーションをする
         character.SitGimmick();
+        if (CriManager.instance.stage11== true)
+        {
+            CriManager.instance.PlayObjSE("SitPoint");
+        }
 
     }
 }

@@ -19,6 +19,7 @@ public class CriManager : MonoBehaviour
     [SerializeField] NoiseManager noiseManager;
     [SerializeField] MovieSoundManager movieSoundManager;
     [SerializeField] bool bgi;
+    public bool stage11 = false;
     bool bGIISPause = false;
     public enum PLAYER_TYPE
     {
