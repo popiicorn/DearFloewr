@@ -31,17 +31,23 @@ public class BGMManager : MonoBehaviour
     {
         if (bGMCueName != null)
         {
-            Debug.Log("StartBGM");
-            StartBGM(bGMCueName);
+           StartBGM();
         }
         
     }
 
   
 
-    public void StartBGM(string cueName)
+    public void StartBGM()
     {
-        bGMAtomSource.Play(cueName);
+        CriAtomSource.Status status = bGMAtomSource.status;
+        if (status == CriAtomSource.Status.Playing)
+        {
+            return;
+
+        }
+        Debug.Log("StartBGM");
+        bGMAtomSource.Play(bGMCueName);
     }
 
     public void StopBGM()
@@ -98,5 +104,5 @@ public class BGMManager : MonoBehaviour
 
     }
 
-
+   
 }
