@@ -58,6 +58,7 @@ public class ButtonStage : MonoBehaviour
     {
         if (!stageData.isOpened)
         {
+            CriManager.instance.PlayObjSE("CloseUI01");
             return;
         }
         BGMManager.Instance.StopBGM();
