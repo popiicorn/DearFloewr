@@ -104,5 +104,10 @@ public class BGMManager : MonoBehaviour
 
     }
 
+    public void DestroyBGM()
+    {
+        Destroy(this.gameObject);
+    }
+
    
 }
