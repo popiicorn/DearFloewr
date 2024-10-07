@@ -91,15 +91,15 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.1
-    functionName: PlaysSE
-    data: 
+    functionName: PlayPlayerSE
+    data: footStep_floor_RUN
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
   - time: 0.5
-    functionName: PlaysSE
-    data: 
+    functionName: PlayPlayerSE
+    data: footStep_floor_RUN
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1

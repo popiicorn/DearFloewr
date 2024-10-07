@@ -44,7 +44,7 @@ public class FootStepSE : MonoBehaviour
 
     public void PlayPlayerSE(string cueName)
     {
-        atomSource?.Play(cueName);
+        atomSource.Play(cueName);
     }
 
 }
