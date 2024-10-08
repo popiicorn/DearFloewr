@@ -182,11 +182,18 @@ public class CriManager : MonoBehaviour
         {
             movieSoundManager.MovieOnPause(); ;
         }
-        
+
+        if (pos3DAtomSource != null)
+        {
+            pos3DAtomSource.Pause(true); ;
+        }
+
+
+
         stageSEatomSource.Pause(true);
         playerAtomSource.Pause(true);
         uiAtomSource.Pause(true);
-        pos3DAtomSource.Pause(true);
+        
         //movieSoundManager.MovieOnPause();
 
     }
@@ -212,11 +219,15 @@ public class CriManager : MonoBehaviour
             movieSoundManager.MovieOffPause(); ;
         }
         
+        if (pos3DAtomSource != null)
+        {
+            pos3DAtomSource.Pause(false); ;
+        }
 
         stageSEatomSource.Pause(false);
         playerAtomSource.Pause(false);
         uiAtomSource.Pause(false);
-        pos3DAtomSource.Pause(false);
+        //pos3DAtomSource.Pause(false);
         //MovieSoundManager.instance.MovieOffPause();
 
     }
