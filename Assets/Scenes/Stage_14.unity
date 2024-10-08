@@ -9346,7 +9346,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0
+  delay: 1
   duration: 2
   easeType: 1
   easeCurve:
@@ -10558,6 +10558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bGMItomSource: {fileID: 2069396378}
+  bGMItomSource01: {fileID: 0}
 --- !u!1 &2071772265
 GameObject:
   m_ObjectHideFlags: 0
