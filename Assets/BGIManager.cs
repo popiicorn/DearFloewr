@@ -7,6 +7,7 @@ using DG.Tweening;
 public class BGIManager : MonoBehaviour
 {
     [SerializeField] CriAtomSource bGMItomSource;
+    [SerializeField] CriAtomSource bGMItomSource01;
 
     public static BGIManager instance;
     private void Awake()
@@ -20,6 +21,13 @@ public class BGIManager : MonoBehaviour
         {
             bGMItomSource.SetAisacControl("Filter", value);
         });
+        if (bGMItomSource01 != null)
+        {
+            DOVirtual.Float(0f, 0.7f, 1f, value =>
+            {
+                bGMItomSource01.SetAisacControl("Filter", value);
+            });
+        }
 
 
     }
@@ -30,6 +38,13 @@ public class BGIManager : MonoBehaviour
         {
             bGMItomSource.SetAisacControl("Filter", value);
         });
+        if (bGMItomSource01 != null)
+        {
+            DOVirtual.Float(0.7f, 0f, 1f, value =>
+            {
+                bGMItomSource01.SetAisacControl("Filter", value);
+            });
+        }
 
     }
 }
