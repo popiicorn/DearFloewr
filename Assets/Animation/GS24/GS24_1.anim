@@ -22639,6 +22639,20 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 5.016667
+    functionName: PlayAnimSE
+    data: DoorSign
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 5.6666665
+    functionName: PlayAnimSE
+    data: DoorSign
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 6.3166666
     functionName: OnAnimEnd
     data: 
