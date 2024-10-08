@@ -1087,7 +1087,7 @@ MonoBehaviour:
     acbFile: Stage35.acb
     awbFile: 
     loaderStatus: 0
-  dspBusSetting: 
+  dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
 --- !u!4 &129310174
@@ -6211,7 +6211,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1

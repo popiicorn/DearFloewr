@@ -1419,7 +1419,11 @@ MonoBehaviour:
     acbFile: TimeHole.acb
     awbFile: TimeHole.awb
     loaderStatus: 0
-  dspBusSetting: 
+  - name: TimeDoorOpen
+    acbFile: TimeDoorOpen.acb
+    awbFile: TimeDoorOpen.awb
+    loaderStatus: 0
+  dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
   dontRemoveExistsCueSheet: 0
 --- !u!4 &129310174
@@ -7183,7 +7187,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Timehole
+            m_StringArgument: TimeDoorOpen
             m_BoolArgument: 1
           m_CallState: 2
   character: {fileID: 1078153417}
@@ -9638,8 +9642,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995003833}
-  - component: {fileID: 1995003832}
   - component: {fileID: 1995003834}
+  - component: {fileID: 1995003835}
   m_Layer: 0
   m_Name: Timehole(CriAtomSource)
   m_TagString: Untagged
@@ -9647,39 +9651,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1995003832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995003831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnStart: 1
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 0
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 0.055
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: Timehole
-  _cueSheet: TimeHole
 --- !u!4 &1995003833
 Transform:
   m_ObjectHideFlags: 0
@@ -9707,8 +9678,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d04f15ea9487043b3b4913990a4c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bGMAtomSource: {fileID: 1995003832}
-  bGMCueName: Timehole
+  bGMAtomSource: {fileID: 1995003835}
+  bGMCueName: TimeDoorOpen
+--- !u!114 &1995003835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995003831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: TimeDoorOpen
+  _cueSheet: TimeDoorOpen
 --- !u!1 &2021151206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5697769418513603842, guid: 4105645935e3dc54da28095dcd16d912,
