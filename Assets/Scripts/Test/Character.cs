@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -46,6 +47,7 @@ public class Character : MonoBehaviour
         PushSwitch,
         Sit,
         AutoRun,
+        GetFlower,
     }
 
     Mode mode = Mode.Normal;
@@ -63,6 +65,10 @@ public class Character : MonoBehaviour
     {
         leftPos = tf;
         initLeftPos = tf;
+    }
+    void SetNormal()
+    {
+        mode = Mode.Normal;
     }
 
     private void Awake()
@@ -156,6 +162,10 @@ public class Character : MonoBehaviour
         {
             return;
         }
+        if (mode == Mode.GetFlower)
+        {
+            return;
+        }
 
         if (GameManager.Instance.IsOptionPanelActive) return;
 
@@ -180,6 +190,14 @@ public class Character : MonoBehaviour
                 // ギミックを取得
                 gimmick = hit2d.transform.GetComponent<Gimmick>();
                 Debug.Log(gimmick);
+                if (hit2d.transform.GetComponentInChildren<BornuthFlower>())
+                {
+                    Debug.Log("BornuthFlower");
+                    gimmick = null;
+                    mode = Mode.GetFlower;
+                    Invoke("SetNormal", 0.5f);
+                    return;
+                }
                 if (gimmick && gimmick.IsLock)
                 {
                     gimmick = null;
@@ -220,6 +238,7 @@ public class Character : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isClicking = false;
+            Debug.Log("isClicking = false");
         }
         
 

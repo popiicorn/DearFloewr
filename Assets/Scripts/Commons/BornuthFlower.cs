@@ -32,7 +32,6 @@ public class BornuthFlower : MonoBehaviour
         wasGet = true;
         flowerObj.SetActive(true);
         SaveManager.Instance.SetBonus();
-        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_2");
         if (TryGetComponent(out Collider2D col))
         {
             col.enabled = false;
@@ -41,6 +40,6 @@ public class BornuthFlower : MonoBehaviour
         {
             image.enabled = false;
         }
-
+        SteamAchievementManager.Instance.UnlockAchievement("ACHIEVEMENT_2");
     }
 }
