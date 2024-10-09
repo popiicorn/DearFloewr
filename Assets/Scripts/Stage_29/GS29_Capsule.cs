@@ -48,6 +48,21 @@ public class GS29_Capsule : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         CriManager.instance.PlayObjSE("CupcellHop");
+        isGrounded = true;
     }
 
+    private void Update()
+    {
+        // ˆê’è‘¬“x‚Å‰ñ“]‚µ‚Ä‚¢‚ê‚ÎA‰¹‚ð–Â‚ç‚·
+        if (Mathf.Abs(rb.angularVelocity) > 50 && isGrounded)
+        {
+            CriManager.instance.PlayObjSE("CupcellHop");
+        }
+    }
+    bool isGrounded = false;
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isGrounded = false;
+    }
 }

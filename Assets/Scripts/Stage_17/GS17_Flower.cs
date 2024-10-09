@@ -25,7 +25,8 @@ public class GS17_Flower : MonoBehaviour
             Debug.Log(collision.tag);
             if (collision.CompareTag("Shadow"))
             {
-                collision.gameObject.SetActive(false);
+                // collision.gameObject.SetActive(false);
+                Destroy(collision.transform.parent.parent.gameObject);
                 StopAllCoroutines();
                 StartCoroutine(Vacuum());
             }

@@ -6,7 +6,10 @@ public class BGMDestroy : MonoBehaviour
 {
     void Start()
     {
-        BGMManager.Instance.DestroyBGM();
+        if (BGMManager.Instance)
+        {
+            BGMManager.Instance.DestroyBGM();
+        }
     }
 
     

@@ -17,7 +17,7 @@ public class GS_31_HintObj : MonoBehaviour
         if (collision.GetComponent<GS_31_Key>())
         {
             animator.Play("FadeIN");
-            //CriManager.instance.PlayObjSE("Pad");
+            CriManager.instance.PlayObjSE("Pad");
         }
     }
     // —£‚ê‚é‚ÆFadeOut
@@ -26,7 +26,7 @@ public class GS_31_HintObj : MonoBehaviour
         if (collision.GetComponent<GS_31_Key>())
         {
             animator.Play("FadeOUT");
-            //CriManager.instance.StopObjSE();
+            CriManager.instance.StopObjSE();
         }
     }
 }

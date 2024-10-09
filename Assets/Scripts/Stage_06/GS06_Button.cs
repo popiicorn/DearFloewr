@@ -9,6 +9,7 @@ public class GS06_Button : Gimmick
     [SerializeField] Transform leftPos;
     [SerializeField] Transform rightPos;
     public UnityEvent OnPush;
+    public UnityEvent OnPushShowQuestion;
 
     public void SetCanPush(bool canPush)
     {
@@ -52,6 +53,7 @@ public class GS06_Button : Gimmick
         else
         {
             character.ShowQuestionEmotion();
+            OnPushShowQuestion?.Invoke();
         }
         // 絵柄を切り替える
         character.SetDefaultMode();
