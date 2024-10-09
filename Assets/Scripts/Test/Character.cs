@@ -113,7 +113,7 @@ public class Character : MonoBehaviour
     // クリックしたものが「キック」ならモードを「PrePush」に変更
 
     // クリックした場所まで移動
-    int walkDistance = 1000000;
+    int walkDistance = 10000;
 
     private void Update()
     {
