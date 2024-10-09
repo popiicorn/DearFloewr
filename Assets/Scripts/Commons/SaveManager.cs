@@ -53,14 +53,21 @@ public class SaveManager : MonoBehaviour
     public void SetCleared(int stageNumber)
     {
         saveData.stages[stageNumber].isCleared = true;
-        if (stageNumber + 1 < saveData.stages.Length)
+        int nextStage = stageNumber + 1;
+        if (nextStage < saveData.stages.Length-1)
         {
-            saveData.stages[stageNumber + 1].isOpened = true;
-            if ((stageNumber + 1 == 34) && IsAllBonusGet())
-            {
-                saveData.stages[34].isOpened = true;
-            }
+            saveData.stages[nextStage].isOpened = true;
         }
+        if ((nextStage == 34) && IsAllBonusGet())
+        {
+            saveData.stages[34].isOpened = true;
+        }
+        Save();
+    }
+
+    public void SetMovieStage(int num, bool isMovieStage)
+    {
+        saveData.stages[num].isMovieStage = isMovieStage;
         Save();
     }
 
@@ -70,6 +77,10 @@ public class SaveManager : MonoBehaviour
         for (int i = 0; i < saveData.stages.Length - 1; i++)
         {
             if(i == 34)
+            {
+                continue;
+            }
+            if (saveData.stages[i].isMovieStage)
             {
                 continue;
             }
@@ -160,6 +171,15 @@ public class SaveManager : MonoBehaviour
                 saveData.stages[i].isOpened = false;
                 saveData.stages[i].getBonus = false;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            saveData.stages[32].isCleared = false;
+            saveData.stages[32].getBonus = false;
+            saveData.stages[33].isCleared = false;
+            saveData.stages[34].isOpened = false;
+            Save();
         }
     }
 

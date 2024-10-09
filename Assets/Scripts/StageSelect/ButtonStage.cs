@@ -44,6 +44,7 @@ public class ButtonStage : MonoBehaviour
         {
             flowerLock.SetActive(false);
         }
+        SaveManager.Instance.saveData.stages[stage.stageNumber].isMovieStage = isMovieStage;
     }
     void SetDalut()
     {
