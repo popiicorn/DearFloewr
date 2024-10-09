@@ -62,6 +62,7 @@ public class Character : MonoBehaviour
     public void ResetLimit(Transform tf)
     {
         leftPos = tf;
+        initLeftPos = tf;
     }
 
     private void Awake()
@@ -89,6 +90,7 @@ public class Character : MonoBehaviour
     {
         leftPos = left;
         rightPos = right;
+        Debug.Log("SetLimitObj");
     }
     bool isAutoRun = false;
     // 右に走り続ける
