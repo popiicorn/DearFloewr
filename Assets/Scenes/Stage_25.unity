@@ -2388,6 +2388,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7caf65dccd3c844b7ee63cd81c9e97, type: 3}
+--- !u!1 &668648090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9004803357672133341, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 668648089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &668648091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668648090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 1
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: flowerGet
+  _cueSheet: Flower
 --- !u!1001 &682720470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6549,6 +6588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bGMItomSource: {fileID: 2006766555}
+  bGMItomSource01: {fileID: 0}
 --- !u!1 &2007478907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2217863747826720377, guid: 13bd0f5d8cd1f0a49a7208794bda53e6,
