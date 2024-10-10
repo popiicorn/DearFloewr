@@ -7,7 +7,8 @@ public class BGMPlay : MonoBehaviour
 {
     [SerializeField] CriAtomSource bGMSource;
     [SerializeField] string queName;
-    
+    //[SerializeField] GameObject gameObject;
+
     void Start()
     {
         Invoke("PlayBGM",0.1f);

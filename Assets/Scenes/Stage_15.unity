@@ -775,13 +775,13 @@ MonoBehaviour:
     acbFile: Nomal.acb
     awbFile: Nomal.awb
     loaderStatus: 0
-  - name: Stage15
-    acbFile: Stage15.acb
-    awbFile: 
-    loaderStatus: 0
   - name: Danger
     acbFile: Danger.acb
     awbFile: Danger.awb
+    loaderStatus: 0
+  - name: Stage15
+    acbFile: Stage15.acb
+    awbFile: 
     loaderStatus: 0
   dspBusSetting: OptionFilter
   dontDestroyOnLoad: 0
@@ -4174,7 +4174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playOnStart: 1
+  _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
   _use3dPositioning: 1
@@ -4195,6 +4195,20 @@ MonoBehaviour:
     - 0
   _cueName: ShadowLoop
   _cueSheet: Stage15
+--- !u!114 &1053963257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053963250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff435104e2660c647bfb4bd18ddb204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGMSource: {fileID: 1053963255}
+  queName: ShadowLoop
 --- !u!1 &1070173175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,7 +5268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playOnStart: 1
+  _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
   _use3dPositioning: 1
@@ -5275,6 +5289,20 @@ MonoBehaviour:
     - 0
   _cueName: ShadowLoop
   _cueSheet: Stage15
+--- !u!114 &1231562936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231562926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff435104e2660c647bfb4bd18ddb204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGMSource: {fileID: 1231562934}
+  queName: ShadowLoop
 --- !u!4 &1250503388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 979027992120582771, guid: 49c96957a308e9c4f9456c4431e6818a,
@@ -6147,6 +6175,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5772181046507911716, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: _use3dPositioning
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107962, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: _cueSheet
@@ -7308,7 +7341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playOnStart: 1
+  _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
   _use3dPositioning: 1
@@ -7329,6 +7362,20 @@ MonoBehaviour:
     - 0
   _cueName: ShadowLoop
   _cueSheet: Stage15
+--- !u!114 &1779431732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779431725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff435104e2660c647bfb4bd18ddb204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGMSource: {fileID: 1779431730}
+  queName: ShadowLoop
 --- !u!1 &1808047749
 GameObject:
   m_ObjectHideFlags: 0
