@@ -53,6 +53,11 @@ public class GS28_Box : Gimmick, IRockable
         {
             IsMove = true;
         }
+        // rightLimit‚É‚Æ‚Ç‚¢‚½‚ç
+        if (transform.position.x > GetRightLimit().position.x - limitOffsetR)
+        {
+            OnLimit?.Invoke();
+        }
     }
 
     // ó‘Ô‚ğ
