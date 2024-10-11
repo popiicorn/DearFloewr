@@ -13,7 +13,7 @@ public class GS17_SmallRockEvent : MonoBehaviour
     // ‚à‚µƒLƒƒƒ‰‚ª5•bÀ‚Á‚Ä‚¢‚½‚çA‰Ô‚ğæ“¾
 
     float timer;
-
+    bool isSit;
     void Start()
     {
         isGetFlower = getFlower.WasGet;
@@ -33,10 +33,23 @@ public class GS17_SmallRockEvent : MonoBehaviour
                 getFlower.ShowFlower();
                 isGetFlower = true;
             }
+            if (!isSit)
+            {
+                // –Â‚ç‚·
+                Debug.Log("À‚Á‚Ä‚é");
+            }
+
+            isSit = true;
         }
         else
         {
             timer = 0;
+            if (isSit)
+            {
+                // –Â‚ç‚·
+                Debug.Log("—§‚Á‚Ä‚é");
+            }
+            isSit = false;
         }
     }
 }
