@@ -65,6 +65,16 @@ public class BGMManager : MonoBehaviour
         
     }
 
+    public void OnFade()
+    {
+        DOVirtual.Float(0f, 0.8f, 0.5f, value =>
+        {
+            bGMAtomSource.SetAisacControl("Fade", value);
+        });
+
+
+    }
+
     public void OffAisac()
     {
         DOVirtual.Float(0.7f, 0f, 3f, value =>
@@ -72,6 +82,14 @@ public class BGMManager : MonoBehaviour
             bGMAtomSource.SetAisacControl("Filter", value);
         });
         
+    }
+    public void OffFade()
+    {
+        DOVirtual.Float(0.8f, 0f, 0.5f, value =>
+        {
+            bGMAtomSource.SetAisacControl("Fade", value);
+        });
+
     }
 
     public void OnBGMAisac(string aisacName)

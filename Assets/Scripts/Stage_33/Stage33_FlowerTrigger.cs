@@ -15,6 +15,7 @@ public class Stage33_FlowerTrigger : MonoBehaviour
         {
             isTriggered = true;
             flower.SetActive(true);
+            CriManager.instance.PlayObjSE("PetelPear");
         }
     }
 }

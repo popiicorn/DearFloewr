@@ -16,6 +16,7 @@ public class CriManager : MonoBehaviour
     [SerializeField] CriAtomSource bGIAtomSource;
     [SerializeField] CriAtomSource uiAtomSource;
     [SerializeField] CriAtomSource pos3DAtomSource;
+    [SerializeField] BGMManager bGMAtomSource;
     [SerializeField] PLAYER_TYPE pLAYER_TYPE;
     [SerializeField] NoiseManager noiseManager;
     [SerializeField] MovieSoundManager movieSoundManager;
@@ -187,7 +188,10 @@ public class CriManager : MonoBehaviour
         {
             pos3DAtomSource.Pause(true); ;
         }
-
+        if (bGMAtomSource != null)
+        {
+            bGMAtomSource.OnFade();
+        }
 
 
         stageSEatomSource.Pause(true);
@@ -223,6 +227,12 @@ public class CriManager : MonoBehaviour
         {
             pos3DAtomSource.Pause(false); ;
         }
+
+        if (bGMAtomSource != null)
+        {
+            bGMAtomSource.OffFade();
+        }
+
 
         stageSEatomSource.Pause(false);
         playerAtomSource.Pause(false);
