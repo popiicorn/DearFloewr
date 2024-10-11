@@ -9,10 +9,10 @@ public class GS29_CapsuleChild : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         count++;
-        if (count < 5)
+        if (count < 3)
         {
             return;
         }
-        CriManager.instance.PlayObjSE("CupcellHop");
+        CriManager.instance.PlayObjSE("CupcellRolling");
     }
 }
