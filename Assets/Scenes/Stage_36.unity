@@ -1164,6 +1164,18 @@ MonoBehaviour:
     unityEvent:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1966760633}
+          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+          m_MethodName: StopBGM
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 806443577}
           m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
           m_MethodName: GameClear
@@ -1192,18 +1204,6 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1966760633}
-          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
-          m_MethodName: StopBGM
-          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1757,6 +1757,18 @@ MonoBehaviour:
     unityEvent:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1966760633}
+          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+          m_MethodName: StopBGM
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 806443577}
           m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
           m_MethodName: GameClear
@@ -8405,6 +8417,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
+      propertyPath: bGMAtomSource
+      value: 
+      objectReference: {fileID: 1966760633}
     - target: {fileID: 8003812210439107967, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
       propertyPath: m_Name
