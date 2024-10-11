@@ -5672,6 +5672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
         type: 3}
+      propertyPath: stage11
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003812210439107965, guid: 58c6f622d2ba66d4aaefc0915432c5d6,
+        type: 3}
       propertyPath: pos3DAtomSource
       value: 
       objectReference: {fileID: 1259292531}

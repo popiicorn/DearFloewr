@@ -35,7 +35,7 @@ public class GS17_SmallRockEvent : MonoBehaviour
             }
             if (!isSit)
             {
-                // ñ¬ÇÁÇ∑
+                CriManager.instance.PlayObjSE("hinto");
                 Debug.Log("ç¿Ç¡ÇƒÇÈ");
             }
 
@@ -46,7 +46,7 @@ public class GS17_SmallRockEvent : MonoBehaviour
             timer = 0;
             if (isSit)
             {
-                // ñ¬ÇÁÇ∑
+                CriManager.instance.StopObjSE();
                 Debug.Log("óßÇ¡ÇƒÇÈ");
             }
             isSit = false;

@@ -29,6 +29,7 @@ public class GS34_Flower : MonoBehaviour
         isBloomed = true;
         // ‰Ô‚ð•\Ž¦‚·‚é
         gameObject.SetActive(true);
+        CriManager.instance.PlayObjSE("FlowerBloom");
         if (isPair)
         {
             return;
@@ -37,6 +38,7 @@ public class GS34_Flower : MonoBehaviour
         foreach (var flower in neighborFlowers)
         {
             flower.Bud();
+            CriManager.instance.PlayObjSE("FlowerBud");
         }
     }
 

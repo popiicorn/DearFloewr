@@ -27,7 +27,7 @@ public class EV01_SmallRock : Gimmick
         character.SitGimmick();
         if (CriManager.instance.stage11== true)
         {
-           // CriManager.instance.PlayObjSE("SitPoint");
+           CriManager.instance.PlayObjSE("SitPoint");
         }
 
     }
