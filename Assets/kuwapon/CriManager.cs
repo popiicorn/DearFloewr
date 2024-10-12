@@ -16,6 +16,7 @@ public class CriManager : MonoBehaviour
     [SerializeField] CriAtomSource bGIAtomSource;
     [SerializeField] CriAtomSource uiAtomSource;
     [SerializeField] CriAtomSource pos3DAtomSource;
+    //[SerializeField] BlockBGMManager blockManager;
     [SerializeField] BGMManager bGMAtomSource;
     [SerializeField] PLAYER_TYPE pLAYER_TYPE;
     [SerializeField] NoiseManager noiseManager;
@@ -123,7 +124,7 @@ public class CriManager : MonoBehaviour
 
     public void PlayUISE(string cueName)
     {
-        uiAtomSource?.Play(cueName);
+        uiAtomSource.Play(cueName);
     }
 
     IEnumerator DeleyBGI()
@@ -241,5 +242,7 @@ public class CriManager : MonoBehaviour
         //MovieSoundManager.instance.MovieOffPause();
 
     }
+
+    
 
 }

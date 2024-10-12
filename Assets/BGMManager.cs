@@ -10,6 +10,7 @@ public class BGMManager : MonoBehaviour
 
     public CriAtomSource bGMAtomSource;
     public string  bGMCueName;
+    CriAtomExPlayback bGMAtomPlayback = new CriAtomExPlayback(CriAtomExPlayback.invalidId);
     public static BGMManager Instance { get; private set; }
 
     private void Awake()
@@ -127,5 +128,15 @@ public class BGMManager : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-   
+    public void BlockMove(int id)
+    {
+        if (bGMAtomPlayback.id != CriAtomExPlayback.invalidId)
+        {
+            if (bGMAtomPlayback.GetCurrentBlockIndex() != id)
+            {
+                bGMAtomPlayback.SetNextBlockIndex(id);
+            }
+        }
+    }
+
 }
