@@ -1099,7 +1099,7 @@ MonoBehaviour:
   cueSheets:
   - name: Stage31
     acbFile: Stage31.acb
-    awbFile: 
+    awbFile: Stage31.awb
     loaderStatus: 0
   - name: Flower
     acbFile: Flower.acb
@@ -6640,20 +6640,20 @@ MonoBehaviour:
             m_StringArgument: disappear
             m_BoolArgument: 0
           m_CallState: 2
-  - delay: 0.5
+  - delay: 0.1
     unityEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 499389002}
-          m_TargetAssemblyTypeName: SingleBGMManager, Assembly-CSharp
-          m_MethodName: StartBGM
+        - m_Target: {fileID: 1230546939}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: TimeDoorOpen
+            m_StringArgument: softWind
             m_BoolArgument: 0
           m_CallState: 2
   - delay: 4
@@ -6701,6 +6701,18 @@ MonoBehaviour:
     unityEvent:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1230546939}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FlowerHop01
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1606357219}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
@@ -6722,28 +6734,12 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: FlowerHop01
+            m_StringArgument: GetFlowerCircle
             m_BoolArgument: 0
           m_CallState: 2
-  - delay: 0.4
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
         - m_Target: {fileID: 609755111}
           m_TargetAssemblyTypeName: NoiseManager, Assembly-CSharp
           m_MethodName: StopNoise
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 499389002}
-          m_TargetAssemblyTypeName: SingleBGMManager, Assembly-CSharp
-          m_MethodName: StopBGM
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6765,6 +6761,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - delay: 0.4
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
   corollaSpriterenderer: {fileID: 972558028}
   bloomDelay: 0.5
 --- !u!114 &1640658588 stripped
@@ -8017,6 +8017,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1230546939}
+          m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+          m_MethodName: PlayObjSE
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FlowerBud
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 0
