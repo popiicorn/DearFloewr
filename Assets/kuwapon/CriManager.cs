@@ -197,7 +197,7 @@ public class CriManager : MonoBehaviour
 
         stageSEatomSource.Pause(true);
         playerAtomSource.Pause(true);
-        uiAtomSource.Pause(true);
+        //uiAtomSource.Pause(true);
         
         //movieSoundManager.MovieOnPause();
 
@@ -237,7 +237,7 @@ public class CriManager : MonoBehaviour
 
         stageSEatomSource.Pause(false);
         playerAtomSource.Pause(false);
-        uiAtomSource.Pause(false);
+        //uiAtomSource.Pause(false);
         //pos3DAtomSource.Pause(false);
         //MovieSoundManager.instance.MovieOffPause();
 
