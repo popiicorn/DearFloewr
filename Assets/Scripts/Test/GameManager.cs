@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
     public void ToStageSelect()
     {
         Debug.Log("ToStageSelect");
-        //CriManager.instance.PlayUISE("TorTittle");
+        CriManager.instance.PlayUISE("TorTittle");
         if (fadeObj.animationType == DOTweenAnimation.AnimationType.Color)
         {
             fadeObj.delay = optionParam.delayColor;
