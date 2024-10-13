@@ -9207,6 +9207,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6582348253631038094, guid: 009e140e9854e374cb38551b8152fa27,
+        type: 3}
+      propertyPath: _cueSheet
+      value: Stage26
+      objectReference: {fileID: 0}
     - target: {fileID: 8414694871274663676, guid: 009e140e9854e374cb38551b8152fa27,
         type: 3}
       propertyPath: m_IsActive
