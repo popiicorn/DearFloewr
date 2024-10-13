@@ -2110,6 +2110,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6309341142423696881, guid: 782dc7a1582dcdb47add82839cd662ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7499858499247298268, guid: 782dc7a1582dcdb47add82839cd662ef,
         type: 3}
       propertyPath: atomSource
