@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     string nextSceneName = "Transition_1";
     string currentSceneName;
     public UnityAction OnClearCkeckSteamAchievement;
+    const string StageSelectName = "Title_StageSelect";
 
     private void Awake()
     {
@@ -259,6 +260,10 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (currentSceneName == StageSelectName)
+            {
+                return;
+            }
             optionPanel.SetActive(true);
             CriManager.instance.OnPauseCRI();
         }

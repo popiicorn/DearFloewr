@@ -7,8 +7,10 @@ public class BornuthFlower : MonoBehaviour
 {
     [SerializeField] GameObject flowerObj;
     [SerializeField] private bool wasGet;
+    [SerializeField] bool isCharaLock = false;
 
     public bool WasGet { get => SaveManager.Instance.CheckGetBonus(); }
+    public bool IsCharaLock { get => isCharaLock; }
 
     private void Start()
     {

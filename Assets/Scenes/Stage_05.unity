@@ -2530,6 +2530,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2786485804027401149, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
+        type: 3}
+      propertyPath: isCharaLock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2786485804027401151, guid: 2a7caf65dccd3c844b7ee63cd81c9e97,
         type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size

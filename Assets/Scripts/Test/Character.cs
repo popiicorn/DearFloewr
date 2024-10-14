@@ -50,7 +50,7 @@ public class Character : MonoBehaviour
         GetFlower,
     }
 
-    Mode mode = Mode.Normal;
+    [SerializeField] Mode mode = Mode.Normal;
     [SerializeField] Gimmick gimmick;
 
     public bool ExitLimit { get => exitLimit; set => exitLimit = value; }
@@ -192,9 +192,12 @@ public class Character : MonoBehaviour
                 Debug.Log(gimmick);
                 if (hit2d.transform.GetComponentInChildren<BornuthFlower>())
                 {
+                    if (hit2d.transform.GetComponentInChildren<BornuthFlower>().IsCharaLock)
+                    {
+                        mode = Mode.GetFlower;
+                    }
                     Debug.Log("BornuthFlower");
                     gimmick = null;
-                    mode = Mode.GetFlower;
                     Invoke("SetNormal", 0.5f);
                     return;
                 }
@@ -290,6 +293,15 @@ public class Character : MonoBehaviour
         if (gimmick && mode == Mode.Push)
         {
             gimmick.Move(transform.position - prePos);
+        }
+        else if (gimmick == null && mode == Mode.Push)
+        {
+            // 10/15
+            animator.SetTrigger("OnNormal");
+            mode = Mode.Normal;
+            gimmick = null;
+            CriManager.instance.StopSE();
+            SetLimitObj(initLeftPos, initRightPos);
         }
         SetDirection(targetPos);
 
