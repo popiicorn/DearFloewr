@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.TextCore.Text;
 
 public class GS24_Door : Gimmick, IPointerDownHandler
 {
@@ -56,7 +57,14 @@ public class GS24_Door : Gimmick, IPointerDownHandler
         character.ShowNockAnim(isRightKnock);
         CheckCorrectKnock(isRightKnock);
         yield return new WaitForSeconds(0.3f);
-        character.SetDefaultMode();
+        if (!canKnock && !isClear)
+        {
+            character.ShowQuestionEmotion();
+        }
+        else
+        {
+            character.SetDefaultMode();
+        }
     }
 
 
@@ -98,5 +106,11 @@ public class GS24_Door : Gimmick, IPointerDownHandler
         {
             yield return eventData.Play();
         }
+    }
+
+    public void Reset()
+    {
+        knockIndex = 0;
+        canKnock = false;
     }
 }

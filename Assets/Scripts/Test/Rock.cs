@@ -39,6 +39,7 @@ public class Rock : Gimmick,IRockable
             GetComponent<Collider2D>().enabled = false;
         }
     }
+    float maxMoveDistance= 0.1f;
 
     public override void Move(Vector3 distance)
     {
@@ -46,6 +47,7 @@ public class Rock : Gimmick,IRockable
         {
             return;
         }
+        Debug.Log(distance.x);
         transform.position += distance;
         if (distance.sqrMagnitude < float.Epsilon)
         {

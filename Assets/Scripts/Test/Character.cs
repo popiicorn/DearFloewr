@@ -192,14 +192,30 @@ public class Character : MonoBehaviour
                 Debug.Log(gimmick);
                 if (hit2d.transform.GetComponentInChildren<BornuthFlower>())
                 {
-                    if (hit2d.transform.GetComponentInChildren<BornuthFlower>().IsCharaLock)
+                    Ray tmpray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    // All 
+                    RaycastHit2D[] raychastHit2DAll = Physics2D.RaycastAll((Vector2)tmpray.origin, (Vector2)tmpray.direction);
+                    // もし花にあたっていたら
+                    BornuthFlower bornuthFlower = null;
+                    foreach (var hit in raychastHit2DAll)
                     {
-                        mode = Mode.GetFlower;
+                        if (hit.collider.TryGetComponent(out bornuthFlower))
+                        {
+                            break;
+                        }
                     }
-                    Debug.Log("BornuthFlower");
-                    gimmick = null;
-                    Invoke("SetNormal", 0.5f);
-                    return;
+
+                    if (bornuthFlower != null && !bornuthFlower.WasGet)
+                    {
+                        if (bornuthFlower.IsCharaLock)
+                        {
+                            mode = Mode.GetFlower;
+                        }
+                        Debug.Log("BornuthFlower");
+                        gimmick = null;
+                        Invoke("SetNormal", 0.5f);
+                        return;
+                    }
                 }
                 if (gimmick && gimmick.IsLock)
                 {
@@ -241,7 +257,6 @@ public class Character : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isClicking = false;
-            Debug.Log("isClicking = false");
         }
         
 
@@ -254,8 +269,10 @@ public class Character : MonoBehaviour
                 {
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
-                    gimmick.CenterTransform.position = new Vector3(targetPos.x, gimmick.CenterTransform.position.y, 0);
-
+                    if (Mathf.Abs(gimmick.CenterTransform.position.x - targetPos.x) < 0.1f)
+                    {
+                        gimmick.CenterTransform.position = new Vector3(targetPos.x, gimmick.CenterTransform.position.y, 0);
+                    }
                     gimmick = null;
                     CriManager.instance.StopSE();
                     SetLimitObj(initLeftPos, initRightPos);
@@ -274,7 +291,6 @@ public class Character : MonoBehaviour
             {
                 if (gimmick && mode == Mode.Push && ((faceDirection == FaceDirection.Right && targetPos.x < gimmick.CenterTransform.position.x) || (faceDirection == FaceDirection.Left && targetPos.x > gimmick.CenterTransform.position.x)))
                 {
-                    Debug.Log("PushMode22222");
                     animator.SetTrigger("OnNormal");
                     mode = Mode.Normal;
                     gimmick = null;
