@@ -9846,6 +9846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925963121}
   - component: {fileID: 1925963122}
+  - component: {fileID: 1925963123}
   m_Layer: 0
   m_Name: BoxRightLimit
   m_TagString: Untagged
@@ -9898,6 +9899,29 @@ MonoBehaviour:
             m_StringArgument: SetObjLim
             m_BoolArgument: 0
           m_CallState: 2
+  canSound: 1
+--- !u!68 &1925963123
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925963120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6842098, y: -2.142874}
+  - {x: 0.6694565, y: -3.283504}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1960404813
 GameObject:
   m_ObjectHideFlags: 0
