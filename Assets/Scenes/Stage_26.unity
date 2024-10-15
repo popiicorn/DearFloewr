@@ -11824,6 +11824,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7470556909208614253, guid: 4105645935e3dc54da28095dcd16d912,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470556909208614253, guid: 4105645935e3dc54da28095dcd16d912,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -12000,6 +12005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GS29_2_Capsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073417902930419337, guid: 4fcb78e9ede3a744a814aa5eaff07bf4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4073417902930419337, guid: 4fcb78e9ede3a744a814aa5eaff07bf4,
         type: 3}
