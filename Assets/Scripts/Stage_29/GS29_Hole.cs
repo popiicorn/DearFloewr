@@ -51,4 +51,20 @@ public class GS29_Hole : Gimmick
     {
         gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<GS29_Box>())
+        {
+            gameObject.layer = 0;    
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<GS29_Box>())
+        {
+            gameObject.layer = 2;
+        }
+    }
 } 
