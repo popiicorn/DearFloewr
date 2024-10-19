@@ -10,7 +10,9 @@ public class BGMManager : MonoBehaviour
 
     public CriAtomSource bGMAtomSource;
     public string  bGMCueName;
+    public bool Stage33 = false; 
     CriAtomExPlayback bGMAtomPlayback = new CriAtomExPlayback(CriAtomExPlayback.invalidId);
+    int blockIndex;
     public static BGMManager Instance { get; private set; }
 
     private void Awake()
@@ -34,7 +36,7 @@ public class BGMManager : MonoBehaviour
         {
            StartBGM();
         }
-        
+         
     }
 
   
@@ -48,7 +50,7 @@ public class BGMManager : MonoBehaviour
 
         }
         Debug.Log("StartBGM");
-        bGMAtomSource.Play(bGMCueName);
+        bGMAtomPlayback = bGMAtomSource.Play(bGMCueName);
     }
 
     public void StopBGM()
@@ -137,6 +139,31 @@ public class BGMManager : MonoBehaviour
                 bGMAtomPlayback.SetNextBlockIndex(id);
             }
         }
+    }
+
+    public void BossBlockMove01()
+    {
+        blockIndex = bGMAtomPlayback.GetCurrentBlockIndex();
+        if (blockIndex == 4)
+        {
+            bGMAtomPlayback.SetNextBlockIndex(6);
+            Debug.Log("インタラクティブ4");
+        }
+        else if  (blockIndex == 6)
+        {
+            Debug.Log("インタラクティブ6");
+            return;
+        }
+        else 
+        {
+            Debug.Log("インタラクティブ");
+            bGMAtomPlayback.SetNextBlockIndex(5);
+        }
+    }
+
+    public void BossBlockMove02()
+    {
+        bGMAtomPlayback.SetNextBlockIndex(7);
     }
 
 }

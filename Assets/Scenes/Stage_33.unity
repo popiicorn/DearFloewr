@@ -1590,6 +1590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerObj: {fileID: 860566156}
   wasGet: 0
+  isCharaLock: 0
 --- !u!1001 &884865903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3890,6 +3891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bGMAtomSource: {fileID: 2081466642}
   bGMCueName: Boss
+  Stage33: 1
 --- !u!114 &2081466642
 MonoBehaviour:
   m_ObjectHideFlags: 0
