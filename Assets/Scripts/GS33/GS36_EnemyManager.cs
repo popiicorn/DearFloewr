@@ -52,11 +52,11 @@ public class GS36_EnemyManager : MonoBehaviour
         }
         if (shadows.Count == 1)
         {
-            BGMManager.Instance.BossBlockMove01(); 
+            //BGMManager.Instance.BossBlockMove01(); 
         }
         if (shadows.Count == 0)
         {
-            BGMManager.Instance.BossBlockMove02();
+            //BGMManager.Instance.BossBlockMove02();
             CriManager.instance.StopBGI();
             GameManager.Instance.GameClear();
         }

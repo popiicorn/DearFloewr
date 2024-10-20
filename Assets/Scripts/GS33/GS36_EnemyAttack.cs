@@ -73,9 +73,13 @@ public class GS36_EnemyAttack : MonoBehaviour
         animator.Play("AttackMiss", 0, 0);
         yield return new WaitForSeconds(3f);
         flowerManager.CurrentFlower.PlayVacuum();
-        if (count >= 2)
+        if (count == 2)
         {
-            Debug.Log("2 or 3");
+            BGMManager.Instance.BossBlockMove01();
+        }
+        else if (count == 3)
+        {
+            BGMManager.Instance.BossBlockMove02();
         }
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(cameraShake.Shake(0.02f, 2, 0.2f));
