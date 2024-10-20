@@ -16,6 +16,7 @@ public class GS36_EnemyAttack : MonoBehaviour
     [SerializeField] Character character;
     [SerializeField] float delayTime = 0.5f;
     int[] attackPosList = new int[3] { -7, 0, 7 };
+    int count = 0;
 
     private void Awake()
     {
@@ -68,9 +69,14 @@ public class GS36_EnemyAttack : MonoBehaviour
 
     IEnumerator AttackMissAnim()
     {
+        count++;
         animator.Play("AttackMiss", 0, 0);
         yield return new WaitForSeconds(3f);
         flowerManager.CurrentFlower.PlayVacuum();
+        if (count >= 2)
+        {
+            Debug.Log("2 or 3");
+        }
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(cameraShake.Shake(0.02f, 2, 0.2f));
         StartCoroutine(OnEndAttack(0.5f, true));
