@@ -86,7 +86,7 @@ TextureImporter:
     compressionQuality: 30
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -746,7 +746,7 @@ TextureImporter:
       StageParts_4_8: 202149605
       StageParts_4_9: 214530355
   spritePackingTag: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
