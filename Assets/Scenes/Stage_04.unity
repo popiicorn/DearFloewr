@@ -449,6 +449,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 422625770}
+        m_TargetAssemblyTypeName: CriManager, Assembly-CSharp
+        m_MethodName: StopBGI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   time: 1.5
 --- !u!1 &129310172
 GameObject:
@@ -1163,10 +1175,13 @@ MonoBehaviour:
   stageSEatomSource: {fileID: 422625773}
   bGIAtomSource: {fileID: 422625772}
   uiAtomSource: {fileID: 422625774}
+  pos3DAtomSource: {fileID: 0}
+  bGMAtomSource: {fileID: 0}
   pLAYER_TYPE: 1
   noiseManager: {fileID: 0}
   movieSoundManager: {fileID: 0}
   bgi: 1
+  stage11: 0
 --- !u!4 &422625771
 Transform:
   m_ObjectHideFlags: 0
@@ -5006,6 +5021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowerObj: {fileID: 1264257512}
+  wasGet: 0
+  isCharaLock: 0
 --- !u!1001 &1265760035
 PrefabInstance:
   m_ObjectHideFlags: 0
