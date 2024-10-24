@@ -1116,7 +1116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -148.3, y: 13.7}
+  m_AnchoredPosition: {x: -113.9, y: 13.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777139619
@@ -1621,6 +1621,7 @@ MonoBehaviour:
   bGIAtomSource: {fileID: 1506331295}
   uiAtomSource: {fileID: 0}
   pos3DAtomSource: {fileID: 0}
+  bGMAtomSource: {fileID: 0}
   pLAYER_TYPE: 2
   noiseManager: {fileID: 0}
   movieSoundManager: {fileID: 0}
@@ -1779,7 +1780,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Popiicorn Game 2024
+  m_Text: Popiicorn Game
 --- !u!222 &1672356549
 CanvasRenderer:
   m_ObjectHideFlags: 0
